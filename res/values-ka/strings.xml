@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="breeds_array">
+        <item>აფენ პინჩერი</item>
+        <item>ავღანური მწევარი</item>
+        <item>აიდი</item>
+        <item>ერდელტერიერი</item>
+        <item>აკიტა-ინუ</item>
+        <item>ალიასკური კლი–კაი</item>
+        <item>ალასკური მალამუტი</item>
+        <item>ალპური ტაქსასმაგვარი მდევარი</item>
+        <item>ამერიკული აკიტა</item>
+        <item>ამერიკული ბულდოგი</item>
+        <item>ამერიკული კოკერ სპანიელი</item>
+        <item>ინგლისური ენოტისებრი მდევარი</item>
+        <item>ამერიკული ესკიმო ძაღლი</item>
+        <item>ამერიკული ფოქსჰაუნდი</item>
+        <item>ამერიკული შიშველი ტერიერი</item>
+        <item>ამერიკული პიტბულ ტერიერი</item>
+        <item>ამერიკული სტაფორდშირის ტერიერი</item>
+        <item>ამერიკული წყლის სპანიელი</item>
+        <item>ანატოლიური ნაგაზი</item>
+        <item>Anglo-Français de Petite Vénerie</item>
+        <item>აპენცელერ ზენენჰუნდი</item>
+        <item>არიეჟული ბრაკი</item>
+        <item>არიეჟული მდევარი</item>
+        <item>არტუას მდევარი</item>
+        <item>ავსტრალიური კეტლ დოგი</item>
+        <item>ავსტრალიური კელპი</item>
+        <item>ავსტარლიური ნაგაზი</item>
+        <item>ავსტრალიური აბრეშუმისებრი ტერიერი</item>
+        <item>ავსტრალიური მოკლეკუდა მეცხვარე ძაღლი</item>
+        <item>ავსტრალიური ტერიერი</item>
+        <item>ავსტრიული ბრანდლ-ბრაკი</item>
+        <item>ავსტრიული პინჩერი</item>
+        <item>აზავაკი</item>
+        <item>ბარბეტი</item>
+        <item>ბასენჯი</item>
+        <item>არტეზიანულ-ნორმანდიული ბასეტი</item>
+        <item>გასკონური ცისფერი ბასეტი</item>
+        <item>ბრეტანული ბასეტი</item>
+        <item>Grand Basset Griffon Vendéen</item>
+        <item>Petit Basset Griffon Vendéen</item>
+        <item>ბასეტ ჰაუნდი</item>
+        <item>ბავარიული მთის მდევარი</item>
+        <item>ბიგლი</item>
+        <item>ბიგლ-ჰარიერი</item>
+        <item>წვერიანი კოლი</item>
+        <item>ბოსერონი</item>
+        <item>ბედლინგტონ ტერიერი</item>
+        <item>გრიუნენდალი</item>
+        <item>ლაკენუა</item>
+        <item>მოლინუა</item>
+        <item>ტერვიურენი</item>
+        <item>ბერგამასკო</item>
+        <item>შვეიცარიული თეთრი მეცხვარე ძაღლი</item>
+        <item>პიკარდიული ნაგაზი</item>
+        <item>ბერნული ზენენჰუნდი</item>
+        <item>ბიშონ ფრიზე</item>
+        <item>ბილი</item>
+        <item>Black and Tan Coonhound</item>
+        <item>შავი ნორვეგიული ელკჰაუნდი</item>
+        <item>რუსული შავი ტერიერი</item>
+        <item>Black Mouth Cur</item>
+        <item>Grand Bleu de Gascogne</item>
+        <item>Petit Bleu de Gascogne</item>
+        <item>ბლადჰოუნდი</item>
+        <item>პიკარდიული ცისფერი სპანიელი</item>
+        <item>Bluetick Coonhound</item>
+        <item>ბურბული</item>
+        <item>ბოლონიეზი</item>
+        <item>ბორდერ-კოლი</item>
+        <item>ბორდერ-ტერიერი</item>
+        <item>ბორზოი</item>
+        <item>ბოსნიური ბარაკი</item>
+        <item>ბოსტონ-ტერიერი</item>
+        <item>არდენების ბუვიე</item>
+        <item>ფლანდრიული ბუვიე</item>
+        <item>ბოქსიორი</item>
+        <item>ბოიკინ-სპანიელი</item>
+        <item>იტალიური ბრაკი</item>
+        <item>ოვერნული ბრაკი</item>
+        <item>ბურბონული ბრაკი</item>
+        <item>გასკონური ბრაკი</item>
+        <item>სენ-ჟერმენული ბრაკი</item>
+        <item>ბრაზილიური ტერიერი</item>
+        <item>ბრიარი</item>
+        <item>საშუალო ვანდეური გრიფონი</item>
+        <item>ბრეტონული სპანიელი</item>
+        <item>ბროჰოლმერი</item>
+        <item>ბუკოვინური მეცხვარე</item>
+        <item>ბულ-ტერიერი</item>
+        <item>მინიატურული ბულ-ტერიერი</item>
+        <item>ინგლისური ბულდოგი</item>
+        <item>ბულმასტიფი</item>
+        <item>ესპანური მეძებარი</item>
+        <item>კერნ-ტერიერი</item>
+        <item>ქანაანის ძაღლი</item>
+        <item>კანე კორსო</item>
+        <item>პორტუგალიური ნაგაზი</item>
+        <item>კაო დე კასტრო ლაბორეირო</item>
+        <item>აზორიული მეცხვარე</item>
+        <item>კაროლინური ძაღლი</item>
+        <item>კარპატული ოვჩარკა</item>
+        <item>კატაჰულური ლეოპარდისებრი ძაღლი</item>
+        <item>კატალონიური ნაგაზი</item>
+        <item>კავაკასიური ნაგაზი</item>
+        <item>კავალერ მეფე ჩარლზის სპანიელი</item>
+        <item>შუააზიური ნაგაზი</item>
+        <item>ჩეხური ფოუსეკი</item>
+        <item>ჩეხური ტერიერი</item>
+        <item>ჩესაპიკ ბეი რეტრივერი</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chien Français Tricolore</item>
+        <item>ჩიუაუა</item>
+        <item>ჩინური ქოჩორა ძაღლი</item>
+        <item>ჩაუ-ჩაუ</item>
+        <item>ჩირნეკო დელ ეტნა</item>
+        <item>კლამბერ-სპანიელი</item>
+        <item>გრძელბალნიანი კოლი</item>
+        <item>გლუვბალნიანი კოლი</item>
+        <item>კოტონ დე ტულეარი</item>
+        <item>ხორვატიული ნაგაზი</item>
+        <item>ხუჭუჭ-ბალნიანი რეტრივერი</item>
+        <item>ჩეხოსლოვაკიური მგელძაღლი</item>
+        <item>ტაქსა</item>
+        <item>დალმაციელი</item>
+        <item>დენდი დინმონტ ტერიერი</item>
+        <item>დანიურ-შვედური ფერმის ძაღლი</item>
+        <item>გერმანული ნაგაზი</item>
+        <item>დობერმანი</item>
+        <item>არგენტინული დოგი</item>
+        <item>ბორდოული დოგი</item>
+        <item>დრენთეს მონადირე ძაღლი</item>
+        <item>დრევერი</item>
+        <item>დუნკერი</item>
+        <item>ჰოლანდიური ნაგაზი</item>
+        <item>ჰოლანდიური სმაუსჰონდი</item>
+        <item>აღმოსავლეთ ციმბირული ლაიკა</item>
+        <item>ინგლისური კოკერ სპანიელი</item>
+        <item>ინგლისური ფოქსჰაუნდი</item>
+        <item>ინგლისური მასტიფი</item>
+        <item>ინგლისური სეტერი</item>
+        <item>ინგლისური სპრინგერ სპანიელი</item>
+        <item>English Toy Terrier (Black &amp; Tan)</item>
+        <item>ენტლებუხერ-ზენენჰუნდი</item>
+        <item>ეშტრელის ნაგაზი</item>
+        <item>ევრაზიერი</item>
+        <item>ფილდ-სპანიელი</item>
+        <item>ფილა ბრაზილეირო</item>
+        <item>ფინური მდევარი</item>
+        <item>ფინური ლაპჰუნდი</item>
+        <item>ფინური შპიცი</item>
+        <item>სწორბალნიანი რეტრივერი</item>
+        <item>გლუვბალნიანი ფოქსტერიერი</item>
+        <item>უხეშბალნიანი ფოქსტერიერი</item>
+        <item>ფრანგული ბულდოგი</item>
+        <item>ფრანგული სპანიელი</item>
+        <item>ესპანური გალგო</item>
+        <item>Gascon Saintongeois</item>
+        <item>ლანგჰაარი</item>
+        <item>გერმანული პინჩერი</item>
+        <item>გერმანული უხეშბალნიანი პოინტერი</item>
+        <item>გერმანული ნაგაზი</item>
+        <item>კურცჰაარი</item>
+        <item>გერმანული სპანიელი</item>
+        <item>გერმანული შპიცი</item>
+        <item>დრატჰაარი</item>
+        <item>რიზენშნაუცერი</item>
+        <item>გლენ ოფ იმაალ ტერიერი</item>
+        <item>ოქროსფერი რეტრივერი</item>
+        <item>გორდონ სეტტერი</item>
+        <item>Grand Anglo-Français Blanc et Noir</item>
+        <item>Grand Anglo-Français Blanc et Orange</item>
+        <item>Grand Anglo-Français Tricolore</item>
+        <item>Grand Griffon Vendéen</item>
+        <item>გერმანული დოგი</item>
+        <item>დიდი პირენეული</item>
+        <item>დიდი შვეიცარიული მთის ძაღლი</item>
+        <item>ბერძნული ჰეარჰუნდი</item>
+        <item>გრენლანდიური ძაღლი</item>
+        <item>გრეიჰუნდი</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>ბრიუსელის გრიფონი</item>
+        <item>ბრეტანული გრიფონი</item>
+        <item>ნივერნეს გრიფონი</item>
+        <item>ჰამილტონის მეძებარი</item>
+        <item>ჰანოვერ ჰოუნდი</item>
+        <item>ჰარიერი</item>
+        <item>ჰავანური ბიშონი</item>
+        <item>ჰოკაიდო</item>
+        <item>ჰოვავარტი</item>
+        <item>ჰიგენჰუნდი</item>
+        <item>პოდენკო იბისენკო</item>
+        <item>ისლანდიური ძაღლი</item>
+        <item>-ირლანდიური წითელი და თეთრი სეტერი</item>
+        <item>ირლანდიური სეტერი</item>
+        <item>ირლანდიული ტერიერი</item>
+        <item>ირლანდიური წყლის სპანიელი</item>
+        <item>ირლანდიური მგლის მახრჩობელა</item>
+        <item>ისტრული უხეშბალნიანი მდევარი</item>
+        <item>ისტრული მოკლებალნიანი მდევარი</item>
+        <item>იტალიური გრეიჰაუნდი(ლევრეტკა)</item>
+        <item>ჯეკ რასელ ტერიერი</item>
+        <item>გერმანული იაგდტერიერი</item>
+        <item>შვედური ელკჰაუნდი</item>
+        <item>იაპონური ცინი</item>
+        <item>იაპონური შპიცი</item>
+        <item>იაპონური ტერიერი</item>
+        <item>კაი კენი(ტორა ინუ)</item>
+        <item>კარელიის სადათვე ძაღლი</item>
+        <item>კრაშის ნაგაზი</item>
+        <item>კეესჰონდი</item>
+        <item>კერი-ბლუ ტერიერი</item>
+        <item>კინგ ჩარლზ სპანიელი</item>
+        <item>კიშუ</item>
+        <item>კომონდორი</item>
+        <item>კოიკერჰონდჯე</item>
+        <item>კორეული ჩინდო</item>
+        <item>კრომფორლენდერი</item>
+        <item>კუვასი</item>
+        <item>ლაბრადორ-რეტრივერი</item>
+        <item>ლაგოტო რომანიოლო</item>
+        <item>ლეიკლენდ-ტერიერი</item>
+        <item>ლანკაშირული ჰილერი</item>
+        <item>ლანდსირი</item>
+        <item>ლაპლანდიური ვალჰუნდი</item>
+        <item>ლეონბერგერი</item>
+        <item>ლჰასური აპსო</item>
+        <item>პატარა ლომისებრი ძაღლი</item>
+        <item>უნგრული მწევარი</item>
+        <item>კა დე ბესტიარი</item>
+        <item>მალტეზე</item>
+        <item>მანჩესტერული ტერიერი</item>
+        <item>მარემა</item>
+        <item>მექსიკური შიშველი ძაღლი</item>
+        <item>მინიატურული პინჩერი</item>
+        <item>ცვერგშნაუცერი</item>
+        <item>რუმინული მიორიტული ოვჩარკა</item>
+        <item>მონტენეგრული მთის მდევარი</item>
+        <item>მუდი</item>
+        <item>დიდი მიუნსტერლენდერი</item>
+        <item>პატარა მიუნსტერლენდერი</item>
+        <item>ნეაპოლური მასტიფი</item>
+        <item>ნიუფაუნდლენდი</item>
+        <item>ნორფოლკ-ტერიერი</item>
+        <item>ნორრბოტტენ შპიცი</item>
+        <item>ნორვეგიული ბუჰუნდი </item>
+        <item>ნორვეგიული ელკჰაუნდი</item>
+        <item>ნორვეგიული ლუნდერჰუნდი</item>
+        <item>ნორვიჩ ტერიერი</item>
+        <item>ახალშოტლანდიური რეტრივერი(ტოლლერი)</item>
+        <item>ძველდანიური მეძებარი</item>
+        <item>ძველინგლისური ნაგაზი</item>
+        <item>ძველინგლისური ბულდოგი</item>
+        <item>ოტერჰაუნდი</item>
+        <item>პაპილიონი</item>
+        <item>პარსონ რასელ ტერიერი</item>
+        <item>პატერდეილ-ტერიერი</item>
+        <item>პეკინესი</item>
+        <item>კანარის დოგი</item>
+        <item>კა დე ბო</item>
+        <item>პერუს შიშველი ძაღლი</item>
+        <item>ფარაონის ძაღლი</item>
+        <item>პიკარდიული სპანიელი</item>
+        <item>პლოტტჰაუნდი</item>
+        <item>პოდენკო კანარიო</item>
+        <item>ინგლისური პოინტერი</item>
+        <item>Poitevin(პუატუს ძაღლი)</item>
+        <item>პოლონური ჰარტი</item>
+        <item>პოლონური მდევარი</item>
+        <item>პოლონური მონადირე</item>
+        <item>პოლონური ნაგაზი</item>
+        <item>პოლონური ტატრების ნაგაზი</item>
+        <item>პომერანიული შპიცი</item>
+        <item>Pont-Audemer Spaniel</item>
+        <item>პუდელი</item>
+        <item>ფარფორის მდევარი</item>
+        <item>პორტუგალიური პოდენგო</item>
+        <item>პორტუგალიური მეძებარი</item>
+        <item>პორტუგალიური ვასერჰუნდი</item>
+        <item>Posavac Hound</item>
+        <item>პუდელ-პოინტერი</item>
+        <item>მოპსი</item>
+        <item>უნგრული ოვჩარკა პული</item>
+        <item>პუმი</item>
+        <item>პირენეული მასტიფი</item>
+        <item>პირენეული მეცხვარე, გრძელბალნიანი</item>
+        <item>პორტუგალიური მოდარაჯე ძაღლი</item>
+        <item>რეტ ტერიერი</item>
+        <item>რედბონ-კუნჰაუნდი</item>
+        <item>როდეზიული რიჯბეკი</item>
+        <item>როტვეილერი</item>
+        <item>რუსული ტოიტერიერი</item>
+        <item>რუსულ-ევროპული ლაიკა</item>
+        <item>საარლოსის მგელ-ძაღლი</item>
+        <item>საბუესო ესპანიოლი</item>
+        <item>სალუკი</item>
+        <item>სამოედური შპიცი</item>
+        <item>შარპლანური ნაგაზი</item>
+        <item>სჰაპენდუსი</item>
+        <item>შილერის მდევარი</item>
+        <item>შიპერკე</item>
+        <item>მიტელშნაუცერი</item>
+        <item>შვეიცარიული მდევარი(ლაუფჰუნდი)</item>
+        <item>შევეიცარიული ნიდერლაუფჰუნდი</item>
+        <item>დირჰაუნდი</item>
+        <item>შოტლანდიური ტერიერი</item>
+        <item>სილიჰემ-ტერიერი</item>
+        <item>სეგუჯიო იტალიანო</item>
+        <item>სერბული(ბალკანური) მდევარი</item>
+        <item>სერბული სამფერა</item>
+        <item>შარპეი</item>
+        <item>შეტლანდიური ნაგაზი</item>
+        <item>შიბა ინუ</item>
+        <item>ში ცუ</item>
+        <item>სიკოკუ</item>
+        <item>ციმბირული ჰასკი</item>
+        <item>სკაიტერიერი</item>
+        <item>სლუგი</item>
+        <item>სლოვაკური ჩუვაჩი</item>
+        <item>სლოვაკური მეძებარი</item>
+        <item>სლოვაკური კოპოვი</item>
+        <item>სმოლანდსტევარე</item>
+        <item>რბილბალნიანი ხორბლისფერი ტერიერი</item>
+        <item>სამხრეთ რუსული ოვჩარკა</item>
+        <item>ესპანური მასტიფი</item>
+        <item>ესპანური წყლის ძაღლი</item>
+        <item>იტალიური სპინონე</item>
+        <item>სენბერნარი</item>
+        <item>სტაბიჰუნი</item>
+        <item>სტაფორდშირული ბულტერიერი</item>
+        <item>ავსტრიული უხეშბალნიანი ბრაკი(შტირიული მდევარი)</item>
+        <item>სუსექსური სპანიელი</item>
+        <item>შვედური ლაპჰუნდი</item>
+        <item>შვედური ვალჰუნდი</item>
+        <item>ტაივანური ძაღლი(ფორმოზი)</item>
+        <item>ტაილანდური ბანგკუ</item>
+        <item>ტაილანდური რიჯბეკი</item>
+        <item>ტიბეტური მასტიფი</item>
+        <item>ტიბეტური სპანიელი</item>
+        <item>ტიბეტური ტერიერი</item>
+        <item>ტორნიაკი</item>
+        <item>ტოსა ინუ</item>
+        <item>ამერიკული ტოი ტერიერი</item>
+        <item>ტრანსილვანიური მდევარი</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>ტიროლის ბრაკი</item>
+        <item>ურუგვაული სიმარონი</item>
+        <item>ვიზლა(ვიჟლა)</item>
+        <item>ვოლპინო იტალიანო</item>
+        <item>ვეიმარანერი</item>
+        <item>უელშ კორგი კარდიგანი</item>
+        <item>უელშ კორგი პემბროკი </item>
+        <item>უელსური სპრინგერ სპანიელი</item>
+        <item>უელშ-ტერიერი</item>
+        <item>უესტ-ჰაილენდ-უაიტ-ტერიერი</item>
+        <item>დასავლეთციმბირული ლაიკა </item>
+        <item>ვესტფალიური დაჩბრაკი</item>
+        <item>ვეტტერჰუნი(ჰოლანდიური წყლის სპანიელი)</item>
+        <item>უიპეტი</item>
+        <item>კორტალსის გრიფონი</item>
+        <item>უნგრული უხეშბალნიანი ვიზლა</item>
+        <item>იორკშირ-ტერიერი</item>
+        <item>ჰალდენსტოვერი</item>
+        <item>ჰოთდოგი</item>
+        <item>ადამიანი</item>
+        <item>ძაღლი არაა</item>
+        <item>კატა</item>
+        <item>ლაბრადუდლი</item>
+        <item>გოლდენდუდლი</item>
+        <item>ფრანგული ბრაკი (პირენეული)</item>
+        <item>ბელგიური გრიფონი</item>
+        <item>პტი-ბრაბანსონი</item>
+        <item>პირენეული ნაგაზი(გლუვსახიანი)</item>
+        <item>სეგუჯიო იტალიანო</item>
+    </string-array>
+    <string name="camera_error">ამ მოწყობილობაში Camera2 API მხარდაჭერილი არაა.</string>
+    <string name="about_message"><![CDATA[
+    <h1>ძაღლების ჯიშის ამომცნობი(Pro)</h1>
+    <p>ამოიცანი ორასზე მეტი განსხვავებული ძაღლის ჯიში თქვენი სმარტფონით.</p>
+    <p>დააჭირე კამერის ღილაკს  ან სურათის ჩატვირთვას სურათების გალერეიდან სურათის ანალიზისთვის. დააჭირეთ შედეგების სიას  ამოცნობილი ჯიშების დეტალური ხედის სანახავად ან დააჭირეთ სურათს მიღებული შედეგის დასახურად.</p>
+    <p>განგრძობითი ამოცნობის გააქტიურება. გთხოვთ მოათავსოთ ძაღლი წრეში(ეკრანზე) პირდაპირ ვიდეო ნაკადიდან ამოცნობის მისაღებად. პროგრამა შეგატყობინებთ 3-მდე ამოცნობის ვარიანტს, რომელსაც იგი მიიჩნევს ყველა ზუსტად. გთხოვთ მიღებული შედეგი მიიღოთ მხოლოდ შესაძლო დაშვებად..</p>
+    <h2>მადლიერებები</h2>
+    <p>ეფუძნება Stanford Dogs dataset გაფართოებულ ვერსიას. ხატულების ავტორები: Pause08, Smashicons, Freepik > www.flaticon.com</p>
+    <p>Apache License 2.0. საწყისი კოდი ხელმისაწვდომია github.com/j05t/dbclf. სურათები აღებულია ვიკიპედიიდან</p>
+    ]]></string>
+    <string name="error_tf_init">მეხსიერება არაა საკმარისი. გთხოვთ დახურეთ რამდენიმე ფონური აპლიკაცია.</string>
+
+    <string name="app_name">ძაღლების ჯიშის ამომცნობი(Pro)</string>
+    <string name="from_gallery">გალერეიდან..</string>
+    <string name="about_menu">პროგრამის შესახებ</string>
+    <string name="exit_menu">გამოსვლა</string>
+    <string name="share_with">გაზიარება შერჩეულთან..</string>
+    <string name="list_breeds">მხარდაჭერილი ჯიშები</string>
+    <string name="searchFor">ვიკიპედიაზე ვნახო?</string>
+    <string name="no">არა</string>
+    <string name="yes">კი</string>
+    <string name="no_detection">ვერ მოიძებნა</string>
+    <string name="change_language">ენის შეცვლა</string>
+</resources>

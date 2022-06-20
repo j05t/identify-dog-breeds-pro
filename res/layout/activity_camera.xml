@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".CameraActivity">
+
+
+    <ToggleButton
+        android:id="@+id/continuousInferenceButton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/roundedbutton"
+        android:textSize="8sp"
+        android:translationZ="50dp"
+        tools:ignore="RtlHardcoded,SmallSp" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@+id/continuousInferenceButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundedbutton"
+        android:src="@drawable/camera_icon"
+        android:translationZ="50dp" />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@+id/continuousInferenceButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundedbutton"
+        android:src="@android:drawable/ic_menu_share"
+        android:translationZ="200dp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@+id/continuousInferenceButton"
+        android:layout_marginEnd="48dp"
+        android:layout_toStartOf="@+id/cameraButton"
+        android:background="@drawable/roundedbutton"
+        android:src="@drawable/ic_action_save"
+        android:translationZ="200dp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@+id/continuousInferenceButton"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@+id/cameraButton"
+        android:background="@drawable/roundedbutton"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:translationZ="200dp"
+        android:visibility="gone" />
+
+    <com.jstappdev.identify_dog_breeds_pro.RecognitionScoreView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_background_selector"
+        android:elevation="@android:dimen/app_icon_size"
+        android:enabled="false"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="22sp"
+        android:translationZ="200dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:translationZ="200dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/blackout_transition"
+        android:translationZ="50dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Large"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:translationZ="200dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/pnlFlash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFF"
+        android:translationZ="200dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

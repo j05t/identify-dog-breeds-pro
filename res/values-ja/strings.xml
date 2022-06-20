@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>アーフェンピンシャー</item>
+        <item>アフガン・ハウンド</item>
+        <item>アイディ</item>
+        <item>エアデール・テリア</item>
+        <item>Akita Inu</item>
+        <item>アラスカン・クリー・カイ</item>
+        <item>アラスカン・マラミュート</item>
+        <item>Alpine Dachsbracke</item>
+        <item>American Akita</item>
+        <item>American Bulldog</item>
+        <item>アメリカン・コッカー・スパニエル</item>
+        <item>イングリッシュ・クーンハウンド</item>
+        <item>アメリカン・エスキモー・ドッグ</item>
+        <item>アメリカン・フォックスハウンド</item>
+        <item>アメリカン・ヘアレス・テリア</item>
+        <item>アメリカン・ピット・ブル・テリア</item>
+        <item>アメリカン・スタッフォードシャー・テリア</item>
+        <item>アメリカン・ウォーター・スパニエル</item>
+        <item>アナトリアン・シェパード・ドッグ</item>
+        <item>Anglo-Français de Petite Vénerie</item>
+        <item>アッペンツェラー・キャトル・ドッグ</item>
+        <item>アリエージュ・ポインター</item>
+        <item>アリエージョワ</item>
+        <item>Artois Hound</item>
+        <item>オーストラリアン・キャトル・ドッグ</item>
+        <item>オーストラリアン・ケルピー</item>
+        <item>オーストラリアン・シェパード</item>
+        <item>オーストラリアン・シルキー・テリア</item>
+        <item>オーストラリアン・スタンピーテイル・キャトル・ドッグ</item>
+        <item>オーストラリアン・テリア</item>
+        <item>オーストリアン・ブラック・アンド・タン・ハウンド</item>
+        <item>オーストリアン・ショートヘアード・ピンシャー</item>
+        <item>アザワク</item>
+        <item>バルビー</item>
+        <item>バセンジー</item>
+        <item>バセー・アルティジャン・ノルマン</item>
+        <item>バセー・ブルー・ド・ガスコーニュ</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>グラン・バセット・グリフォン・バンデーン</item>
+        <item>プチ・バセット・グリフォン・バンデーン</item>
+        <item>バセット・ハウンド</item>
+        <item>バヴァリアン・ハウンド</item>
+        <item>ビーグル</item>
+        <item>ビーグル・ハーリア</item>
+        <item>ビアデッド・コリー</item>
+        <item>ボースロン</item>
+        <item>ベドリントン・テリア</item>
+        <item>ベルジアン・シェパード・ドッグ・グローネンダール</item>
+        <item>ベルジアン・シェパード・ドッグ・ラケノア</item>
+        <item>ベルジアン・シェパード・ドッグ・マリノア</item>
+        <item>ベルジアン・シェパード・ドッグ・タービュレン</item>
+        <item>ベルガマスコ・シェパード・ドッグ</item>
+        <item>ホワイト・スイス・シェパード・ドッグ</item>
+        <item>ピカルディ・シープドッグ</item>
+        <item>バーニーズ・マウンテン・ドッグ</item>
+        <item>ビション・フリーゼ</item>
+        <item>ビリー (犬種)</item>
+        <item>ブラック・アンド・タン・クーンハウンド</item>
+        <item>ノルウェジアン・エルクハウンド・ブラック</item>
+        <item>ブラック・ロシアン・テリア</item>
+        <item>ブラック・マウス・カー</item>
+        <item>グラン・ブルー・ド・ガスコーニュ</item>
+        <item>プティ・ブルー・ド・ガスコーニュ</item>
+        <item>ブラッドハウンド</item>
+        <item>ブルー・ピカルディー・スパニエル</item>
+        <item>ブルーティック・クーンハウンド</item>
+        <item>ボーアボール</item>
+        <item>ボロニーズ</item>
+        <item>ボーダー・コリー</item>
+        <item>ボーダー・テリア</item>
+        <item>ボルゾイ</item>
+        <item>ボスニアン・ラフヘアード・ハウンド</item>
+        <item>ボストン・テリア</item>
+        <item>ブービエ・デ・アルデンヌ</item>
+        <item>Bouvier des Flandres</item>
+        <item>ボクサー (犬)</item>
+        <item>ボイキン・スパニエル</item>
+        <item>ブラッコ・イタリアーノ</item>
+        <item>オーヴェルニュー・ポインター</item>
+        <item>ブルボネ・ポインター</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>サン・ジェルマン・ポインター</item>
+        <item>ブラジリアン・テリア</item>
+        <item>ブリアード</item>
+        <item>ブリケ・グリフォン・バンデーン</item>
+        <item>フレンチ・ブリタニー・スパニエル</item>
+        <item>デーニッシュ・ブロホルマー</item>
+        <item>Bucovina Shepherd Dog</item>
+        <item>ブル・テリア</item>
+        <item>ミニチュア・ブル・テリア</item>
+        <item>ブルドッグ</item>
+        <item>ブルマスティフ</item>
+        <item>Burgos Pointer</item>
+        <item>ケアーン・テリア</item>
+        <item>カナーン・ドッグ</item>
+        <item>イタリアン・コルソ・ドッグ</item>
+        <item>Cão da Serra de Aires</item>
+        <item>カオ・デ・カストロ・ラボレイロ</item>
+        <item>カオ・デ・フィラ・デ・サン・ミゲル</item>
+        <item>カロライナ・ドッグ</item>
+        <item>カルパチアン・シェパード・ドッグ</item>
+        <item>レパード・ツリー・ドッグ</item>
+        <item>カタロニアン・シープドッグ</item>
+        <item>コーカシアン・シェパード・ドッグ</item>
+        <item>キャバリア・キング・チャールズ・スパニエル</item>
+        <item>セントラル・アジア・シェパード・ドッグ</item>
+        <item>チェスキー・フォーセク</item>
+        <item>チェスキー・テリア</item>
+        <item>チェサピーク・ベイ・レトリーバー</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>フランセ・トリコロール</item>
+        <item>チワワ (曖昧さ回避)</item>
+        <item>チャイニーズ・クレステッド・ドッグ</item>
+        <item>チャウ・チャウ</item>
+        <item>チルネコ・デル・エトナ</item>
+        <item>クランバー・スパニエル</item>
+        <item>ラフ・コリー</item>
+        <item>スムース・コリー</item>
+        <item>コトン・ド・テュレアール</item>
+        <item>クロアチアン・シープドッグ</item>
+        <item>カーリーコーテッド・レトリーバー</item>
+        <item>チェコスロバキアン・ウルフドッグ</item>
+        <item>ダックスフント</item>
+        <item>Dalmatian</item>
+        <item>ダンディ・ディンモント・テリア</item>
+        <item>ダンスク・スヴェンスク・ゴールフンド</item>
+        <item>ジャーマン・ハウンド</item>
+        <item>ドーベルマン</item>
+        <item>ドゴ・アルヘンティーノ</item>
+        <item>ボルドー・マスティフ</item>
+        <item>ダッチ・パートリッジ・ドッグ</item>
+        <item>ドレーファー</item>
+        <item>ドゥンケル</item>
+        <item>ダッチ・シェパード</item>
+        <item>ダッチ・スムースフント</item>
+        <item>イースト・シベリアン・ライカ</item>
+        <item>イングリッシュ・コッカー・スパニエル</item>
+        <item>イングリッシュ・フォックスハウンド</item>
+        <item>イングリッシュ・マスティフ</item>
+        <item>イングリッシュ・セター</item>
+        <item>イングリッシュ・スプリンガー・スパニエル</item>
+        <item>English Toy Terrier (Black &amp; Tan)</item>
+        <item>エントレブッハー・キャトル・ドッグ</item>
+        <item>エストレラ・マウンテン・ドッグ</item>
+        <item>ユーラシア (犬種)</item>
+        <item>フィールド・スパニエル</item>
+        <item>ブラジリアン・ガード・ドッグ</item>
+        <item>フィニッシュ・ハウンド</item>
+        <item>Finnish Lapphund</item>
+        <item>フィニッシュ・スピッツ</item>
+        <item>フラットコーテッド・レトリーバー</item>
+        <item>スムース・フォックス・テリア</item>
+        <item>ワイアー・フォックス・テリア</item>
+        <item>フレンチ・ブルドッグ</item>
+        <item>フレンチ・スパニエル</item>
+        <item>スパニッシュ・グレイハウンド</item>
+        <item>グラン・ガスコン・サントンジョワ</item>
+        <item>ジャーマン・ロングヘアード・ポインター</item>
+        <item>ジャーマン・ピンシャー</item>
+        <item>ジャーマン・ブロークンヘアード・ポインター</item>
+        <item>ジャーマン・シェパード・ドッグ</item>
+        <item>ジャーマン・ショートヘアード・ポインター</item>
+        <item>ジャーマン・スパニエル</item>
+        <item>ジャーマン・スピッツ</item>
+        <item>ジャーマン・ワイアーヘアード・ポインター</item>
+        <item>ジャイアント・シュナウザー</item>
+        <item>グレン・オブ・イマール・テリア</item>
+        <item>ゴールデン・レトリバー</item>
+        <item>ゴードン・セッター</item>
+        <item>Grand Anglo-Français Blanc et Noir</item>
+        <item>Grand Anglo-Français Blanc et Orange</item>
+        <item>Grand Anglo-Français Tricolore</item>
+        <item>グラン・グリフォン・バンデーン</item>
+        <item>グレート・デーン</item>
+        <item>グレート・ピレニーズ</item>
+        <item>グレーター・スイス・マウンテン・ドッグ</item>
+        <item>グリーク・サルーキ</item>
+        <item>グリーンランド・ドッグ</item>
+        <item>イングリッシュ・グレイハウンド</item>
+        <item>グリフォン・ブルー・ド・ガスコーニュ</item>
+        <item>ブリュッセル・グリフォン</item>
+        <item>Griffon Fauve de Bretagne</item>
+        <item>グリフォン・ニヴェルネ</item>
+        <item>ハミルトン・シュトーヴァレ</item>
+        <item>ハノーヴァリアン・ハウンド</item>
+        <item>ハーリア</item>
+        <item>ハバニーズ</item>
+        <item>北海道犬</item>
+        <item>ホファヴァルト</item>
+        <item>Hygen Hound</item>
+        <item>Ibizan Hound</item>
+        <item>アイスランド・シープドッグ</item>
+        <item>アイリッシュ・レッド・アンド・ホワイト・セッター</item>
+        <item>アイリッシュ・セッター</item>
+        <item>アイリッシュ・テリア</item>
+        <item>アイリッシュ・ウォーター・スパニエル</item>
+        <item>アイリッシュ・ウルフハウンド</item>
+        <item>イストリアン・コースヘアード・ハウンド</item>
+        <item>イストリアン・スムースヘアード・ハウンド</item>
+        <item>イタリアン・グレイハウンド</item>
+        <item>ジャック・ラッセル・テリア</item>
+        <item>ジャーマン・ハンティング・テリア</item>
+        <item>スウェーディッシュ・エルクハウンド</item>
+        <item>狆</item>
+        <item>日本スピッツ</item>
+        <item>日本テリア</item>
+        <item>甲斐犬</item>
+        <item>カレリアン・ベア・ドッグ</item>
+        <item>カルスト・シェパード</item>
+        <item>キースホンド</item>
+        <item>ケリー・ブルー・テリア</item>
+        <item>キング・チャールズ・スパニエル</item>
+        <item>紀州犬</item>
+        <item>コモンドール</item>
+        <item>コーイケルホンディエ</item>
+        <item>珍島犬</item>
+        <item>クロムフォルレンダー</item>
+        <item>クーバース</item>
+        <item>ラブラドール・レトリバー</item>
+        <item>ロマーニョ・ウォーター・ドッグ</item>
+        <item>Lakeland Terrier</item>
+        <item>ランカシャー・ヒーラー</item>
+        <item>ランドシーア (犬)</item>
+        <item>ラポニアン・ハーダー</item>
+        <item>レオンベルガー</item>
+        <item>ラサ・アプソ</item>
+        <item>ローシェン</item>
+        <item>ハンガリアン・グレイハウンド</item>
+        <item>マヨルカン・シェパード</item>
+        <item>マルチーズ</item>
+        <item>マンチェスター・テリア</item>
+        <item>マレンマ・シープドッグ</item>
+        <item>メキシカン・ヘアレス・ドッグ</item>
+        <item>ミニチュア・ピンシャー</item>
+        <item>ミニチュア・シュナウザー</item>
+        <item>ミオリティック・シープドッグ</item>
+        <item>Montenegrin Mountain Hound</item>
+        <item>ムーディ (犬種)</item>
+        <item>ラージ・ミュンスターレンダー</item>
+        <item>スモール・ミュンスターレンダー</item>
+        <item>ナポリタン・マスティフ</item>
+        <item>ニューファンドランド (犬)</item>
+        <item>ノーフォーク・テリア</item>
+        <item>Norrbottenspets</item>
+        <item>ノルウェジアン・ブーフント</item>
+        <item>ノルウェジアン・エルクハウンド・グレー</item>
+        <item>ノルウェイジアン・パフィン・ドッグ</item>
+        <item>ノーリッチ・テリア</item>
+        <item>ノヴァ・スコシア・ダック・トーリング・レトリーバー</item>
+        <item>Old Danish Pointer</item>
+        <item>オールド・イングリッシュ・シープドッグ</item>
+        <item>オールディ・イングリッシュ・ブルドッグ</item>
+        <item>オッターハウンド</item>
+        <item>パピヨン (犬)</item>
+        <item>パーソン・ラッセル・テリア</item>
+        <item>Patterdale Terrier</item>
+        <item>ペキニーズ</item>
+        <item>ペロ・デ・プレサ・カナリオ</item>
+        <item>カ・デ・ブー</item>
+        <item>ペルービアン・ヘアレス・ドッグ</item>
+        <item>ファラオ・ハウンド</item>
+        <item>ピカルディー・スパニエル</item>
+        <item>プロット・ハウンド</item>
+        <item>ポデンコ・カナリオ</item>
+        <item>イングリッシュ・ポインター</item>
+        <item>ポワトヴァン</item>
+        <item>ポーリッシュ・グレイハウンド</item>
+        <item>ポーリッシュ・ハウンド</item>
+        <item>Polish Hunting Dog</item>
+        <item>ポリッシュ・ローランド・シープドッグ</item>
+        <item>タトラ・シェパード・ドッグ</item>
+        <item>Pomeranian</item>
+        <item>ポン・オードメル・スパニエル</item>
+        <item>プードル</item>
+        <item>ポルスレーヌ</item>
+        <item>ポデンゴ・ポルトゥゲス</item>
+        <item>ポーチュギーズ・ポインター</item>
+        <item>ポーチュギーズ・ウォーター・ドッグ</item>
+        <item>Posavac Hound</item>
+        <item>プードルポインター</item>
+        <item>パグ</item>
+        <item>プーリー (犬種)</item>
+        <item>Pumi</item>
+        <item>ピレニアン・マスティフ</item>
+        <item>Pyrenean Shepherd</item>
+        <item>ラフェイロ・ド・アレンティジョ</item>
+        <item>ラット・テリア</item>
+        <item>レッドボーン・クーンハウンド</item>
+        <item>ローデシアン・リッジバック</item>
+        <item>ロットワイラー (犬種)</item>
+        <item>ロシアン・トイ・テリア</item>
+        <item>ラッソ・ヨーロピアン・ライカ</item>
+        <item>サーロス・ウルフホンド</item>
+        <item>ラージ・スパニッシュ・ハウンド</item>
+        <item>サルーキ</item>
+        <item>サモエド</item>
+        <item>シャルプラニナッツ</item>
+        <item>シャーペンドース</item>
+        <item>シラー・シュトーヴァレ</item>
+        <item>スキッパーキ</item>
+        <item>スタンダード・シュナウザー</item>
+        <item>スイス・ハウンド</item>
+        <item>スモール・スイス・ハウンド</item>
+        <item>スコティッシュ・ディアハウンド</item>
+        <item>スコティッシュ・テリア</item>
+        <item>シーリハム・テリア</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Serbian Hound</item>
+        <item>Serbian Tricolour Hound</item>
+        <item>シャー・ペイ</item>
+        <item>シェットランド・シープドッグ</item>
+        <item>柴犬</item>
+        <item>シーズー</item>
+        <item>四国犬</item>
+        <item>シベリアン・ハスキー</item>
+        <item>スカイ・テリア</item>
+        <item>スルーギ</item>
+        <item>スロヴェンスキー・チュヴァック</item>
+        <item>スロヴェンスキー・ポインター</item>
+        <item>ブラック・フォレスト・ハウンド</item>
+        <item>スモーランド・ハウンド</item>
+        <item>ソフトコーテッド・ウィートン・テリア</item>
+        <item>サウス・ロシアン・シェパード・ドッグ</item>
+        <item>スパニッシュ・マスティフ</item>
+        <item>スパニッシュ・ウォーター・ドッグ</item>
+        <item>スピノーネ・イタリアーノ</item>
+        <item>セント・バーナード</item>
+        <item>シュタバイフーン</item>
+        <item>スタッフォードシャー・ブル・テリア</item>
+        <item>パインティンガー・ブラッケ</item>
+        <item>サセックス・スパニエル</item>
+        <item>スウェーディッシュ・ラップフンド</item>
+        <item>スウェーディッシュ・ヴァルフント</item>
+        <item>Taiwan Dog</item>
+        <item>Thai Bangkaew Dog</item>
+        <item>タイ・リッジバック・ドッグ</item>
+        <item>チベタン・マスティフ</item>
+        <item>チベタン・スパニエル</item>
+        <item>チベタン・テリア</item>
+        <item>トルニャック</item>
+        <item>Tosa</item>
+        <item>トイ・フォックス・テリア</item>
+        <item>トランシルバニアン・ハウンド</item>
+        <item>ツリーイング・ウォーカー・クーンハウンド</item>
+        <item>ティロリアン・ハウンド</item>
+        <item>シマロン・ウルグアヨ</item>
+        <item>ショートヘアード・ハンガリアン・ビズラ</item>
+        <item>ヴォルピーノ・イタリアーノ</item>
+        <item>ワイマラナー</item>
+        <item>ウェルシュ・コーギー・カーディガン</item>
+        <item>ウェルシュ・コーギー・ペンブローク</item>
+        <item>Welsh Springer Spaniel</item>
+        <item>ウェルシュ・テリア</item>
+        <item>ウエスト・ハイランド・ホワイト・テリア</item>
+        <item>ウエスト・シベリアン・ライカ</item>
+        <item>ウェストファリアン・ダックスブラッケ</item>
+        <item>ヴェッターフーン</item>
+        <item>ウィペット</item>
+        <item>ワイアーヘアード・ポインティング・グリフォン</item>
+        <item>ワイアーヘアード・ヴィズラ</item>
+        <item>ヨークシャー・テリア</item>
+        <item>ハルデン・ハウンド</item>
+        <item>ホットドッグ</item>
+        <item>ヒト</item>
+        <item>Not a dog</item>
+        <item>ネコ</item>
+        <item>ラブラドゥードル</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">犬の品種を特定する</string>
+    <string name="list_breeds">識別可能な品種</string>
+    <string name="searchFor">Wikipediaを見て？</string>
+    <string name="no">いいえ</string>
+    <string name="yes">はい</string>
+    <string name="no_detection">検出なし</string>
+    <string name="from_gallery">ギャラリーから..</string>
+    <string name="about_menu">約</string>
+    <string name="exit_menu">出口</string>
+    <string name="share_with">と共有する..</string>
+    <string name="change_language">言語を変えてください</string>
+</resources>

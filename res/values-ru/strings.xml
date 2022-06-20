@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>Аффенпинчер</item>
+        <item>Афганская борзая</item>
+        <item>Аиди</item>
+        <item>Эрдельтерьер</item>
+        <item>Akita Inu</item>
+        <item>Аляскинский кли-кай</item>
+        <item>Аляскинский маламут</item>
+        <item>Альпийская таксообразная гончая</item>
+        <item>American Akita</item>
+        <item>Американский бульдог</item>
+        <item>Американский кокер-спаниель</item>
+        <item>Английская енотовая гончая</item>
+        <item>Американская эскимосская собака</item>
+        <item>Американский фоксхаунд</item>
+        <item>Американский голый терьер</item>
+        <item>Американский питбультерьер</item>
+        <item>Американский стаффордширский терьер</item>
+        <item>Американский водяной спаниель</item>
+        <item>Анатолийская овчарка</item>
+        <item>Англо-французская малая гончая</item>
+        <item>Аппенцеллер зенненхунд</item>
+        <item>Ariege Pointer</item>
+        <item>Ariegeois</item>
+        <item>Артуазская гончая</item>
+        <item>Австралийская пастушья собака</item>
+        <item>Австралийский келпи</item>
+        <item>Австралийская овчарка</item>
+        <item>Австралийский шелковистый терьер</item>
+        <item>Австралийская короткохвостая пастушья собака</item>
+        <item>Австралийский терьер</item>
+        <item>Австрийская гончая</item>
+        <item>Австрийский пинчер</item>
+        <item>Азавак</item>
+        <item>Барбет (собака)</item>
+        <item>Басенджи</item>
+        <item>Basset Artésien Normand</item>
+        <item>Голубой гасконский бассет</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>Grand Basset Griffon Vendéen</item>
+        <item>Вандейский бассет-гриффон</item>
+        <item>Бассет-хаунд</item>
+        <item>Баварская горная гончая</item>
+        <item>Бигль</item>
+        <item>Beagle-Harrier</item>
+        <item>Бородатый колли</item>
+        <item>Босерон</item>
+        <item>Бедлингтон-терьер</item>
+        <item>Грюнендаль (порода собак)</item>
+        <item>Лакенуа</item>
+        <item>Малинуа</item>
+        <item>Тервюрен (порода собак)</item>
+        <item>Бергамская овчарка</item>
+        <item>Белая швейцарская овчарка</item>
+        <item>Пикардийская овчарка</item>
+        <item>Бернский зенненхунд</item>
+        <item>Бишон фризе</item>
+        <item>Billy (dog)</item>
+        <item>Black and Tan Coonhound</item>
+        <item>Норвежский чёрный элкхунд</item>
+        <item>Чёрный терьер</item>
+        <item>Black Mouth Cur</item>
+        <item>Grand Bleu de Gascogne</item>
+        <item>Petit Bleu de Gascogne</item>
+        <item>Бладхаунд</item>
+        <item>Blue Picardy Spaniel</item>
+        <item>Bluetick Coonhound</item>
+        <item>Бурбуль</item>
+        <item>Болоньез</item>
+        <item>Бордер-колли</item>
+        <item>Бордер-терьер</item>
+        <item>Русская псовая борзая</item>
+        <item>Barak hound</item>
+        <item>Бостон-терьер</item>
+        <item>Арденнский бувье</item>
+        <item>Фландрский бувье</item>
+        <item>Немецкий боксёр</item>
+        <item>Boykin Spaniel</item>
+        <item>Итальянский бракк</item>
+        <item>Braque d\'Auvergne</item>
+        <item>Braque du Bourbonnais</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Braque Saint-Germain</item>
+        <item>Бразильский терьер</item>
+        <item>Бриар (порода собак)</item>
+        <item>Briquet Griffon Vendéen</item>
+        <item>Бретонский эпаньоль</item>
+        <item>Брохольмер</item>
+        <item>Буковинская овчарка</item>
+        <item>Бультерьер</item>
+        <item>Miniature Bull Terrier</item>
+        <item>Английский бульдог</item>
+        <item>Бульмастиф</item>
+        <item>Burgos Pointer</item>
+        <item>Керн-терьер</item>
+        <item>Ханаанская собака</item>
+        <item>Кане-корсо</item>
+        <item>Португальская овчарка</item>
+        <item>Као де кастро-лаборейро</item>
+        <item>Азорская пастушья собака</item>
+        <item>Каролинская собака</item>
+        <item>Румынская карпатская овчарка</item>
+        <item>Леопардовая собака Катахулы</item>
+        <item>Каталонская овчарка</item>
+        <item>Кавказская овчарка</item>
+        <item>Кавалер-кинг-чарльз-спаниель</item>
+        <item>Среднеазиатская овчарка</item>
+        <item>Český fousek</item>
+        <item>Чешский терьер</item>
+        <item>Чесапик-бей-ретривер</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chien Français Tricolore</item>
+        <item>Чиуауа (значения)</item>
+        <item>Китайская хохлатая собака</item>
+        <item>Чау-чау</item>
+        <item>Чирнеко дель Этна</item>
+        <item>Кламбер-спаниель</item>
+        <item>Длинношёрстный колли</item>
+        <item>Короткошёрстный колли</item>
+        <item>Котон-де-тулеар</item>
+        <item>Хорватская овчарка</item>
+        <item>Курчавошёрстный ретривер</item>
+        <item>Чехословацкая волчья собака</item>
+        <item>Такса</item>
+        <item>Далматин (значения)</item>
+        <item>Денди-динмонт-терьер</item>
+        <item>Датско-шведская фермерская собака</item>
+        <item>German Hound</item>
+        <item>Доберман</item>
+        <item>Аргентинский дог</item>
+        <item>Бордоский дог</item>
+        <item>Drentse Patrijshond</item>
+        <item>Древер</item>
+        <item>Dunker</item>
+        <item>Голландская овчарка</item>
+        <item>Голландский смоусхонд</item>
+        <item>Восточносибирская лайка</item>
+        <item>Английский кокер-спаниель</item>
+        <item>Английский фоксхаунд</item>
+        <item>Английский мастиф</item>
+        <item>Английский сеттер</item>
+        <item>Английский спрингер-спаниель</item>
+        <item>Английский той-терьер</item>
+        <item>Энтлебухер зенненхунд</item>
+        <item>Эштрельская овчарка</item>
+        <item>Евразиер</item>
+        <item>Field Spaniel</item>
+        <item>Бразильский фила</item>
+        <item>Финская гончая</item>
+        <item>Финский лаппхунд</item>
+        <item>Финский шпиц</item>
+        <item>Прямошёрстный ретривер</item>
+        <item>Гладкошёрстный фокстерьер</item>
+        <item>Жесткошёрстный фокстерьер</item>
+        <item>Французский бульдог</item>
+        <item>French Spaniel</item>
+        <item>Испанский гальго</item>
+        <item>Gascon Saintongeois</item>
+        <item>Лангхаар</item>
+        <item>Немецкий пинчер</item>
+        <item>Stichelhaar</item>
+        <item>Немецкая овчарка</item>
+        <item>Курцхаар</item>
+        <item>Немецкий вахтельхунд</item>
+        <item>Немецкий шпиц</item>
+        <item>Дратхаар</item>
+        <item>Ризеншнауцер</item>
+        <item>Глен оф Имаал терьер</item>
+        <item>Золотистый ретривер</item>
+        <item>Шотландский сеттер</item>
+        <item>Grand Anglo-Français Blanc et Noir</item>
+        <item>Grand Anglo-Français Blanc et Orange</item>
+        <item>Grand Anglo-Français Tricolore</item>
+        <item>Большой вандейский гриффон</item>
+        <item>Немецкий дог</item>
+        <item>Пиренейская горная собака</item>
+        <item>Большой швейцарский зенненхунд</item>
+        <item>Greek Harehound</item>
+        <item>Гренландская собака</item>
+        <item>Грейхаунд</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>Малые бельгийские собаки</item>
+        <item>Griffon Fauve de Bretagne</item>
+        <item>Griffon Nivernais</item>
+        <item>Гамильтонстёваре</item>
+        <item>Hanover Hound</item>
+        <item>Харьер</item>
+        <item>Гаванский бишон</item>
+        <item>Хоккайдо (порода собак)</item>
+        <item>Ховаварт</item>
+        <item>Hygen Hound</item>
+        <item>Поденко ибиценко</item>
+        <item>Исландская собака</item>
+        <item>Irish Red and White Setter</item>
+        <item>Ирландский красный сеттер</item>
+        <item>Ирландский терьер</item>
+        <item>Ирландский водяной спаниель</item>
+        <item>Ирландский волкодав</item>
+        <item>Istrian Coarse-haired Hound</item>
+        <item>Istrian Shorthaired Hound</item>
+        <item>Левретка</item>
+        <item>Джек-рассел-терьер</item>
+        <item>Немецкий ягдтерьер</item>
+        <item>Ямтхунд</item>
+        <item>Японский хин</item>
+        <item>Японский шпиц</item>
+        <item>Японский терьер</item>
+        <item>Каи (порода собак)</item>
+        <item>Карельская медвежья собака</item>
+        <item>Крашская овчарка</item>
+        <item>Keeshond</item>
+        <item>Керри-блю-терьер</item>
+        <item>Кинг-чарльз-спаниель</item>
+        <item>Кисю (порода собак)</item>
+        <item>Комондор</item>
+        <item>Коикерхондье</item>
+        <item>Корейский чиндо</item>
+        <item>Кромфорлендер</item>
+        <item>Кувас</item>
+        <item>Лабрадор-ретривер</item>
+        <item>Лаготто-романьоло</item>
+        <item>Лейкленд-терьер</item>
+        <item>Ланкаширский хилер</item>
+        <item>Ландсир</item>
+        <item>Лопарская оленегонная собака</item>
+        <item>Леонбергер</item>
+        <item>Лхасский апсо</item>
+        <item>Малая львиная собака</item>
+        <item>Венгерская борзая</item>
+        <item>Майоркская овчарка</item>
+        <item>Мальтийская болонка</item>
+        <item>Манчестер-терьер</item>
+        <item>Мареммо-абруццкая овчарка</item>
+        <item>Ксолоитцкуинтли</item>
+        <item>Карликовый пинчер</item>
+        <item>Цвергшнауцер</item>
+        <item>Румынская миоритская овчарка</item>
+        <item>Montenegrin Mountain Hound</item>
+        <item>Муди (порода собак)</item>
+        <item>Large Münsterländer</item>
+        <item>Small Münsterländer</item>
+        <item>Неаполитанский мастиф</item>
+        <item>Ньюфаундленд (порода собак)</item>
+        <item>Норфолк-терьер</item>
+        <item>Норботтен шпиц</item>
+        <item>Норвежский бухунд</item>
+        <item>Норвежский серый элкхунд</item>
+        <item>Норвежский лундехунд</item>
+        <item>Норвич-терьер</item>
+        <item>Новошотландский ретривер</item>
+        <item>Old Danish Pointer</item>
+        <item>Бобтейл</item>
+        <item>Староанглийский бульдог (заново созданный)</item>
+        <item>Оттерхаунд</item>
+        <item>Континентальный той-спаниель</item>
+        <item>Парсон-рассел-терьер</item>
+        <item>Паттердейл-терьер</item>
+        <item>Пекинес</item>
+        <item>Канарский дог</item>
+        <item>Ка-де-бо</item>
+        <item>Перуанская голая собака</item>
+        <item>Фараонова собака</item>
+        <item>Picardy Spaniel</item>
+        <item>Plott Hound</item>
+        <item>Поденко канарио</item>
+        <item>Английский пойнтер</item>
+        <item>Poitevin hound</item>
+        <item>Polish Greyhound</item>
+        <item>Польский огар</item>
+        <item>Польская гончая</item>
+        <item>Польская низинная овчарка</item>
+        <item>Польская подгалянская овчарка</item>
+        <item>Pomeranian</item>
+        <item>Pont-Audemer Spaniel</item>
+        <item>Пудель</item>
+        <item>Фарфоровая гончая</item>
+        <item>Португальский поденгу</item>
+        <item>Portuguese Pointer</item>
+        <item>Португальская водяная собака</item>
+        <item>Posavac Hound</item>
+        <item>Pudelpointer</item>
+        <item>Мопс</item>
+        <item>Пули</item>
+        <item>Pumi</item>
+        <item>Пиренейский мастиф</item>
+        <item>Пиренейская овчарка</item>
+        <item>Rafeiro do Alentejo</item>
+        <item>Rat Terrier</item>
+        <item>Redbone Coonhound</item>
+        <item>Родезийский риджбек</item>
+        <item>Ротвейлер</item>
+        <item>Русский той</item>
+        <item>Русско-европейская лайка</item>
+        <item>Волчья собака Сарлоса</item>
+        <item>Sabueso Español</item>
+        <item>Салюки</item>
+        <item>Самоедская собака</item>
+        <item>Шарпланинская овчарка</item>
+        <item>Шапендуа</item>
+        <item>Гончая Шиллера</item>
+        <item>Схипперке</item>
+        <item>Миттельшнауцер</item>
+        <item>Швейцарская гончая</item>
+        <item>Малая швейцарская гончая</item>
+        <item>Дирхаунд</item>
+        <item>Шотландский терьер</item>
+        <item>Силихем-терьер</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Serbian Hound</item>
+        <item>Serbian Tricolour Hound</item>
+        <item>Шарпей</item>
+        <item>Шелти</item>
+        <item>Сиба-ину</item>
+        <item>Ши-тцу</item>
+        <item>Сикоку (порода собак)</item>
+        <item>Сибирский хаски</item>
+        <item>Скайтерьер</item>
+        <item>Слюги</item>
+        <item>Словацкий чувач</item>
+        <item>Slovak Rough-haired Pointer</item>
+        <item>Словацкий копов</item>
+        <item>Smaland Hound</item>
+        <item>Ирландский мягкошёрстный пшеничный терьер</item>
+        <item>Южнорусская овчарка</item>
+        <item>Испанский мастиф</item>
+        <item>Испанская водяная собака</item>
+        <item>Итальянский спиноне</item>
+        <item>Сенбернар</item>
+        <item>Stabyhoun</item>
+        <item>Стаффордширский бультерьер</item>
+        <item>Австрийский брудастый бракк</item>
+        <item>Суссекс-спаниель</item>
+        <item>Шведский лаппхунд</item>
+        <item>Шведский вальхунд</item>
+        <item>Тайваньская собака</item>
+        <item>Тайский бангку</item>
+        <item>Тайский риджбек</item>
+        <item>Тибетский мастиф</item>
+        <item>Тибетский спаниель</item>
+        <item>Тибетский терьер</item>
+        <item>Торньяк</item>
+        <item>Tosa</item>
+        <item>Той-фокстерьер</item>
+        <item>Transylvanian Hound</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>Tyrolean Hound</item>
+        <item>Cimarrón Uruguayo</item>
+        <item>Венгерская выжла</item>
+        <item>Вольпино итальяно</item>
+        <item>Веймаранер</item>
+        <item>Cardigan Welsh Corgi</item>
+        <item>Pembroke Welsh Corgi</item>
+        <item>Вельш-спрингер-спаниель</item>
+        <item>Вельштерьер</item>
+        <item>Вест-хайленд-уайт-терьер</item>
+        <item>Западносибирская лайка</item>
+        <item>Westphalian Dachsbracke</item>
+        <item>Веттерхун</item>
+        <item>Уиппет</item>
+        <item>Гриффон Кортальса</item>
+        <item>Wirehaired Vizsla</item>
+        <item>Йоркширский терьер</item>
+        <item>Halden Hound</item>
+        <item>Хот-дог</item>
+        <item>Человек</item>
+        <item>Not a dog</item>
+        <item>Кошка</item>
+        <item>Лабрадудль</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">Определить породы собак</string>
+    <string name="list_breeds">Определяемые породы</string>
+    <string name="searchFor">Посмотрите на Википедию?</string>
+    <string name="no">нет</string>
+    <string name="yes">да</string>
+    <string name="no_detection">Нет обнаружения</string>
+    <string name="from_gallery">Из галереи ..</string>
+    <string name="about_menu">Около</string>
+    <string name="exit_menu">Выход</string>
+    <string name="share_with">Поделиться с.</string>
+    <string name="change_language">изменение языка</string>
+</resources>

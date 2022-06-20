@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>Affenpinscher</item>
+        <item>Afgán agár</item>
+        <item>Atlaszi hegyikutya</item>
+        <item>Airedale terrier</item>
+        <item>Akita Inu</item>
+        <item>Alaskan Klee Kai</item>
+        <item>Alaszkai malamut</item>
+        <item>Alpesi tacskókopó</item>
+        <item>American Akita</item>
+        <item>Amerikai buldog</item>
+        <item>Amerikai cocker spániel</item>
+        <item>American English Coonhound</item>
+        <item>Amerikai eszkimó kutya</item>
+        <item>Amerikai rókakopó</item>
+        <item>Amerikai meztelen terrier</item>
+        <item>Amerikai pitbull terrier</item>
+        <item>Amerikai staffordshire terrier</item>
+        <item>American Water Spaniel</item>
+        <item>Anatóliai juhászkutya</item>
+        <item>Anglo-Français de Petite Vénerie</item>
+        <item>Appenzelli havasi kutya</item>
+        <item>Ariege Pointer</item>
+        <item>Ariegeois</item>
+        <item>Artois-i kopó</item>
+        <item>Ausztrál pásztorkutya</item>
+        <item>Ausztrál kelpie</item>
+        <item>Ausztrál juhászkutya</item>
+        <item>Ausztrál selyemszőrű terrier</item>
+        <item>Australian Stumpy Tail Cattle Dog</item>
+        <item>Ausztrál terrier</item>
+        <item>Austrian Black and Tan Hound</item>
+        <item>Austrian Pinscher</item>
+        <item>Azawakh</item>
+        <item>Barbet</item>
+        <item>Basenji</item>
+        <item>Basset Artésien Normand</item>
+        <item>Basset Bleu de Gascogne</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>Grand Basset Griffon Vendéen</item>
+        <item>Petit Basset Griffon Vendéen</item>
+        <item>Basset hound</item>
+        <item>Bajor hegyi véreb</item>
+        <item>Beagle</item>
+        <item>Beagle-Harrier</item>
+        <item>Bearded collie</item>
+        <item>Beauce-i juhászkutya</item>
+        <item>Bedlington terrier</item>
+        <item>Groenendael</item>
+        <item>Laekenois</item>
+        <item>Malinois</item>
+        <item>Tervueren (kutyafajta)</item>
+        <item>Bergamói juhászkutya</item>
+        <item>Fehér svájci juhászkutya</item>
+        <item>Pikárdiai juhászkutya</item>
+        <item>Berni pásztorkutya</item>
+        <item>Bichon frisé</item>
+        <item>Billy (kutyafajta)</item>
+        <item>Fekete-cser mosómedvekopó</item>
+        <item>Black Norwegian Elkhound</item>
+        <item>Orosz fekete terrier</item>
+        <item>Black Mouth Cur</item>
+        <item>Nagy gascogne-i kék kopó</item>
+        <item>Kis gascogne-i kék kopó</item>
+        <item>Angol véreb</item>
+        <item>Pikárdiai kék spániel</item>
+        <item>Bluetick Coonhound</item>
+        <item>Boerboel</item>
+        <item>Bolognai pincs</item>
+        <item>Border collie</item>
+        <item>Border terrier</item>
+        <item>Orosz agár</item>
+        <item>Barak hound</item>
+        <item>Boston Terrier</item>
+        <item>Ardenni pásztorkutya</item>
+        <item>Flandriai pásztorkutya</item>
+        <item>Bokszer (kutyafajta)</item>
+        <item>Boykin Spaniel</item>
+        <item>Olasz vizsla</item>
+        <item>Auvergne-i vizsla</item>
+        <item>Bourbonnais-i vizsla</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Braque Saint-Germain</item>
+        <item>Brazilian Terrier</item>
+        <item>Brie-i juhászkutya</item>
+        <item>Vendée-i griffonkopó</item>
+        <item>Breton spániel</item>
+        <item>Broholmer</item>
+        <item>Bucovina Shepherd Dog</item>
+        <item>Bullterrier</item>
+        <item>Miniature Bull Terrier</item>
+        <item>Angol buldog</item>
+        <item>Bullmasztiff</item>
+        <item>Burgosi vizsla</item>
+        <item>Cairn terrier</item>
+        <item>Kánaán kutya</item>
+        <item>Cane corso</item>
+        <item>Portugál juhászkutya</item>
+        <item>Cão de Castro Laboreiro</item>
+        <item>Cão Fila de São Miguel</item>
+        <item>Karolina kutya</item>
+        <item>Kárpáti pásztorkutya</item>
+        <item>Louisiana Catahoula Leopárdkutya</item>
+        <item>Katalán pásztorkutya</item>
+        <item>Kaukázusi juhászkutya</item>
+        <item>Cavalier King Charles spániel</item>
+        <item>Közép-ázsiai juhászkutya</item>
+        <item>Cseh szálkás szakállú vizsla</item>
+        <item>Cseh terrier</item>
+        <item>Chesapeake Bay retriever</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chien Français Tricolore</item>
+        <item>Chihuahua (egyértelműsítő lap)</item>
+        <item>Kínai meztelen kutya</item>
+        <item>Csau csau</item>
+        <item>Cirneco dell’Etna</item>
+        <item>Clumber spániel</item>
+        <item>Hosszúszőrű skót juhászkutya</item>
+        <item>Smooth Collie</item>
+        <item>Coton de tuléar</item>
+        <item>Horvát juhászkutya</item>
+        <item>Göndörszőrű retriever</item>
+        <item>Csehszlovák farkaskutya</item>
+        <item>Tacskó</item>
+        <item>Dalmatian</item>
+        <item>Dandie Dinmont-terrier</item>
+        <item>Danish–Swedish Farmdog</item>
+        <item>German Hound</item>
+        <item>Dobermann</item>
+        <item>Argentin dog</item>
+        <item>Bordeaux-i dog</item>
+        <item>Drenti vizsla</item>
+        <item>Drever</item>
+        <item>Dunker</item>
+        <item>Dutch Shepherd</item>
+        <item>Dutch Smoushond</item>
+        <item>East Siberian Laika</item>
+        <item>Angol cocker spániel</item>
+        <item>Angol rókakopó</item>
+        <item>Angol masztiff</item>
+        <item>Angol szetter</item>
+        <item>Angol springer spániel</item>
+        <item>Kis angol terrier</item>
+        <item>Entlebuchi havasi kutya</item>
+        <item>Estrela Mountain Dog</item>
+        <item>Eurázsiai</item>
+        <item>Field spániel</item>
+        <item>Brazil masztiff</item>
+        <item>Finn kopó</item>
+        <item>Finn lapphund</item>
+        <item>Finn spicc</item>
+        <item>Simaszőrű retriever</item>
+        <item>Simaszőrű foxterrier</item>
+        <item>Drótszőrű foxterrier</item>
+        <item>Francia buldog</item>
+        <item>Francia spániel</item>
+        <item>Spanyol agár</item>
+        <item>Gascon Saintongeois</item>
+        <item>Hosszúszőrű német vizsla</item>
+        <item>German Pinscher</item>
+        <item>Szálkásszőrű német vizsla</item>
+        <item>Német juhászkutya</item>
+        <item>Rövidszőrű német vizsla</item>
+        <item>Német fürjészeb</item>
+        <item>Német spicc</item>
+        <item>Drótszőrű német vizsla</item>
+        <item>Óriás schnauzer</item>
+        <item>Glen of Imaal terrier</item>
+        <item>Golden retriever</item>
+        <item>Gordon szetter</item>
+        <item>Grand Anglo-Français Blanc et Noir</item>
+        <item>Grand Anglo-Français Blanc et Orange</item>
+        <item>Grand Anglo-Français Tricolore</item>
+        <item>Grand Griffon Vendéen</item>
+        <item>Német dog</item>
+        <item>Pireneusi hegyikutya</item>
+        <item>Nagy svájci havasi kutya</item>
+        <item>Greek Harehound</item>
+        <item>Grönlandi kutya</item>
+        <item>Angol agár</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>Brüsszeli griffon</item>
+        <item>Griffon Fauve de Bretagne</item>
+        <item>Griffon Nivernais</item>
+        <item>Hamilton-kopó</item>
+        <item>Hannoveri véreb</item>
+        <item>Nyulászkopó</item>
+        <item>Havannai pincs</item>
+        <item>Hokkaido dog</item>
+        <item>Hovawart</item>
+        <item>Hygen Hound</item>
+        <item>Ibizai kopó</item>
+        <item>Izlandi juhászkutya</item>
+        <item>Irish Red and White Setter</item>
+        <item>Ír szetter</item>
+        <item>Ír terrier</item>
+        <item>Ír vízispániel</item>
+        <item>Ír farkaskutya</item>
+        <item>Istrian Coarse-haired Hound</item>
+        <item>Rövidszőrű isztriai kopó</item>
+        <item>Kis olasz agár</item>
+        <item>Jack Russell-terrier</item>
+        <item>Német vadászterrier</item>
+        <item>Jämthund</item>
+        <item>Japán csin</item>
+        <item>Japán spicc</item>
+        <item>Japán terrier</item>
+        <item>Kai ken</item>
+        <item>Karéliai medvekutya</item>
+        <item>Karszti pásztorkutya</item>
+        <item>Keeshond</item>
+        <item>Kerry Blue Terrier</item>
+        <item>King Charles spániel</item>
+        <item>Kishu</item>
+        <item>Komondor</item>
+        <item>Kooikerhondje</item>
+        <item>Korean Jindo</item>
+        <item>Kromfohrländer</item>
+        <item>Kuvasz</item>
+        <item>Labrador retriever</item>
+        <item>Lagotto Romagnolo</item>
+        <item>Lakeland terrier</item>
+        <item>Lancashire Heeler</item>
+        <item>Landseer</item>
+        <item>Lapp pásztorkutya</item>
+        <item>Leonbergi</item>
+        <item>Lhasa apso</item>
+        <item>Kis oroszlánkutya</item>
+        <item>Magyar agár</item>
+        <item>Mallorcai pásztorkutya</item>
+        <item>Máltai selyemkutya</item>
+        <item>Manchester terrier</item>
+        <item>Abruzzói juhászkutya</item>
+        <item>Mexikói meztelen kutya</item>
+        <item>Törpe pinscher</item>
+        <item>Törpe schnauzer</item>
+        <item>Romanian Mioritic Shepherd Dog</item>
+        <item>Montenegrin Mountain Hound</item>
+        <item>Mudi</item>
+        <item>Nagy münsterlandi vizsla</item>
+        <item>Small Münsterländer</item>
+        <item>Nápolyi masztiff</item>
+        <item>Újfundlandi</item>
+        <item>Norfolk Terrier</item>
+        <item>Norrbottenspets</item>
+        <item>Norvég buhund</item>
+        <item>Norwegian Elkhound</item>
+        <item>Norwegian Lundehund</item>
+        <item>Norwich terrier</item>
+        <item>Vadkacsavadász retriever</item>
+        <item>Old Danish Pointer</item>
+        <item>Óangol juhászkutya</item>
+        <item>Olde English Bulldogge</item>
+        <item>Otterhound</item>
+        <item>Papillon</item>
+        <item>Parson Russell Terrier</item>
+        <item>Patterdale terrier</item>
+        <item>Pekingi palotakutya</item>
+        <item>Kanári-szigeteki kutya</item>
+        <item>Mallorcai masztiff</item>
+        <item>Perui meztelen kutya</item>
+        <item>Fáraókutya</item>
+        <item>Pikárdiai spániel</item>
+        <item>Plott Hound</item>
+        <item>Podenco Canario</item>
+        <item>Angol pointer</item>
+        <item>Poitevin hound</item>
+        <item>Lengyel agár</item>
+        <item>Lengyel kopó</item>
+        <item>Polish Hunting Dog</item>
+        <item>Lengyel alföldi juhászkutya</item>
+        <item>Tátrai juhászkutya</item>
+        <item>Pomeranian</item>
+        <item>Pont-Audemer Spaniel</item>
+        <item>Uszkár</item>
+        <item>Porcelánkopó</item>
+        <item>Portuguese Podengo</item>
+        <item>Portugál vizsla</item>
+        <item>Portuguese Water Dog</item>
+        <item>Szávavölgyi kopó</item>
+        <item>Pudelpointer</item>
+        <item>Mopsz</item>
+        <item>Puli (kutyafajta)</item>
+        <item>Pumi</item>
+        <item>Pireneusi masztiff</item>
+        <item>Félhosszúszőrű pireneusi juhászkutya</item>
+        <item>Rafeiro do Alentejo</item>
+        <item>Rat Terrier</item>
+        <item>Redbone Coonhound</item>
+        <item>Afrikai oroszlánkutya</item>
+        <item>Rottweiler</item>
+        <item>Russkiy Toy</item>
+        <item>Russo-European Laika</item>
+        <item>Saarloosi farkaskutya</item>
+        <item>Spanyol kopó</item>
+        <item>Perzsa agár</item>
+        <item>Szamojéd (kutyafajta)</item>
+        <item>Sarplaninai juhászkutya</item>
+        <item>Schapendoes</item>
+        <item>Schillerstövare</item>
+        <item>Schipperke</item>
+        <item>Közép schnauzer</item>
+        <item>Schweizer Laufhund</item>
+        <item>Schweizerischer Niederlaufhund</item>
+        <item>Skót szarvasagár</item>
+        <item>Skót terrier</item>
+        <item>Sealyham Terrier</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Serbian Hound</item>
+        <item>Serbian Tricolour Hound</item>
+        <item>Shar pei</item>
+        <item>Shetlandi juhászkutya</item>
+        <item>Siba inu</item>
+        <item>Si-cu</item>
+        <item>Shikoku dog</item>
+        <item>Szibériai husky</item>
+        <item>Skye terrier</item>
+        <item>Arab agár</item>
+        <item>Szlovák csuvacs</item>
+        <item>Slovak Rough-haired Pointer</item>
+        <item>Szlovák kopó</item>
+        <item>Smålandi kopó</item>
+        <item>Soft-coated Wheaten Terrier</item>
+        <item>Délorosz juhászkutya</item>
+        <item>Spanyol masztiff</item>
+        <item>Spanish Water Dog</item>
+        <item>Olasz drótszőrű vizsla</item>
+        <item>Bernáthegyi</item>
+        <item>Stabyhoun</item>
+        <item>Staffordshire bullterrier</item>
+        <item>Styrian Coarse-haired Hound</item>
+        <item>Sussexi spániel</item>
+        <item>Swedish Lapphund</item>
+        <item>Swedish Vallhund</item>
+        <item>Taiwan Dog</item>
+        <item>Thai Bangkaew Dog</item>
+        <item>Thai ridgeback</item>
+        <item>Tibeti masztiff</item>
+        <item>Tibeti spániel</item>
+        <item>Tibeti terrier</item>
+        <item>Tornjak</item>
+        <item>Tosa</item>
+        <item>Toy Fox Terrier</item>
+        <item>Erdélyi kopó</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>Tyrolean Hound</item>
+        <item>Cimarrón Uruguayo</item>
+        <item>Rövidszőrű magyar vizsla</item>
+        <item>Volpino Italiano</item>
+        <item>Weimari vizsla</item>
+        <item>Cardigan welsh corgi</item>
+        <item>Pembroke Welsh Corgi</item>
+        <item>Welsh Springer Spaniel</item>
+        <item>Welsh terrier</item>
+        <item>West highland white terrier</item>
+        <item>West Siberian Laika</item>
+        <item>Westphalian Dachsbracke</item>
+        <item>Wetterhoun</item>
+        <item>Kis angol agár</item>
+        <item>Drótszőrű griffon</item>
+        <item>Drótszőrű magyar vizsla</item>
+        <item>Yorkshire terrier</item>
+        <item>Halden kopó</item>
+        <item>Hot dog</item>
+        <item>Ember</item>
+        <item>Not a dog</item>
+        <item>Macska</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">Azonosítsa a kutyafajtákat Pro</string>
+    <string name="searchFor">Nézze meg a Wikipédiát?</string>
+    <string name="no">Nem</string>
+    <string name="yes">Igen</string>
+    <string name="no_detection">Nincs észlelés</string>
+    <string name="list_breeds">Azonosítható fajták</string>
+    <string name="from_gallery">Galériából ..</string>
+    <string name="about_menu">Ról ről</string>
+    <string name="exit_menu">Kijárat</string>
+    <string name="share_with">Oszd..</string>
+    <string name="change_language">Válts nyelvet</string>
+</resources>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">Cet appareil ne prend pas en charge l\'API Camera2.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify Dog Breeds Pro</h1>
+    <p>Identifiez plus d\'deux centaine de races de chiens différentes avec votre smartphone.</p>
+    <p>Cliquez sur le bouton de l\'appareil photo ou chargez une image à partir de la galerie d\'images pour analyser une image. Appuyez sur l\'écran pour fermer le résultat affiché ou utilisez le bouton Partager pour partager une capture d\'écran.</p>
+    <p>Activer les prédictions continues et garder le chien dans le cercle pour obtenir le résultat en direct. L\'application indique jusqu\'à trois prédictions jugées les plus correctes. Ce résultat n\'a aucune valeur scientifique.</p>
+    <h2>Remerciements</h2>
+    <p>Basé sur une version étendue de la base de données Stanford Dogs. Icônes créées par Pause08, Smashicons, Freepik de www.flaticon.com.
+    <p>Apache License 2.0. Code source disponible à github.com/j05t/dbclf. Images issues de Wikipedia. Traduction française par Clément Thonon.</p>
+    ]]></string>
+    <string name="error_tf_init">Erreur de mémoire insuffisante. Essayez de fermer quelques applications en arrière-plan.</string>
+
+    <string-array name="breeds_array">
+        <item>Affenpinscher</item>
+        <item>Lévrier afghan</item>
+        <item>Aïdi</item>
+        <item>Airedale Terrier</item>
+        <item>Akita Inu</item>
+        <item>Alaskan Klee Kai</item>
+        <item>Malamute de l\'Alaska</item>
+        <item>Basset des Alpes</item>
+        <item>American Akita</item>
+        <item>Bouledogue américain</item>
+        <item>Cocker américain</item>
+        <item>English Coonhound</item>
+        <item>Esquimau américain</item>
+        <item>Foxhound américain</item>
+        <item>American Hairless terrier</item>
+        <item>American Pit Bull Terrier</item>
+        <item>American Staffordshire Terrier</item>
+        <item>Chien d\'eau américain</item>
+        <item>Berger d\'Anatolie</item>
+        <item>Anglo-français de petite vénerie</item>
+        <item>Bouvier de l’Appenzell</item>
+        <item>Braque de l\'Ariège</item>
+        <item>Ariégeois (chien)</item>
+        <item>Chien d\'Artois</item>
+        <item>Bouvier australien</item>
+        <item>Australian Kelpie</item>
+        <item>Berger australien</item>
+        <item>Terrier australien à poil soyeux</item>
+        <item>Bouvier australien courte queue</item>
+        <item>Terrier australien</item>
+        <item>Brachet noir et feu</item>
+        <item>Pinscher autrichien</item>
+        <item>Azawakh</item>
+        <item>Barbet (chien)</item>
+        <item>Basenji</item>
+        <item>Basset artésien normand</item>
+        <item>Basset bleu de Gascogne</item>
+        <item>Basset fauve de Bretagne</item>
+        <item>Grand basset griffon vendéen</item>
+        <item>Petit basset griffon vendéen</item>
+        <item>Basset hound</item>
+        <item>Chien de recherche au sang de la montagne bavaroise</item>
+        <item>Beagle</item>
+        <item>Beagle-harrier</item>
+        <item>Bearded collie</item>
+        <item>Berger de Beauce</item>
+        <item>Bedlington terrier</item>
+        <item>Berger belge Groenendael</item>
+        <item>Berger belge Laekenois</item>
+        <item>Malinois (chien)</item>
+        <item>Berger belge Tervueren</item>
+        <item>Berger de Bergame</item>
+        <item>Berger blanc suisse</item>
+        <item>Berger picard</item>
+        <item>Bouvier bernois</item>
+        <item>Bichon à poil frisé</item>
+        <item>Billy (chien)</item>
+        <item>Chien noir et feu pour la chasse au raton laveur</item>
+        <item>Chien d\'élan norvégien noir</item>
+        <item>Terrier noir russe</item>
+        <item>Black Mouth Cur</item>
+        <item>Grand bleu de Gascogne</item>
+        <item>Petit bleu de Gascogne</item>
+        <item>Chien de Saint-Hubert</item>
+        <item>Épagneul bleu de Picardie</item>
+        <item>Bluetick coonhound</item>
+        <item>Boerboel</item>
+        <item>Bichon bolonais</item>
+        <item>Border collie</item>
+        <item>Border Terrier</item>
+        <item>Barzoï</item>
+        <item>Chien courant de Bosnie à poil dur</item>
+        <item>Terrier de Boston</item>
+        <item>Bouvier des Ardennes</item>
+        <item>Bouvier des Flandres</item>
+        <item>Boxer (chien)</item>
+        <item>Boykin Spaniel</item>
+        <item>Braque italien</item>
+        <item>Braque d\'Auvergne</item>
+        <item>Braque du Bourbonnais</item>
+        <item>Braque français, type Gascogne</item>
+        <item>Braque Saint-Germain</item>
+        <item>Terrier brésilien</item>
+        <item>Berger de Brie</item>
+        <item>Briquet griffon vendéen</item>
+        <item>Épagneul breton</item>
+        <item>Broholmer</item>
+        <item>Berger de l\'Europe du Sud-Est</item>
+        <item>Bull Terrier</item>
+        <item>Bull Terrier miniature</item>
+        <item>Bulldog anglais</item>
+        <item>Bullmastiff</item>
+        <item>Perdiguero de Burgos</item>
+        <item>Cairn terrier</item>
+        <item>Chien de Canaan</item>
+        <item>Cane Corso</item>
+        <item>Berger de la Serra de Aires</item>
+        <item>Chien de Castro Laboreiro</item>
+        <item>Fila de São Miguel</item>
+        <item>Carolina Dog</item>
+        <item>Chien de berger roumain des Carpathes</item>
+        <item>Chien léopard catahoula</item>
+        <item>Gos d\'Atura Català</item>
+        <item>Berger du Caucase</item>
+        <item>Cavalier King Charles Spaniel</item>
+        <item>Berger d\'Asie Centrale</item>
+        <item>Barbu tchèque</item>
+        <item>Terrier Tchèque</item>
+        <item>Retriever de la baie de Chesapeake</item>
+        <item>Français blanc et noir</item>
+        <item>Français blanc et orange</item>
+        <item>Français tricolore</item>
+        <item>Chihuahua</item>
+        <item>Chien chinois à crête</item>
+        <item>Chow-chow</item>
+        <item>Cirneco de l\'Etna</item>
+        <item>Clumber Spaniel</item>
+        <item>Colley</item>
+        <item>Colley à poil court</item>
+        <item>Coton de Tuléar</item>
+        <item>Berger croate</item>
+        <item>Retriever à poil bouclé</item>
+        <item>Chien-loup tchécoslovaque</item>
+        <item>Teckel</item>
+        <item>Dalmatian</item>
+        <item>Dandie Dinmont Terrier</item>
+        <item>Chien de ferme dano-suédois</item>
+        <item>Brachet allemand</item>
+        <item>Dobermann</item>
+        <item>Dogue argentin</item>
+        <item>Dogue de Bordeaux</item>
+        <item>Chien de perdrix de Drente</item>
+        <item>Basset suédois</item>
+        <item>Chien courant norvégien</item>
+        <item>Berger hollandais</item>
+        <item>Smous des Pays-Bas</item>
+        <item>Laïka de Sibérie orientale</item>
+        <item>Cocker spaniel anglais</item>
+        <item>Foxhound anglais</item>
+        <item>Mastiff</item>
+        <item>Setter anglais</item>
+        <item>Springer anglais</item>
+        <item>Terrier d\'agrément anglais noir et feu</item>
+        <item>Bouvier de l\'Entlebuch</item>
+        <item>Chien de la Serra da Estrela</item>
+        <item>Eurasier</item>
+        <item>Field Spaniel</item>
+        <item>Fila Brasileiro</item>
+        <item>Chien courant finlandais</item>
+        <item>Chien finnois de Laponie</item>
+        <item>Spitz finlandais</item>
+        <item>Retriever à poil plat</item>
+        <item>Fox-terrier à poil lisse</item>
+        <item>Fox-terrier à poil dur</item>
+        <item>Bouledogue</item>
+        <item>Épagneul français</item>
+        <item>Lévrier espagnol</item>
+        <item>Gascon saintongeois</item>
+        <item>Chien d\'arrêt allemand à poil long</item>
+        <item>Pinscher allemand</item>
+        <item>Chien d\'arrêt allemand à poil raide</item>
+        <item>Berger allemand</item>
+        <item>Braque allemand à poil court</item>
+        <item>Chien d\'oysel allemand</item>
+        <item>Spitz allemand</item>
+        <item>Chien d\'arrêt allemand à poil dur</item>
+        <item>Schnauzer géant</item>
+        <item>Terrier irlandais Glen of Imaal</item>
+        <item>Golden retriever</item>
+        <item>Setter Gordon</item>
+        <item>Grand anglo-français blanc et noir</item>
+        <item>Grand anglo-français blanc et orange</item>
+        <item>Grand anglo-français tricolore</item>
+        <item>Grand griffon vendéen</item>
+        <item>Dogue allemand</item>
+        <item>Chien de montagne des Pyrénées</item>
+        <item>Grand bouvier suisse</item>
+        <item>Chien courant grec</item>
+        <item>Chien du Groenland</item>
+        <item>Lévrier greyhound</item>
+        <item>Griffon bleu de Gascogne</item>
+        <item>Griffon bruxellois</item>
+        <item>Griffon fauve de Bretagne</item>
+        <item>Griffon nivernais</item>
+        <item>Chien courant de Hamilton</item>
+        <item>Chien de recherche au sang de Hanovre</item>
+        <item>Harrier (chien)</item>
+        <item>Bichon havanais</item>
+        <item>Hokkaïdo (chien)</item>
+        <item>Hovawart</item>
+        <item>Chien courant de Hygen</item>
+        <item>Podenco d\'Ibiza</item>
+        <item>Chien de berger islandais</item>
+        <item>Setter irlandais rouge et blanc</item>
+        <item>Setter irlandais rouge</item>
+        <item>Terrier irlandais</item>
+        <item>Épagneul d\'eau irlandais</item>
+        <item>Irish wolfhound</item>
+        <item>Chien courant d\'Istrie à poil dur</item>
+        <item>Chien courant d\'Istrie à poil ras</item>
+        <item>Petit lévrier italien</item>
+        <item>Jack Russell terrier</item>
+        <item>Terrier de chasse allemand</item>
+        <item>Chien d\'élan suédois</item>
+        <item>Épagneul japonais</item>
+        <item>Spitz japonais</item>
+        <item>Terrier japonais</item>
+        <item>Kai (chien)</item>
+        <item>Chien d\'ours de Carélie</item>
+        <item>Berger du Karst</item>
+        <item>Spitz Loup</item>
+        <item>Terrier Kerry Blue</item>
+        <item>King Charles Spaniel</item>
+        <item>Kishu (chien)</item>
+        <item>Komondor</item>
+        <item>Kooikerhondje</item>
+        <item>Jindo coréen</item>
+        <item>Kromfohrländer</item>
+        <item>Kuvasz</item>
+        <item>Labrador retriever</item>
+        <item>Chien d\'eau romagnol</item>
+        <item>Lakeland Terrier</item>
+        <item>Lancashire Heeler</item>
+        <item>Landseer</item>
+        <item>Berger finnois de Laponie</item>
+        <item>Leonberg (chien)</item>
+        <item>Lhassa Apso</item>
+        <item>Petit chien lion</item>
+        <item>Lévrier hongrois</item>
+        <item>Chien de berger de Majorque</item>
+        <item>Bichon maltais</item>
+        <item>Manchester terrier</item>
+        <item>Berger de Maremme et Abruzzes</item>
+        <item>Xoloitzcuintle</item>
+        <item>Pinscher nain</item>
+        <item>Schnauzer miniature</item>
+        <item>Chien de berger roumain de Mioritza</item>
+        <item>Chien courant de montagne du Monténégro</item>
+        <item>Mudi</item>
+        <item>Grand épagneul de Münster</item>
+        <item>Petit épagneul de Münster</item>
+        <item>Mâtin napolitain</item>
+        <item>Terre-neuve (chien)</item>
+        <item>Norfolk Terrier</item>
+        <item>Spitz de Norrbotten</item>
+        <item>Buhund norvégien</item>
+        <item>Chien d\'élan norvégien gris</item>
+        <item>Chien norvégien de macareux</item>
+        <item>Norwich Terrier</item>
+        <item>Retriever de la Nouvelle-Écosse</item>
+        <item>Chien d\'arrêt danois ancestral</item>
+        <item>Bobtail</item>
+        <item>Olde English Bulldogge</item>
+        <item>Chien à loutre</item>
+        <item>Épagneul nain continental papillon</item>
+        <item>Parson Russell terrier</item>
+        <item>Patterdale Terrier</item>
+        <item>Pékinois (chien)</item>
+        <item>Dogue des Canaries</item>
+        <item>Ca de Bou</item>
+        <item>Chien nu du Pérou</item>
+        <item>Chien du pharaon</item>
+        <item>Épagneul picard</item>
+        <item>Plott Hound</item>
+        <item>Chien de garenne des Canaries</item>
+        <item>Pointer anglais</item>
+        <item>Poitevin (chien)</item>
+        <item>Chart polski</item>
+        <item>Brachet polonais</item>
+        <item>Chien courant polonais</item>
+        <item>Berger polonais de plaine</item>
+        <item>Berger des Tatras</item>
+        <item>Pomeranian</item>
+        <item>Épagneul de Pont-Audemer</item>
+        <item>Caniche</item>
+        <item>Porcelaine (chien)</item>
+        <item>Chien de garenne portugais</item>
+        <item>Chien d\'arrêt portugais</item>
+        <item>Chien d\'eau portugais</item>
+        <item>Chien courant de la vallée de la Save</item>
+        <item>Pudelpointer</item>
+        <item>Carlin</item>
+        <item>Puli</item>
+        <item>Pumi</item>
+        <item>Mâtin des Pyrénées</item>
+        <item>Berger des Pyrénées à poil long</item>
+        <item>Rafeiro de l\'Alentejo</item>
+        <item>Rat Terrier</item>
+        <item>Redbone Coonhound</item>
+        <item>Chien de Rhodésie à crête dorsale</item>
+        <item>Rottweiler</item>
+        <item>Petit chien russe</item>
+        <item>Laïka russo-européen</item>
+        <item>Chien-loup de Saarloos</item>
+        <item>Chien courant espagnol</item>
+        <item>Lévrier persan</item>
+        <item>Samoyède (chien)</item>
+        <item>Chien de berger yougoslave de Charplanina</item>
+        <item>Schapendoes néerlandais</item>
+        <item>Chien courant de Schiller</item>
+        <item>Schipperke</item>
+        <item>Schnauzer moyen</item>
+        <item>Chien courant suisse</item>
+        <item>Petit chien courant suisse</item>
+        <item>Deerhound</item>
+        <item>Terrier écossais</item>
+        <item>Sealyham Terrier</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Chien courant serbe</item>
+        <item>Chien courant tricolore serbe</item>
+        <item>Shar Pei</item>
+        <item>Shetland (chien)</item>
+        <item>Shiba (chien)</item>
+        <item>Shih tzu</item>
+        <item>Shikoku (chien)</item>
+        <item>Husky de Sibérie</item>
+        <item>Skye terrier</item>
+        <item>Lévrier arabe</item>
+        <item>Tchouvatch slovaque</item>
+        <item>Braque slovaque à poil dur</item>
+        <item>Chien courant slovaque</item>
+        <item>Chien courant du Småland</item>
+        <item>Terrier irlandais à poil doux</item>
+        <item>Berger de Russie méridionale</item>
+        <item>Mâtin espagnol</item>
+        <item>Chien d\'eau espagnol</item>
+        <item>Spinone</item>
+        <item>Saint-bernard</item>
+        <item>Chien d\'arrêt frison</item>
+        <item>Staffordshire Bull Terrier</item>
+        <item>Brachet de Styrie à poil dur</item>
+        <item>Sussex Spaniel</item>
+        <item>Lapphund suédois</item>
+        <item>Vallhund suédois</item>
+        <item>Chien de Taïwan</item>
+        <item>Bangkaew de Thaïlande</item>
+        <item>Chien thaïlandais à crête dorsale</item>
+        <item>Dogue du Tibet</item>
+        <item>Épagneul tibétain</item>
+        <item>Terrier tibétain</item>
+        <item>Berger de Bosnie-Herzégovine et de Croatie</item>
+        <item>Tosa</item>
+        <item>Toy Fox Terrier</item>
+        <item>Chien courant de Transylvanie</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>Brachet tyrolien</item>
+        <item>Cimarron uruguayen</item>
+        <item>Braque hongrois à poil court</item>
+        <item>Volpino italien</item>
+        <item>Braque de Weimar</item>
+        <item>Welsh Corgi Cardigan</item>
+        <item>Welsh Corgi Pembroke</item>
+        <item>Welsh Springer Spaniel</item>
+        <item>Welsh terrier</item>
+        <item>West Highland white terrier</item>
+        <item>Laïka de Sibérie occidentale</item>
+        <item>Basset de Westphalie</item>
+        <item>Chien d\'eau frison</item>
+        <item>Lévrier whippet</item>
+        <item>Griffon d\'arrêt à poil dur Korthals</item>
+        <item>Braque hongrois à poil dur</item>
+        <item>Yorkshire Terrier</item>
+        <item>Chien courant de Halden</item>
+        <item>Hot-dog</item>
+        <item>Human</item>
+        <item>Not a dog</item>
+        <item>Global Invasive Species Database</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque français, type Pyrénées</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Berger des Pyrénées à face rase</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="from_gallery">Depuis la Galerie..</string>
+    <string name="app_name">Identifier les races de chiens Pro</string>
+    <string name="about_menu">A propos</string>
+    <string name="exit_menu">Quitter</string>
+    <string name="share_with">Partager avec..</string>
+    <string name="list_breeds">Races identifiables</string>
+    <string name="searchFor">Regarder sur Wikipedia ?</string>
+    <string name="no">Non</string>
+    <string name="yes">Oui</string>
+    <string name="no_detection">Pas de détection.</string>
+    <string name="change_language">Changer de langue</string>
+</resources>

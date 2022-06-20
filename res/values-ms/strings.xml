@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="breeds_array">
+        <item>Pincer monyet</item>
+        <item>Anjing pemburu Afghan</item>
+        <item>Aidi</item>
+        <item>Terier Airedale</item>
+        <item>Akita Inu</item>
+        <item>Klee kai Alaska</item>
+        <item>Malamut Alaska</item>
+        <item>Anjing pemburu bejar Alp</item>
+        <item>American Akita</item>
+        <item>Buldog Amerika</item>
+        <item>Cocker spaniel Amerika</item>
+        <item>Anjing pemburu rakun Inggeris Amerika</item>
+        <item>Anjing Eskimo Amerika</item>
+        <item>Anjing pemburu rubah Amerika</item>
+        <item>Terier tidak berbulu Amerika</item>
+        <item>Terier pit bull Amerika</item>
+        <item>Terier Staffordshire Amerika</item>
+        <item>Spaniel air Amerika</item>
+        <item>Anjing gembala Anatolia</item>
+        <item>Anjing pemburu buruan kecil Inggeris-Perancis</item>
+        <item>Anjing gunung Appenzell</item>
+        <item>Anjing penuding Ariège</item>
+        <item>Anjing pemburu Ariège</item>
+        <item>Anjing pemburu Artois</item>
+        <item>Anjing lembu Australia</item>
+        <item>Kelpie Australia</item>
+        <item>Anjing gembala Australia</item>
+        <item>Terier sutera Australia</item>
+        <item>Anjing lembu ekor kontot Australia</item>
+        <item>Terier Australia</item>
+        <item>Anjing pemburu hitam dan sawo matang Austria</item>
+        <item>Pincer Austria</item>
+        <item>Azawakh</item>
+        <item>Barbet (anjing)</item>
+        <item>Basenji</item>
+        <item>Basset Artésien Normand</item>
+        <item>Basset biru Gascogne</item>
+        <item>Basset perang kekuning-kuningan Bretagne</item>
+        <item>Basset grifon besar Vendée</item>
+        <item>Basset grifon kecil Vendée</item>
+        <item>Basset Hound</item>
+        <item>Anjing pemburu gunung Bavaria</item>
+        <item>Beagle</item>
+        <item>Beagle-harrier</item>
+        <item>Collie berjanggut</item>
+        <item>Anjing Beauce</item>
+        <item>Terier Bedlington</item>
+        <item>Anjing gembala Belgium Groenendael</item>
+        <item>Anjing gembala Belgium Laeken</item>
+        <item>Anjing gembala Belgium Malines</item>
+        <item>Anjing gembala Belgium Tervuren</item>
+        <item>Anjing gembala Bergamo</item>
+        <item>Anjing gembala Switzerland putih</item>
+        <item>Anjing gembala Picardie</item>
+        <item>Anjing gunung Bern</item>
+        <item>Bichon frisé</item>
+        <item>Anjing Billy</item>
+        <item>Anjing pemburu rakun hitam dan sawo matang</item>
+        <item>Anjing pemburu elk Norway hitam</item>
+        <item>Terier Rusia hitam</item>
+        <item>Black mouth cur</item>
+        <item>Anjing pemburu biru Gascogne besar</item>
+        <item>Anjing pemburu biru Gascogne kecil</item>
+        <item>Bloodhound</item>
+        <item>Spaniel Picardie biru</item>
+        <item>Bluetick coonhound</item>
+        <item>Boerboel</item>
+        <item>Anjing Bologna</item>
+        <item>Collie sempadan</item>
+        <item>Terier sempadan</item>
+        <item>Borzoi</item>
+        <item>Anjing pemburu berbulu kasar Bosnia</item>
+        <item>Terier Boston</item>
+        <item>Anjing lembu Ardenne</item>
+        <item>Anjing lembu Flandre</item>
+        <item>Boxer (anjing)</item>
+        <item>Spaniel Boykin</item>
+        <item>Anjing penuding Itali</item>
+        <item>Anjing penuding Auvergne</item>
+        <item>Anjing penuding Bourbonnais</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Anjing penuding Saint-Germain</item>
+        <item>Terier Brazil</item>
+        <item>Anjing Brie</item>
+        <item>Grifon Vendée sederhana</item>
+        <item>Anjing Bretagne</item>
+        <item>Anjing Broholm</item>
+        <item>Anjing gembala Bukovina</item>
+        <item>Bulterier</item>
+        <item>Bulterier kecil</item>
+        <item>Buldog</item>
+        <item>Bulmastif</item>
+        <item>Anjing penuding Burgos</item>
+        <item>Terier batu tanda</item>
+        <item>Anjing Kanaan</item>
+        <item>Cane corso</item>
+        <item>Anjing Serra de Aires</item>
+        <item>Anjing Castro Laboreiro</item>
+        <item>Fila São Miguel</item>
+        <item>Anjing Carolina</item>
+        <item>Anjing gembala Karpatos</item>
+        <item>Catahoula cur</item>
+        <item>Anjing gembala Catalonia</item>
+        <item>Anjing gembala Kaukasus</item>
+        <item>Cavalier King Charles spaniel</item>
+        <item>Anjing gembala Asia Tengah</item>
+        <item>Fousek Czech</item>
+        <item>Terier Czech</item>
+        <item>Anjing pengutip Teluk Chesapeake</item>
+        <item>Anjing pemburu putih dan hitam Perancis</item>
+        <item>Anjing pemburu putih dan jingga Perancis</item>
+        <item>Anjing pemburu triwarna Perancis</item>
+        <item>Chihuahua</item>
+        <item>Anjing berjambul China</item>
+        <item>Chow chow</item>
+        <item>Anjing pemburu Etna</item>
+        <item>Spaniel Clumber</item>
+        <item>Collie kasar</item>
+        <item>Collie licin</item>
+        <item>Anjing kapas Tuléar</item>
+        <item>Anjing gembala Croatia</item>
+        <item>Anjing pengutip berbulu keriting</item>
+        <item>Anjing serigala Czechoslovakia</item>
+        <item>Dachshund</item>
+        <item>Dalmatian</item>
+        <item>Terier Dandie Dinmont</item>
+        <item>Anjing ladang Denmark-Sweden</item>
+        <item>Anjing pemburu Jerman</item>
+        <item>Pincer Dobermann</item>
+        <item>Dogo Argentina</item>
+        <item>Dogue Bordeaux</item>
+        <item>Drentsche patrijshond</item>
+        <item>Drever</item>
+        <item>Anjing Dunker</item>
+        <item>Anjing gembala Belanda</item>
+        <item>Smoushond Belanda</item>
+        <item>Laika Siberia Timur</item>
+        <item>Cocker spaniel Inggeris</item>
+        <item>Anjing pemburu rubah Inggeris</item>
+        <item>Mastif Inggeris</item>
+        <item>Seter Inggeris</item>
+        <item>Springer spaniel Inggeris</item>
+        <item>Terier mainan Inggeris hitam dan sawo matang</item>
+        <item>Anjing gunung Entlebuch</item>
+        <item>Anjing gunung Estrela</item>
+        <item>Anjing Eurasia</item>
+        <item>Spaniel padang</item>
+        <item>Fila Brazil</item>
+        <item>Anjing pemburu Finland</item>
+        <item>Anjing Lap Finland</item>
+        <item>Spits Finland</item>
+        <item>Anjing pengutip berbulu rata</item>
+        <item>Terier rubah licin</item>
+        <item>Terier rubah dawai</item>
+        <item>Buldog Perancis</item>
+        <item>Spaniel Perancis</item>
+        <item>Greyhound Sepanyol</item>
+        <item>Anjing pemburu Gascogne Saintonge</item>
+        <item>Anjing penuding berbulu panjang Jerman</item>
+        <item>Pincer Jerman</item>
+        <item>Deutscher stichelhaariger Vorstehhund</item>
+        <item>Anjing gembala Jerman</item>
+        <item>Anjing penuding berbulu pendek Jerman</item>
+        <item>Spaniel Jerman</item>
+        <item>Spits Jerman</item>
+        <item>Anjing penuding berbulu dawai Jerman</item>
+        <item>Schnauzer besar</item>
+        <item>Terier Glen of Imaal</item>
+        <item>Anjing pengutip keemasan</item>
+        <item>Seter Gordon</item>
+        <item>Anjing pemburu putih dan hitam Inggeris-Perancis besar</item>
+        <item>Anjing pemburu putih dan jingga Inggeris-Perancis besar</item>
+        <item>Anjing pemburu triwarna Inggeris-Perancis besar</item>
+        <item>Grifon Vendée besar</item>
+        <item>Anjing Denmark besar</item>
+        <item>Anjing Pyrénées besar</item>
+        <item>Anjing gunung Switzerland besar</item>
+        <item>Anjing pemburu kelinci Yunani</item>
+        <item>Anjing Greenland</item>
+        <item>Greyhound</item>
+        <item>Grifon Gascogne biru</item>
+        <item>Grifon Brussel</item>
+        <item>Grifon Bretagne perang kekuning-kuningan</item>
+        <item>Grifon Nivernais</item>
+        <item>Anjing pemburu Hamilton</item>
+        <item>Anjing pemburu Hanover</item>
+        <item>Harrier (anjing)</item>
+        <item>Anjing Havana</item>
+        <item>Anjing Hokkaido</item>
+        <item>Hovawart</item>
+        <item>Anjing pemburu Hygen</item>
+        <item>Anjing pemburu Ibiza</item>
+        <item>Anjing gembala Iceland</item>
+        <item>Seter merah dan putih Ireland</item>
+        <item>Seter Ireland</item>
+        <item>Terier Ireland</item>
+        <item>Spaniel air Ireland</item>
+        <item>Anjing pemburu serigala Ireland</item>
+        <item>Anjing pemburu berbulu kasar Istria</item>
+        <item>Anjing pemburu berbulu pendek Istria</item>
+        <item>Greyhound Itali</item>
+        <item>Terier Jack Russell</item>
+        <item>Terier pemburu</item>
+        <item>Anjing Jämtland</item>
+        <item>Chin Jepun</item>
+        <item>Spits Jepun</item>
+        <item>Terier Jepun</item>
+        <item>Anjing Kai</item>
+        <item>Anjing beruang Karelia</item>
+        <item>Anjing gembala Karst</item>
+        <item>Anjing Kees</item>
+        <item>Terier biru Kerry</item>
+        <item>King Charles spaniel</item>
+        <item>Anjing Kishu</item>
+        <item>Komondor</item>
+        <item>Anjing Kooiker</item>
+        <item>Anjing Jindo Korea</item>
+        <item>Kromfohrländer</item>
+        <item>Kuvasz</item>
+        <item>Anjing pengutip Labrador</item>
+        <item>Anjing tasik Romagna</item>
+        <item>Terier Lakeland</item>
+        <item>Anjing penggigit tumit Lancashire</item>
+        <item>Anjing Landseer</item>
+        <item>Anjing gembala Lapland</item>
+        <item>Anjing Leonberg</item>
+        <item>Lhasa apso</item>
+        <item>Anjing singa kecil</item>
+        <item>Greyhound Hungary</item>
+        <item>Anjing gembala Mallorca</item>
+        <item>Anjing Malta</item>
+        <item>Terier Manchester</item>
+        <item>Anjing gembala Maremma</item>
+        <item>Anjing tidak berbulu Mexico</item>
+        <item>Pincer kecil</item>
+        <item>Schnauzer kecil</item>
+        <item>Anjing gembala miorița</item>
+        <item>Anjing pemburu gunung Montenegro</item>
+        <item>Mudi</item>
+        <item>Anjing Münster besar</item>
+        <item>Anjing Münster kecil</item>
+        <item>Mastif Napoli</item>
+        <item>Anjing Newfoundland</item>
+        <item>Terier Norfolk</item>
+        <item>Spits Norrbotten</item>
+        <item>Buhund Norway</item>
+        <item>Anjing pemburu elk Norway</item>
+        <item>Anjing pufin Norway</item>
+        <item>Terier Norwich</item>
+        <item>Anjing pengutip pemburu itik Nova Scotia</item>
+        <item>Anjing penuding Denmark lama</item>
+        <item>Anjing gembala Inggeris lama</item>
+        <item>Buldog Inggeris lama (baka moden)</item>
+        <item>Anjing pemburu berang-berang</item>
+        <item>Papillon (anjing)</item>
+        <item>Terier Parson Russell</item>
+        <item>Terier Patterdale</item>
+        <item>Anjing Peking</item>
+        <item>Anjing tangkap Canaria</item>
+        <item>Anjing tangkap Mallorca</item>
+        <item>Anjing tidak berbulu Peru</item>
+        <item>Anjing pemburu firaun</item>
+        <item>Spaniel Picardie</item>
+        <item>Anjing pemburu Plott</item>
+        <item>Anjing pemburu Canaria</item>
+        <item>Anjing penuding (baka anjing)</item>
+        <item>Anjing pemburu Poitou</item>
+        <item>Greyhound Poland</item>
+        <item>Hound Poland</item>
+        <item>Anjing pemburu Poland</item>
+        <item>Anjing gembala tanah pamah Poland</item>
+        <item>Anjing gembala Tatra Poland</item>
+        <item>Pomeranian</item>
+        <item>Spaniel Pont-Audemer</item>
+        <item>Pudel</item>
+        <item>Porcelaine</item>
+        <item>Anjing pemburu Portugis</item>
+        <item>Anjing penuding Portugis</item>
+        <item>Anjing air Portugis</item>
+        <item>Anjing pemburu Posavac</item>
+        <item>Anjing penuding pudel</item>
+        <item>Pug</item>
+        <item>Puli</item>
+        <item>Pumi</item>
+        <item>Mastif Pyrénées</item>
+        <item>Anjing gembala Pyrénées</item>
+        <item>Anjing kacuk Alentejo</item>
+        <item>Terier tikus</item>
+        <item>Redbone coonhound</item>
+        <item>Anjing belakang permatang Rhodesia</item>
+        <item>Anjing Rottweil</item>
+        <item>Anjing mainan Rusia</item>
+        <item>Laika Rusia-Eropah</item>
+        <item>Anjing serigala Saarloos</item>
+        <item>Anjing pemburu bau Sepanyol</item>
+        <item>Saluki</item>
+        <item>Anjing Samoyed</item>
+        <item>Anjing gunung Šar</item>
+        <item>Schapendoes</item>
+        <item>Anjing pemburu Schiller</item>
+        <item>Schipperke</item>
+        <item>Schnauzer piawai</item>
+        <item>Anjing pemburu Switzerland</item>
+        <item>Anjing pemburu Switzerland kecil</item>
+        <item>Anjing pemburu rusa Scotland</item>
+        <item>Terier Scotland</item>
+        <item>Terier Sealyham</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Anjing pemburu Serbia</item>
+        <item>Anjing pemburu triwarna Serbia</item>
+        <item>Shar pei</item>
+        <item>Anjing gembala Shetland</item>
+        <item>Shiba inu</item>
+        <item>Shih tzu</item>
+        <item>Anjing Shikoku</item>
+        <item>Husky Siberia</item>
+        <item>Terier Skye</item>
+        <item>Sloughi</item>
+        <item>Čuvač Slovak</item>
+        <item>Anjing penuding berbulu kasar Slovakia</item>
+        <item>Anjing pemburu Slovakia</item>
+        <item>Anjing pemburu Småland</item>
+        <item>Terier gandum berbulu lembut</item>
+        <item>Anjing gembala Rusia Selatan</item>
+        <item>Mastif Sepanyol</item>
+        <item>Anjing air Sepanyol</item>
+        <item>Spinone Itali</item>
+        <item>Anjing Santo Bernard</item>
+        <item>Stabijhûn</item>
+        <item>Bulterier Staffordshire</item>
+        <item>Anjing pemburu berbulu kasar Stiria</item>
+        <item>Spaniel Sussex</item>
+        <item>Anjing Lap Sweden</item>
+        <item>Anjing gembala Sweden</item>
+        <item>Anjing gunung Formosa</item>
+        <item>Anjing Bangkaew Thai</item>
+        <item>Anjing belakang permatang Thai</item>
+        <item>Mastif Tibet</item>
+        <item>Spaniel Tibet</item>
+        <item>Terier Tibet</item>
+        <item>Tornjak</item>
+        <item>Tosa</item>
+        <item>Terier rubah mainan</item>
+        <item>Anjing pemburu Transilvania</item>
+        <item>Treeing walker coonhound</item>
+        <item>Anjing pemburu Tirol</item>
+        <item>Anjing jalang Uruguay</item>
+        <item>Anjing penuding Hungary</item>
+        <item>Anjing rubah kecil Itali</item>
+        <item>Anjing Weimar</item>
+        <item>Corgi Wales Cardigan</item>
+        <item>Corgi Wales Pembroke</item>
+        <item>Springer spaniel Wales</item>
+        <item>Terier Wales</item>
+        <item>Terier putih Tanah Tinggi Barat</item>
+        <item>Laika Siberia Barat</item>
+        <item>Anjing pemburu bejar Westfalia</item>
+        <item>Anjing air Friesland</item>
+        <item>Whippet</item>
+        <item>Grifon penuding berbulu dawai</item>
+        <item>Anjing penuding Hungary berbulu dawai</item>
+        <item>Terier Yorkshire</item>
+        <item>Anjing pemburu Halden</item>
+        <item>Hot dog</item>
+        <item>Manusia</item>
+        <item>Not a dog</item>
+        <item>Kucing</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+    <string name="no">Tidak</string>
+    <string name="yes">Ya</string>
+    <string name="app_name">Kenal pasti baka anjing</string>
+    <string name="list_breeds">Baka yang dapat dikenal pasti</string>
+    <string name="searchFor">Lihatlah Wikipedia?</string>
+    <string name="no_detection">Tiada pengesanan</string>
+    <string name="from_gallery">Dari Galeri ..</string>
+    <string name="about_menu">Mengenai</string>
+    <string name="exit_menu">Keluar</string>
+    <string name="share_with">Berkongsi dengan ..</string>
+    <string name="change_language">Tukar bahasa</string>
+</resources>

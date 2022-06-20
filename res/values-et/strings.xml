@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>Ahvpinšer</item>
+        <item>Afganistani hurt</item>
+        <item>Aïdi</item>
+        <item>Äärdeilterjer</item>
+        <item>Akita Inu</item>
+        <item>Alaskan Klee Kai</item>
+        <item>Alaska malamuut</item>
+        <item>Alpine Dachsbracke</item>
+        <item>American Akita</item>
+        <item>Ameerika buldog</item>
+        <item>Ameerika kokkerspanjel</item>
+        <item>American English Coonhound</item>
+        <item>American Eskimo Dog</item>
+        <item>Ameerika rebasehagijas</item>
+        <item>American Hairless Terrier</item>
+        <item>American Pit Bull Terrier</item>
+        <item>American Staffordshire Terrier</item>
+        <item>American Water Spaniel</item>
+        <item>Anatoolia karjakoer</item>
+        <item>Anglo-Français de Petite Vénerie</item>
+        <item>Appenzeller Sennenhund</item>
+        <item>Ariege Pointer</item>
+        <item>Ariegeois</item>
+        <item>Arteesia hagijas</item>
+        <item>Austraalia karjakoer</item>
+        <item>Kelpie</item>
+        <item>Austraalia lambakoer</item>
+        <item>Austraalia siiditerjer</item>
+        <item>Austraalia tömbisabaline karjakoer</item>
+        <item>Austraalia terjer</item>
+        <item>Austrian Black and Tan Hound</item>
+        <item>Austria pinšer</item>
+        <item>Azawakh</item>
+        <item>Barbet dog</item>
+        <item>Basenji</item>
+        <item>Basset Artésien Normand</item>
+        <item>Basset Bleu de Gascogne</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>Grand Basset Griffon Vendéen</item>
+        <item>Petit Basset Griffon Vendéen</item>
+        <item>Basset hound</item>
+        <item>Bavarian Mountain Hound</item>
+        <item>Beagle</item>
+        <item>Beagle-Harrier</item>
+        <item>Habekolli</item>
+        <item>Beauceron</item>
+        <item>Bedlingtoni terjer</item>
+        <item>Groenendael dog</item>
+        <item>Laekenois dog</item>
+        <item>Malinois dog</item>
+        <item>Tervuren dog</item>
+        <item>Bergamo karjakoer</item>
+        <item>Šveitsi valge lambakoer</item>
+        <item>Berger Picard</item>
+        <item>Berni alpi karjakoer</item>
+        <item>Bichon frisé</item>
+        <item>Billy (koeratõug)</item>
+        <item>Black and Tan Coonhound</item>
+        <item>Must norra põdrakoer</item>
+        <item>Must terjer</item>
+        <item>Black Mouth Cur</item>
+        <item>Grand Bleu de Gascogne</item>
+        <item>Petit Bleu de Gascogne</item>
+        <item>Verekoer</item>
+        <item>Blue Picardy Spaniel</item>
+        <item>Bluetick Coonhound</item>
+        <item>Boerboel</item>
+        <item>Bolognese</item>
+        <item>Borderkolli</item>
+        <item>Borderterjer</item>
+        <item>Vene hurt</item>
+        <item>Barak hound</item>
+        <item>Bostoni terjer</item>
+        <item>Bouvier des Ardennes</item>
+        <item>Bouvier des Flandres</item>
+        <item>Bokser</item>
+        <item>Boykin Spaniel</item>
+        <item>Itaalia linnukoer</item>
+        <item>Braque d\'Auvergne</item>
+        <item>Braque du Bourbonnais</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Braque Saint-Germain</item>
+        <item>Brasiilia terjer</item>
+        <item>Briard</item>
+        <item>Briquet griffon vendéen</item>
+        <item>Bretooni spanjel</item>
+        <item>Broholmer</item>
+        <item>Bucovina Shepherd Dog</item>
+        <item>Bullterjer</item>
+        <item>Kääbusbullterjer</item>
+        <item>Inglise buldog</item>
+        <item>Bullmastif</item>
+        <item>Burgos Pointer</item>
+        <item>Cairni terjer</item>
+        <item>Canaan Dog</item>
+        <item>Cane corso</item>
+        <item>Portugali lambakoer</item>
+        <item>Cão de Castro Laboreiro</item>
+        <item>Cão Fila de São Miguel</item>
+        <item>Carolina Dog</item>
+        <item>Idakarpaadi lambakoer</item>
+        <item>Louisiana Catahoula Leopard dog</item>
+        <item>Kataloonia lambakoer</item>
+        <item>Kaukaasia lambakoer</item>
+        <item>Cavalier King Charlesi spanjel</item>
+        <item>Keskaasia lambakoer</item>
+        <item>Český fousek</item>
+        <item>Tšehhi terjer</item>
+        <item>Chesapeake bay retriiver</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chien Français Tricolore</item>
+        <item>Chihuahua</item>
+        <item>Hiina harjaskoer</item>
+        <item>Tšau-tšau</item>
+        <item>Etna cirneco</item>
+        <item>Clumber Spaniel</item>
+        <item>Rough Collie</item>
+        <item>Smooth Collie</item>
+        <item>Coton de Tuléar</item>
+        <item>Croatian Sheepdog</item>
+        <item>Curly-coated Retriever</item>
+        <item>Czechoslovakian Wolfdog</item>
+        <item>Taks</item>
+        <item>Dalmatian</item>
+        <item>Dandie Dinmonti terjer</item>
+        <item>Taani-rootsi õuekoer</item>
+        <item>Saksa hagijas</item>
+        <item>Dobermann</item>
+        <item>Argentiina dogi</item>
+        <item>Bordoo dogi</item>
+        <item>Drentse Patrijshond</item>
+        <item>Drever</item>
+        <item>Dunker</item>
+        <item>Hollandi lambakoer</item>
+        <item>Dutch Smoushond</item>
+        <item>East Siberian Laika</item>
+        <item>Inglise kokkerspanjel</item>
+        <item>Inglise rebasehagijas</item>
+        <item>Inglise mastif</item>
+        <item>Inglise setter</item>
+        <item>English Springer Spaniel</item>
+        <item>English Toy Terrier (Black &amp; Tan)</item>
+        <item>Entlebucher Mountain Dog</item>
+        <item>Estrela Mountain Dog</item>
+        <item>Eurasien</item>
+        <item>Field Spaniel</item>
+        <item>Fila Brasileiro</item>
+        <item>Soome hagijas</item>
+        <item>Finnish Lapphund</item>
+        <item>Soome püstkőrv</item>
+        <item>Flat-coated Retriever</item>
+        <item>Smooth Fox Terrier</item>
+        <item>Wire Fox Terrier</item>
+        <item>Prantsuse buldog</item>
+        <item>Prantsuse spanjel</item>
+        <item>Galgo Español</item>
+        <item>Gascon Saintongeois</item>
+        <item>Saksa pikakarvaline linnukoer</item>
+        <item>German Pinscher</item>
+        <item>Stichelhaar</item>
+        <item>Saksa lambakoer</item>
+        <item>Saksa lühikarvaline linnukoer</item>
+        <item>German Spaniel</item>
+        <item>Saksa spits</item>
+        <item>Saksa karmikarvaline linnukoer</item>
+        <item>Suuršnautser</item>
+        <item>Imaali oru terjer</item>
+        <item>Kuldne retriiver</item>
+        <item>Gordoni setter</item>
+        <item>Grand Anglo-Français Blanc et Noir</item>
+        <item>Grand Anglo-Français Blanc et Orange</item>
+        <item>Grand Anglo-Français Tricolore</item>
+        <item>Grand Griffon Vendéen</item>
+        <item>Saksa dogi</item>
+        <item>Pürenee mäestikukoer</item>
+        <item>Suur šveitsi alpi karjakoer</item>
+        <item>Greek Harehound</item>
+        <item>Grööni koer</item>
+        <item>Greyhound</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>Brüsseli grifoon</item>
+        <item>Griffon Fauve de Bretagne</item>
+        <item>Nièvre\'i grifoon</item>
+        <item>Hamiltonstövare</item>
+        <item>Hanover Hound</item>
+        <item>Harjer</item>
+        <item>Havanese dog</item>
+        <item>Hokkaido (koeratõug)</item>
+        <item>Hovawart</item>
+        <item>Hygeni hagijas</item>
+        <item>Ibizan Hound</item>
+        <item>Islandi lambakoer</item>
+        <item>Iiri punavalge setter</item>
+        <item>Iiri punane setter</item>
+        <item>Iiri terjer</item>
+        <item>Irish Water Spaniel</item>
+        <item>Iiri hundikoer</item>
+        <item>Istrian Coarse-haired Hound</item>
+        <item>Istrian Shorthaired Hound</item>
+        <item>Itaalia väikehurt</item>
+        <item>Jack Russelli terjer</item>
+        <item>Jagdterrier</item>
+        <item>Rootsi põdrakoer</item>
+        <item>Jaapani spanjel</item>
+        <item>Jaapani spits</item>
+        <item>Jaapani terjer</item>
+        <item>Kai (koeratõug)</item>
+        <item>Karjala karukoer</item>
+        <item>Karsti lambakoer</item>
+        <item>Keeshond</item>
+        <item>Kerry blue terjer</item>
+        <item>King Charles Spaniel</item>
+        <item>Kishū</item>
+        <item>Komondor</item>
+        <item>Kooikerhondje</item>
+        <item>Korea jindo</item>
+        <item>Kromfohrländer</item>
+        <item>Kuvasz</item>
+        <item>Labradori retriiver</item>
+        <item>Romagna veekoer</item>
+        <item>Lakelandi terjer</item>
+        <item>Lancashire Heeler</item>
+        <item>Landseer</item>
+        <item>Lapponian Herder</item>
+        <item>Leonberger</item>
+        <item>Lhasa apso</item>
+        <item>Lõvikoerake</item>
+        <item>Ungari hurt</item>
+        <item>Mallorca lambakoer</item>
+        <item>Malta koer</item>
+        <item>Manchesteri terjer</item>
+        <item>Maremma-abruzzo karjakoer</item>
+        <item>Mehhiko karvutu koer</item>
+        <item>Kääbuspinšer</item>
+        <item>Kääbusšnautser</item>
+        <item>Romanian Mioritic Shepherd Dog</item>
+        <item>Montenegrin Mountain Hound</item>
+        <item>Mudi</item>
+        <item>Large Münsterländer</item>
+        <item>Small Münsterländer</item>
+        <item>Napoli mastif</item>
+        <item>Newfoundland dog</item>
+        <item>Norfolki terjer</item>
+        <item>Norrbottenspets</item>
+        <item>Norra õuekoer</item>
+        <item>Hall norra põdrakoer</item>
+        <item>Norra lunnikoer</item>
+        <item>Norwichi terjer</item>
+        <item>Nova Scotia Duck Tolling Retriever</item>
+        <item>Old Danish Pointer</item>
+        <item>Vana-inglise lambakoer</item>
+        <item>Olde English Bulldogge</item>
+        <item>Saarmakoer</item>
+        <item>Papillon</item>
+        <item>Parson Russell Terrier</item>
+        <item>Patterdale Terrier</item>
+        <item>Pekingese</item>
+        <item>Perro de Presa Canario</item>
+        <item>Ca de Bou</item>
+        <item>Peruu karvutu koer</item>
+        <item>Vaaraokoer</item>
+        <item>Picardy Spaniel</item>
+        <item>Plott Hound</item>
+        <item>Podenco Canario</item>
+        <item>English Pointer</item>
+        <item>Poitevin hound</item>
+        <item>Poola hurt</item>
+        <item>Poola hagijas</item>
+        <item>Polish Hunting Dog</item>
+        <item>Poola lauskmaa lambakoer</item>
+        <item>Polish Tatra Sheepdog</item>
+        <item>Pomeranian</item>
+        <item>Pont-Audemer Spaniel</item>
+        <item>Poodle</item>
+        <item>Portselanhagijas</item>
+        <item>Portuguese Podengo</item>
+        <item>Portuguese Pointer</item>
+        <item>Portuguese Water Dog</item>
+        <item>Posavac Hound</item>
+        <item>Pudelpointer</item>
+        <item>Mops</item>
+        <item>Puli</item>
+        <item>Pumi</item>
+        <item>Pürenee mastif</item>
+        <item>Pyrenean Shepherd</item>
+        <item>Rafeiro do Alentejo</item>
+        <item>Rat Terrier</item>
+        <item>Redbone Coonhound</item>
+        <item>Rodeesia ridgeback</item>
+        <item>Rotveiler</item>
+        <item>Vene toiterjer</item>
+        <item>Vene-euroopa laika</item>
+        <item>Saarloosi huntkoer</item>
+        <item>Sabueso Español</item>
+        <item>Saluki</item>
+        <item>Samojeedi koer</item>
+        <item>Šarplaninac</item>
+        <item>Schapendoes</item>
+        <item>Schillerstövare</item>
+        <item>Schipperke</item>
+        <item>Šnautser</item>
+        <item>Schweizer Laufhund</item>
+        <item>Schweizerischer Niederlaufhund</item>
+        <item>Hirvekoer</item>
+        <item>Šoti terjer</item>
+        <item>Sealyhami terjer</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Serbian Hound</item>
+        <item>Serbian Tricolour Hound</item>
+        <item>Shar Pei</item>
+        <item>Shetlandi lambakoer</item>
+        <item>Shiba</item>
+        <item>Shih Tzu</item>
+        <item>Shikoku dog</item>
+        <item>Siberian Husky</item>
+        <item>Skye terjer</item>
+        <item>Araabia hurt</item>
+        <item>Slovak Cuvac</item>
+        <item>Slovak Rough-haired Pointer</item>
+        <item>Slovaki hagijas</item>
+        <item>Smaland Hound</item>
+        <item>Pehmekarvaline nisuterjer</item>
+        <item>South Russian Ovcharka</item>
+        <item>Hispaania mastif</item>
+        <item>Hispaania veekoer</item>
+        <item>Itaalia karmikarvaline linnukoer</item>
+        <item>Bernhardiin</item>
+        <item>Stabyhoun</item>
+        <item>Staffordshire Bull Terrier</item>
+        <item>Steiermargi karmikarvaline hagijas</item>
+        <item>Sussexi spanjel</item>
+        <item>Rootsi lapikoer</item>
+        <item>Swedish Vallhund</item>
+        <item>Taiwan Dog</item>
+        <item>Thai Bangkaew Dog</item>
+        <item>Tai ridgeback</item>
+        <item>Tiibeti mastif</item>
+        <item>Tiibeti spanjel</item>
+        <item>Tibetan Terrier</item>
+        <item>Tornjak</item>
+        <item>Tosa</item>
+        <item>Toy Fox Terrier</item>
+        <item>Transylvanian Hound</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>Tyrolean Hound</item>
+        <item>Cimarrón Uruguayo</item>
+        <item>Ungari lühikarvaline linnukoer</item>
+        <item>Volpino Italiano</item>
+        <item>Weimari linnukoer</item>
+        <item>Welsh Corgi Cardigan</item>
+        <item>Welsh Corgi Pembroke</item>
+        <item>Welsh Springer Spaniel</item>
+        <item>Uelsi terjer</item>
+        <item>West Highlandi valge terjer</item>
+        <item>Lääne-siberi laika</item>
+        <item>Vestfaali takshagijas</item>
+        <item>Wetterhoun</item>
+        <item>Whippet</item>
+        <item>Prantsuse karmikarvaline linnukoer</item>
+        <item>Ungari karmikarvaline linnukoer</item>
+        <item>Jorkširi terjer</item>
+        <item>Haldeni hagijas</item>
+        <item>Hot dog</item>
+        <item>Inimene</item>
+        <item>Not a dog</item>
+        <item>Kass</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">Määrake koeratõugud</string>
+    <string name="list_breeds">Identifitseeritavad tõud</string>
+    <string name="searchFor">Otsi Wikipedia?</string>
+    <string name="no">Ei</string>
+    <string name="yes">Jah</string>
+    <string name="no_detection">Avastamist pole</string>
+    <string name="from_gallery">Galeriist ..</string>
+    <string name="about_menu">Umbes</string>
+    <string name="exit_menu">Välju</string>
+    <string name="share_with">Jaga..</string>
+    <string name="change_language">Keele muutmine</string>
+</resources>

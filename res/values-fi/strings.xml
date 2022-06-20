@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>Apinapinseri</item>
+        <item>Afgaaninvinttikoira</item>
+        <item>Aidi</item>
+        <item>Airedalenterrieri</item>
+        <item>Akita Inu</item>
+        <item>Alaskan Klee Kai</item>
+        <item>Alaskanmalamuutti</item>
+        <item>Alppienajokoira</item>
+        <item>American Akita</item>
+        <item>Amerikanbulldoggi</item>
+        <item>Amerikancockerspanieli</item>
+        <item>Englanninpesukarhukoira</item>
+        <item>Amerikaneskimokoira</item>
+        <item>Amerikankettukoira</item>
+        <item>Amerikankarvatonterrieri</item>
+        <item>Amerikanpitbullterrieri</item>
+        <item>Amerikanstaffordshirenterrieri</item>
+        <item>Amerikanvesispanieli</item>
+        <item>Anatoliankoira</item>
+        <item>Englantilais-ranskalainen pienriistan ajokoira</item>
+        <item>Appenzellinpaimenkoira</item>
+        <item>Ariege Pointer</item>
+        <item>Ariègenajokoira</item>
+        <item>Chien d’artois</item>
+        <item>Australiankarjakoira</item>
+        <item>Australiankelpie</item>
+        <item>Australianpaimenkoira</item>
+        <item>Silkkiterrieri</item>
+        <item>Australian töpöhäntäinen karjakoira</item>
+        <item>Australianterrieri</item>
+        <item>Itävallanajokoira</item>
+        <item>Itävallanpinseri</item>
+        <item>Azawakh</item>
+        <item>Barbet</item>
+        <item>Basenji</item>
+        <item>Basset artésien normand</item>
+        <item>Gascognenbassetti</item>
+        <item>Bretagnenbassetti</item>
+        <item>Grand basset griffon vendéen</item>
+        <item>Petit basset griffon vendéen</item>
+        <item>Basset hound</item>
+        <item>Baijerinvuoristovihikoira</item>
+        <item>Beagle</item>
+        <item>Beagle-harrier</item>
+        <item>Partacollie</item>
+        <item>Beaucenpaimenkoira</item>
+        <item>Bedlingtoninterrieri</item>
+        <item>Belgianpaimenkoira groenendael</item>
+        <item>Belgianpaimenkoira laekenois</item>
+        <item>Belgianpaimenkoira malinois</item>
+        <item>Belgianpaimenkoira tervueren</item>
+        <item>Bergamasco</item>
+        <item>Valkoinenpaimenkoira</item>
+        <item>Picardienpaimenkoira</item>
+        <item>Berninpaimenkoira</item>
+        <item>Bichon frisé</item>
+        <item>Billy (koirarotu)</item>
+        <item>Black and Tan Coonhound</item>
+        <item>Musta norjanhirvikoira</item>
+        <item>Venäjänmustaterrieri</item>
+        <item>Blackmouth cur</item>
+        <item>Isogascognenajokoira</item>
+        <item>Petit Bleu de Gascogne</item>
+        <item>Vihikoira</item>
+        <item>Sininenpicardienspanieli</item>
+        <item>Sininenpesukarhukoira</item>
+        <item>Boerboel</item>
+        <item>Bolognese (koira)</item>
+        <item>Bordercollie</item>
+        <item>Borderterrieri</item>
+        <item>Venäjänvinttikoira</item>
+        <item>Karkeakarvainen bosnianajokoira</item>
+        <item>Bostoninterrieri</item>
+        <item>Ardennienkarjakoira</item>
+        <item>Bouvier</item>
+        <item>Bokseri</item>
+        <item>Boykininspanieli</item>
+        <item>Italianseisoja</item>
+        <item>Braque d\'Auvergne</item>
+        <item>Bourbonnaisinseisoja</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Braque Saint-Germain</item>
+        <item>Brasilianterrieri</item>
+        <item>Brienpaimenkoira</item>
+        <item>Briquet griffon vendéen</item>
+        <item>Bretoni (koira)</item>
+        <item>Broholminkoira</item>
+        <item>Bukovinankoira</item>
+        <item>Bullterrieri</item>
+        <item>Kääpiöbullterrieri</item>
+        <item>Englanninbulldoggi</item>
+        <item>Bullmastiffi</item>
+        <item>Burgosinseisoja</item>
+        <item>Cairnterrieri</item>
+        <item>Kaanaankoira</item>
+        <item>Cane corso</item>
+        <item>Serra de airesinpaimenkoira</item>
+        <item>Castro laboreironkoira</item>
+        <item>São miguelinfila</item>
+        <item>Carolinankoira</item>
+        <item>Karpaattienkoira</item>
+        <item>Catahoulanleopardikoira</item>
+        <item>Katalonianpaimenkoira</item>
+        <item>Kaukasiankoira</item>
+        <item>Cavalierkingcharlesinspanieli</item>
+        <item>Keskiaasiankoira</item>
+        <item>Český fousek</item>
+        <item>Ceskyterrieri</item>
+        <item>Chesapeakelahdennoutaja</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chien Français Tricolore</item>
+        <item>Chihuahua</item>
+        <item>Kiinanharjakoira</item>
+        <item>Chow chow</item>
+        <item>Etnankoira</item>
+        <item>Clumberinspanieli</item>
+        <item>Pitkäkarvainen skotlanninpaimenkoira</item>
+        <item>Sileäkarvainen skotlanninpaimenkoira</item>
+        <item>Coton de tuléar</item>
+        <item>Kroatianpaimenkoira</item>
+        <item>Kiharakarvainennoutaja</item>
+        <item>Ceskoslovensky vlcak</item>
+        <item>Mäyräkoira</item>
+        <item>Dalmatian</item>
+        <item>Dandiedinmontinterrieri</item>
+        <item>Tanskalais-ruotsalainen pihakoira</item>
+        <item>Saksanajokoira</item>
+        <item>Dobermanni</item>
+        <item>Dogo argentino</item>
+        <item>Bordeaux’ndoggi</item>
+        <item>Hollanninpeltopyykoira</item>
+        <item>Dreeveri</item>
+        <item>Dunkerinajokoira</item>
+        <item>Hollanninpaimenkoira</item>
+        <item>Hollanninrottakoira</item>
+        <item>Itäsiperianlaika</item>
+        <item>Cockerspanieli</item>
+        <item>Englanninkettukoira</item>
+        <item>Mastiffi (koirarotu)</item>
+        <item>Englanninsetteri</item>
+        <item>Englanninspringerspanieli</item>
+        <item>Englanninkääpiöterrieri</item>
+        <item>Entlebuchinpaimenkoira</item>
+        <item>Estrelanvuoristokoira</item>
+        <item>Eurasier</item>
+        <item>Fieldspanieli</item>
+        <item>Fila brasileiro</item>
+        <item>Suomenajokoira</item>
+        <item>Suomenlapinkoira</item>
+        <item>Suomenpystykorva</item>
+        <item>Sileäkarvainennoutaja</item>
+        <item>Sileäkarvainen kettuterrieri</item>
+        <item>Karkeakarvainen kettuterrieri</item>
+        <item>Ranskanbulldoggi</item>
+        <item>Ranskanspanieli</item>
+        <item>Espanjanvinttikoira</item>
+        <item>Gascon Saintongeois</item>
+        <item>Pitkäkarvainen saksanseisoja</item>
+        <item>Pinseri (koirarotu)</item>
+        <item>Harjaskarvainen saksanseisoja</item>
+        <item>Saksanpaimenkoira</item>
+        <item>Lyhytkarvainen saksanseisoja</item>
+        <item>Viiriäiskoira</item>
+        <item>Saksanpystykorva</item>
+        <item>Karkeakarvainen saksanseisoja</item>
+        <item>Suursnautseri</item>
+        <item>Glen of imaalinterrieri</item>
+        <item>Kultainennoutaja</item>
+        <item>Gordoninsetteri</item>
+        <item>Grand anglo-français blanc et noir</item>
+        <item>Grand anglo-français blanc et orange</item>
+        <item>Grand anglo-français tricolore</item>
+        <item>Grand griffon vendéen</item>
+        <item>Tanskandoggi</item>
+        <item>Pyreneittenkoira</item>
+        <item>Isosveitsinpaimenkoira</item>
+        <item>Kreikanvinttikoira</item>
+        <item>Grönlanninkoira</item>
+        <item>Englanninvinttikoira</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>Griffon bruxellois</item>
+        <item>Griffon fauve de bretagne</item>
+        <item>Griffon nivernais</item>
+        <item>Hamiltoninajokoira</item>
+        <item>Hannoverinvihikoira</item>
+        <item>Harrieri</item>
+        <item>Havannankoira</item>
+        <item>Hokkaidonkoira</item>
+        <item>Hovawart</item>
+        <item>Hygeninajokoira</item>
+        <item>Ibizanpodenco</item>
+        <item>Islanninlammaskoira</item>
+        <item>Irish Red and White Setter</item>
+        <item>Irlanninsetteri</item>
+        <item>Irlanninterrieri</item>
+        <item>Irlanninvesispanieli</item>
+        <item>Irlanninsusikoira</item>
+        <item>Karkeakarvainen istrianajokoira</item>
+        <item>Istrian Shorthaired Hound</item>
+        <item>Italianvinttikoira</item>
+        <item>Jackrussellinterrieri</item>
+        <item>Saksanmetsästysterrieri</item>
+        <item>Jämtlanninpystykorva</item>
+        <item>Japanese chin</item>
+        <item>Japaninpystykorva</item>
+        <item>Japaninterrieri</item>
+        <item>Kainkoira</item>
+        <item>Karjalankarhukoira</item>
+        <item>Karstinpaimenkoira</item>
+        <item>Keeshond</item>
+        <item>Kerrynterrieri</item>
+        <item>Kingcharlesinspanieli</item>
+        <item>Kishunkoira</item>
+        <item>Komondor</item>
+        <item>Kooikerhondje</item>
+        <item>Koreanjindonkoira</item>
+        <item>Kromfohrländer</item>
+        <item>Kuvasz</item>
+        <item>Labradorinnoutaja</item>
+        <item>Lagotto romagnolo</item>
+        <item>Lakelandinterrieri</item>
+        <item>Lancashirenkarjakoira</item>
+        <item>Landseer</item>
+        <item>Lapinporokoira</item>
+        <item>Leonberginkoira</item>
+        <item>Lhasa apso</item>
+        <item>Löwchen</item>
+        <item>Unkarinvinttikoira</item>
+        <item>Mallorcanpaimenkoira</item>
+        <item>Maltankoira</item>
+        <item>Manchesterinterrieri</item>
+        <item>Maremmano-abruzzese</item>
+        <item>Meksikonkarvatonkoira</item>
+        <item>Kääpiöpinseri</item>
+        <item>Kääpiösnautseri</item>
+        <item>Romanianpaimenkoira</item>
+        <item>Montenegronajokoira</item>
+        <item>Mudi</item>
+        <item>Isomünsterinseisoja</item>
+        <item>Pienimünsterinseisoja</item>
+        <item>Napolinmastiffi</item>
+        <item>Newfoundlandinkoira</item>
+        <item>Norfolkinterrieri</item>
+        <item>Pohjanpystykorva</item>
+        <item>Buhund</item>
+        <item>Harmaa norjanhirvikoira</item>
+        <item>Lunnikoira</item>
+        <item>Norwichinterrieri</item>
+        <item>Novascotiannoutaja</item>
+        <item>Old Danish Pointer</item>
+        <item>Vanhaenglanninlammaskoira</item>
+        <item>Vanhaenglanninbulldoggi</item>
+        <item>Saukkokoira</item>
+        <item>Papillon (koirarotu)</item>
+        <item>Parsonrussellinterrieri</item>
+        <item>Patterdale Terrier</item>
+        <item>Kiinanpalatsikoira</item>
+        <item>Kanariandoggi</item>
+        <item>Mallorcandoggi</item>
+        <item>Perunkarvatonkoira</item>
+        <item>Faaraokoira</item>
+        <item>Picardienspanieli</item>
+        <item>Plott Hound</item>
+        <item>Kanarianpodenco</item>
+        <item>Pointteri</item>
+        <item>Poitevin hound</item>
+        <item>Puolanvinttikoira</item>
+        <item>Puolanajokoira</item>
+        <item>Puolanjahtikoira</item>
+        <item>Polski owczarek nizinny</item>
+        <item>Owczarek podhalanski</item>
+        <item>Pomeranian</item>
+        <item>Pont-Audemer Spaniel</item>
+        <item>Villakoira</item>
+        <item>Porcelaine</item>
+        <item>Portugalinpodengo</item>
+        <item>Portugalinseisoja</item>
+        <item>Portugalinvesikoira</item>
+        <item>Posavinanajokoira</item>
+        <item>Villakoirapointteri</item>
+        <item>Mopsi</item>
+        <item>Puli</item>
+        <item>Pumi</item>
+        <item>Pyreneittenmastiffi</item>
+        <item>Pyreneittenpaimenkoira</item>
+        <item>Alentejonkoira</item>
+        <item>Rat Terrier</item>
+        <item>Redbone Coonhound</item>
+        <item>Rhodesiankoira</item>
+        <item>Rottweiler</item>
+        <item>Venäjäntoy</item>
+        <item>Venäläis-eurooppalainen laika</item>
+        <item>Saarlooswolfhond</item>
+        <item>Sabueso español</item>
+        <item>Saluki</item>
+        <item>Samojedinkoira</item>
+        <item>Sarplaninac</item>
+        <item>Schapendoes</item>
+        <item>Schillerinajokoira</item>
+        <item>Schipperke</item>
+        <item>Snautseri</item>
+        <item>Sveitsinajokoira</item>
+        <item>Schweizerischer Niederlaufhund</item>
+        <item>Skotlanninhirvikoira</item>
+        <item>Skotlanninterrieri</item>
+        <item>Sealyhaminterrieri</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Serbianajokoira</item>
+        <item>Serbian Tricolour Hound</item>
+        <item>Shar pei</item>
+        <item>Shetlanninlammaskoira</item>
+        <item>Shiba</item>
+        <item>Shih tzu</item>
+        <item>Shikokunkoira</item>
+        <item>Siperianhusky</item>
+        <item>Skyenterrieri</item>
+        <item>Sloughi</item>
+        <item>Slovakiancuvac</item>
+        <item>Slovak Rough-haired Pointer</item>
+        <item>Slovakianajokoira</item>
+        <item>Smoolanninajokoira</item>
+        <item>Vehnäterrieri</item>
+        <item>Etelävenäjänkoira</item>
+        <item>Espanjanmastiffi</item>
+        <item>Espanjanvesikoira</item>
+        <item>Spinone</item>
+        <item>Bernhardinkoira</item>
+        <item>Stabijhoun</item>
+        <item>Staffordshirenbullterrieri</item>
+        <item>Styrian Coarse-haired Hound</item>
+        <item>Sussexinspanieli</item>
+        <item>Ruotsinlapinkoira</item>
+        <item>Länsigöötanmaanpystykorva</item>
+        <item>Taiwaninkoira</item>
+        <item>Thaimaanpystykorva</item>
+        <item>Thai ridgeback</item>
+        <item>Tiibetinmastiffi</item>
+        <item>Tiibetinspanieli</item>
+        <item>Tiibetinterrieri</item>
+        <item>Tornjak</item>
+        <item>Tosa (täsmennyssivu)</item>
+        <item>Amerikankääpiökettuterrieri</item>
+        <item>Kopo</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>Tirolinajokoira</item>
+        <item>Uruguayncimarrón</item>
+        <item>Unkarinvizsla</item>
+        <item>Volpino italiano</item>
+        <item>Weimarinseisoja</item>
+        <item>Welsh corgi cardigan</item>
+        <item>Welsh corgi pembroke</item>
+        <item>Walesinspringerspanieli</item>
+        <item>Walesinterrieri</item>
+        <item>Valkoinen länsiylämaanterrieri</item>
+        <item>Länsisiperianlaika</item>
+        <item>Westfälische dachsbracke</item>
+        <item>Friisinvesikoira</item>
+        <item>Whippet</item>
+        <item>Korthalsingriffoni</item>
+        <item>Wirehaired Vizsla</item>
+        <item>Yorkshirenterrieri</item>
+        <item>Haldeninajokoira</item>
+        <item>Nakkisämpylä</item>
+        <item>Ihminen</item>
+        <item>Not a dog</item>
+        <item>Kissa</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">Tunnista koirarodut</string>
+    <string name="list_breeds">Tunnistettavat rodut</string>
+    <string name="searchFor">Tutustu Wikipediaan?</string>
+    <string name="no">Ei</string>
+    <string name="yes">Joo</string>
+    <string name="no_detection">Ei havaittavissa</string>
+    <string name="from_gallery">Galleriasta ..</string>
+    <string name="about_menu">Noin</string>
+    <string name="exit_menu">poistuminen</string>
+    <string name="share_with">Jakaa..</string>
+    <string name="change_language">Vaihda kieltä</string>
+</resources>

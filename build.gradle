@@ -1,0 +1,95 @@
+// set to 'armabi-v7a', 'all', 'arm64-v8a'
+// armabi-v7a will only build for armabi-v7a (most smartphones)
+// all will build for arm64-v8a, armeabi-v7a, x86, x86_64
+def buildFor = 'armabi-v7a'
+
+
+project.buildDir = 'gradleBuild'
+getProject().setBuildDir('gradleBuild')
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'org.apache.httpcomponents:httpclient:4.5.9'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+project.ext.ASSET_DIR = projectDir.toString() + '/assets'
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '30.0.3'
+
+
+    defaultConfig {
+        applicationId = 'com.jstappdev.identify_dog_breeds_pro'
+        minSdkVersion 21
+        targetSdkVersion 32
+
+        versionCode 53
+        versionName "22"
+    }
+
+    if (buildFor == 'armabi-v7a') {
+        defaultConfig {
+            ndk {
+                abiFilters 'armeabi-v7a'
+            }
+        }
+    } else if (buildFor == 'arm64-v8a') {
+        defaultConfig {
+            ndk {
+                abiFilters 'arm64-v8a'
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src'
+            }
+
+            manifest.srcFile 'AndroidManifest.xml'
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = [project.ext.ASSET_DIR]
+            jniLibs.srcDirs = ['libs']
+        }
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation 'org.tensorflow:tensorflow-android:1.8.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}

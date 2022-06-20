@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>Affenpinscher</item>
+        <item>Afghansk mynde</item>
+        <item>Aidi</item>
+        <item>Airedale terrier</item>
+        <item>Akita Inu</item>
+        <item>Alaskan klee kai</item>
+        <item>Alaskan malamute</item>
+        <item>Alpinsk dachsbracke</item>
+        <item>American Akita</item>
+        <item>Amerikansk bulldog</item>
+        <item>Amerikansk cocker spaniel</item>
+        <item>American English Coonhound</item>
+        <item>Amerikansk eskimohund</item>
+        <item>Amerikansk foxhound</item>
+        <item>Amerikansk nakenterrier</item>
+        <item>Amerikansk pitbullterrier</item>
+        <item>Amerikansk staffordshire terrier</item>
+        <item>Amerikansk vannspaniel</item>
+        <item>Anatolsk gjeterhund</item>
+        <item>Anglo-Français de Petite Vénerie</item>
+        <item>Appenzeller sennenhund</item>
+        <item>Ariege Pointer</item>
+        <item>Ariegeois</item>
+        <item>Artois Hound</item>
+        <item>Australian cattledog</item>
+        <item>Australian kelpie</item>
+        <item>Australian shepherd</item>
+        <item>Silky terrier</item>
+        <item>Australian stumpy tail cattle dog</item>
+        <item>Australian Terrier</item>
+        <item>Austrian Black and Tan Hound</item>
+        <item>Austrian Pinscher</item>
+        <item>Azawakh</item>
+        <item>Barbet</item>
+        <item>Basenji</item>
+        <item>Basset Artésien Normand</item>
+        <item>Basset bleu de gascogne</item>
+        <item>Basset fauve de bretagne</item>
+        <item>Grand basset griffon vendéen</item>
+        <item>Petit basset griffon vendéen</item>
+        <item>Basset hound</item>
+        <item>Bavarian Mountain Hound</item>
+        <item>Beagle</item>
+        <item>Beagle harrier</item>
+        <item>Bearded collie</item>
+        <item>Beauceron</item>
+        <item>Bedlington terrier</item>
+        <item>Groenendael</item>
+        <item>Laekenois</item>
+        <item>Malinois</item>
+        <item>Tervueren</item>
+        <item>Bergamasco Shepherd</item>
+        <item>Hvit gjeterhund</item>
+        <item>Berger picard</item>
+        <item>Berner sennenhund</item>
+        <item>Bichon frisé</item>
+        <item>Billy (dog)</item>
+        <item>Black and tan coonhound</item>
+        <item>Norsk elghund sort</item>
+        <item>Black Russian Terrier</item>
+        <item>Black Mouth Cur</item>
+        <item>Grand Bleu de Gascogne</item>
+        <item>Petit Bleu de Gascogne</item>
+        <item>Blodhund</item>
+        <item>Blue Picardy Spaniel</item>
+        <item>Bluetick Coonhound</item>
+        <item>Boerboel</item>
+        <item>Bolognese</item>
+        <item>Border collie</item>
+        <item>Borderterrier</item>
+        <item>Borzoi</item>
+        <item>Barak hound</item>
+        <item>Bostonterrier</item>
+        <item>Bouvier des ardennes</item>
+        <item>Bouvier des flandres</item>
+        <item>Boxer</item>
+        <item>Boykin Spaniel</item>
+        <item>Bracco Italiano</item>
+        <item>Braque d\'Auvergne</item>
+        <item>Braque du Bourbonnais</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Braque Saint-Germain</item>
+        <item>Brazilian Terrier</item>
+        <item>Briard</item>
+        <item>Briquet Griffon Vendéen</item>
+        <item>Breton</item>
+        <item>Broholmer</item>
+        <item>Bucovina Shepherd Dog</item>
+        <item>Bull terrier</item>
+        <item>Miniature Bull Terrier</item>
+        <item>Engelsk bulldog</item>
+        <item>Bullmastiff</item>
+        <item>Burgos Pointer</item>
+        <item>Cairn terrier</item>
+        <item>Canaanhund</item>
+        <item>Cane corso</item>
+        <item>Cão da Serra de Aires</item>
+        <item>Cão de Castro Laboreiro</item>
+        <item>Azores cattle dog</item>
+        <item>Carolinahund</item>
+        <item>Karpatisk fårehund</item>
+        <item>Catahoula leopard dog</item>
+        <item>Katalansk gjeterhund</item>
+        <item>Kaukasisk ovtcharka</item>
+        <item>Cavalier king charles spaniel</item>
+        <item>Sentralasiatisk ovtcharka</item>
+        <item>Český fousek</item>
+        <item>Cesky terrier</item>
+        <item>Chesapeake bay retriever</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chien Français Tricolore</item>
+        <item>Chihuahua</item>
+        <item>Chinese crested</item>
+        <item>Chow-chow</item>
+        <item>Etnahund</item>
+        <item>Clumber spaniel</item>
+        <item>Rough Collie</item>
+        <item>Smooth Collie</item>
+        <item>Coton de tuléar</item>
+        <item>Croatian Sheepdog</item>
+        <item>Curly coated retriever</item>
+        <item>Tsjekkoslovakisk ulvehund</item>
+        <item>Dachshund</item>
+        <item>Dalmatian</item>
+        <item>Dandie dinmont-terrier</item>
+        <item>Dansk-svensk gårdshund</item>
+        <item>German Hound</item>
+        <item>Dobermann</item>
+        <item>Argentinsk dogge</item>
+        <item>Bordeaux dogge</item>
+        <item>Drentsche patrijshond</item>
+        <item>Drever</item>
+        <item>Dunker</item>
+        <item>Hollandsk gjeterhund</item>
+        <item>Dutch Smoushond</item>
+        <item>Østsibirsk laika</item>
+        <item>Cocker spaniel</item>
+        <item>English Foxhound</item>
+        <item>Engelsk mastiff</item>
+        <item>Engelsk setter</item>
+        <item>Engelsk springer spaniel</item>
+        <item>Engelsk toy terrier</item>
+        <item>Entlebucher sennenhund</item>
+        <item>Serra da estrelahund</item>
+        <item>Eurasier</item>
+        <item>Field spaniel</item>
+        <item>Fila brasileiro</item>
+        <item>Finsk støver</item>
+        <item>Finsk lapphund</item>
+        <item>Finsk spets</item>
+        <item>Flat coated retriever</item>
+        <item>Smooth Fox Terrier</item>
+        <item>Wire Fox Terrier</item>
+        <item>Fransk bulldog</item>
+        <item>French Spaniel</item>
+        <item>Spansk galgo</item>
+        <item>Gascon Saintongeois</item>
+        <item>Vorstehhund langhåret</item>
+        <item>Pinscher</item>
+        <item>Vorstehhund stikkelhåret</item>
+        <item>Schäferhund</item>
+        <item>Vorstehhund korthåret</item>
+        <item>Wachtelhund</item>
+        <item>Tysk spitz</item>
+        <item>Vorstehhund strihåret</item>
+        <item>Riesenschnauzer</item>
+        <item>Irish glen of imaal terrier</item>
+        <item>Golden retriever</item>
+        <item>Gordon setter</item>
+        <item>Grand Anglo-Français Blanc et Noir</item>
+        <item>Grand Anglo-Français Blanc et Orange</item>
+        <item>Grand Anglo-Français Tricolore</item>
+        <item>Grand Griffon Vendéen</item>
+        <item>Grand danois</item>
+        <item>Pyreneerhund</item>
+        <item>Grosser schweizer sennenhund</item>
+        <item>Greek Harehound</item>
+        <item>Grønlandshund</item>
+        <item>Greyhound</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>Griffon bruxellois</item>
+        <item>Griffon Fauve de Bretagne</item>
+        <item>Griffon Nivernais</item>
+        <item>Hamiltonstøver</item>
+        <item>Hanover Hound</item>
+        <item>Harrier (hund)</item>
+        <item>Bichon havanais</item>
+        <item>Hokkaido (hund)</item>
+        <item>Hovawart</item>
+        <item>Hygenhund</item>
+        <item>Podenco ibicenco</item>
+        <item>Islandsk fårehund</item>
+        <item>Irsk rød og hvit setter</item>
+        <item>Irsk setter</item>
+        <item>Irsk terrier</item>
+        <item>Irsk vannspaniel</item>
+        <item>Irsk ulvehund</item>
+        <item>Istrian Coarse-haired Hound</item>
+        <item>Istrian Shorthaired Hound</item>
+        <item>Italiensk mynde</item>
+        <item>Jack russell-terrier</item>
+        <item>Tysk jaktterrier</item>
+        <item>Jämthund</item>
+        <item>Japanese chin</item>
+        <item>Japansk spisshund</item>
+        <item>Japansk terrier</item>
+        <item>Kaï</item>
+        <item>Karelsk bjørnehund</item>
+        <item>Karst gjeterhund</item>
+        <item>Keeshond</item>
+        <item>Kerry blue terrier</item>
+        <item>King charles spaniel</item>
+        <item>Kishu (hund)</item>
+        <item>Komondor</item>
+        <item>Kooikerhund</item>
+        <item>Koreansk jindo</item>
+        <item>Kromfohrländer</item>
+        <item>Ungarsk kuvasz</item>
+        <item>Labrador retriever</item>
+        <item>Lagotto romagnolo</item>
+        <item>Lakeland Terrier</item>
+        <item>Lancashire heeler</item>
+        <item>Landseer</item>
+        <item>Lapsk vallhund</item>
+        <item>Leonberger</item>
+        <item>Lhasa apso</item>
+        <item>Løwchen</item>
+        <item>Ungarsk mynde</item>
+        <item>Majorca Shepherd Dog</item>
+        <item>Malteser</item>
+        <item>Manchester terrier</item>
+        <item>Maremma (hund)</item>
+        <item>Mexikansk nakenhund</item>
+        <item>Dvergpinscher</item>
+        <item>Dvergschnauzer</item>
+        <item>Romanian Mioritic Shepherd Dog</item>
+        <item>Montenegrin Mountain Hound</item>
+        <item>Mudi</item>
+        <item>Grosser münsterländer</item>
+        <item>Kleiner münsterländer</item>
+        <item>Napolitansk mastiff</item>
+        <item>Newfoundlandshund</item>
+        <item>Norfolk terrier</item>
+        <item>Norrbottenspets</item>
+        <item>Norsk buhund</item>
+        <item>Norsk elghund grå</item>
+        <item>Norsk lundehund</item>
+        <item>Norwich terrier</item>
+        <item>Nova scotia duck tolling retriever</item>
+        <item>Gammel dansk hønsehund</item>
+        <item>Old english sheepdog</item>
+        <item>Olde english bulldogge</item>
+        <item>Otterhound</item>
+        <item>Kontinental toy spaniel</item>
+        <item>Parson russell-terrier</item>
+        <item>Patterdale Terrier</item>
+        <item>Pekingeser</item>
+        <item>Dogo canario</item>
+        <item>Ca de Bou</item>
+        <item>Peruviansk nakenhund</item>
+        <item>Faraohund</item>
+        <item>Picardy Spaniel</item>
+        <item>Plotthund</item>
+        <item>Podenco canario</item>
+        <item>English Pointer</item>
+        <item>Poitevin hound</item>
+        <item>Polsk mynde</item>
+        <item>Polish Hound</item>
+        <item>Polish Hunting Dog</item>
+        <item>Polsk owczarek nizinny</item>
+        <item>Polsk owczarek podhalanski</item>
+        <item>Pomeranian</item>
+        <item>Pont-Audemer Spaniel</item>
+        <item>Puddel</item>
+        <item>Porcelaine</item>
+        <item>Podengo português</item>
+        <item>Portuguese Pointer</item>
+        <item>Portugisisk vannhund</item>
+        <item>Posavac Hound</item>
+        <item>Pudelpointer</item>
+        <item>Mops</item>
+        <item>Puli</item>
+        <item>Pumi</item>
+        <item>Pyreneisk mastiff</item>
+        <item>Pyrenean Shepherd</item>
+        <item>Rafeiro do Alentejo</item>
+        <item>Rat Terrier</item>
+        <item>Redbone Coonhound</item>
+        <item>Rhodesian ridgeback</item>
+        <item>Rottweiler</item>
+        <item>Russisk Toy</item>
+        <item>Russisk-europeisk laika</item>
+        <item>Saarloos wolfhond</item>
+        <item>Sabueso Español</item>
+        <item>Saluki</item>
+        <item>Samojedhund</item>
+        <item>Sarplaninac</item>
+        <item>Schapendoes</item>
+        <item>Schillerstøver</item>
+        <item>Schipperke</item>
+        <item>Schnauzer</item>
+        <item>Schweizer Laufhund</item>
+        <item>Schweizerischer Niederlaufhund</item>
+        <item>Skotsk hjortehund</item>
+        <item>Skotsk terrier</item>
+        <item>Sealyham Terrier</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Serbian Hound</item>
+        <item>Serbian Tricolour Hound</item>
+        <item>Shar pei</item>
+        <item>Shetland sheepdog</item>
+        <item>Shiba</item>
+        <item>Shih tzu</item>
+        <item>Shikoku (hund)</item>
+        <item>Sibirsk husky</item>
+        <item>Skye terrier</item>
+        <item>Sloughi</item>
+        <item>Slovak Cuvac</item>
+        <item>Slovak Rough-haired Pointer</item>
+        <item>Slovenský kopov</item>
+        <item>Smålandsstøver</item>
+        <item>Irish softcoated wheaten terrier</item>
+        <item>Sydrussisk ovtcharka</item>
+        <item>Spansk mastiff</item>
+        <item>Spansk vannhund</item>
+        <item>Italiensk spinone</item>
+        <item>Sanktbernhardshund</item>
+        <item>Stabyhoun</item>
+        <item>Staffordshire bull terrier</item>
+        <item>Styrian Coarse-haired Hound</item>
+        <item>Sussex spaniel</item>
+        <item>Svensk lapphund</item>
+        <item>Västgøtaspets</item>
+        <item>Taiwanhund</item>
+        <item>Thai bangkaew-hund</item>
+        <item>Thai ridgeback</item>
+        <item>Tibetansk mastiff</item>
+        <item>Tibetansk spaniel</item>
+        <item>Tibetansk terrier</item>
+        <item>Tornjak</item>
+        <item>Tosa</item>
+        <item>Toy fox terrier</item>
+        <item>Transylvanian Hound</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>Tyrolean Hound</item>
+        <item>Cimarrón Uruguayo</item>
+        <item>Ungarsk vizsla</item>
+        <item>Volpino italiano</item>
+        <item>Weimaraner</item>
+        <item>Welsh corgi cardigan</item>
+        <item>Welsh corgi pembroke</item>
+        <item>Welsh springer spaniel</item>
+        <item>Welsh Terrier</item>
+        <item>West highland white terrier</item>
+        <item>Vestsibirsk laika</item>
+        <item>Westphalian Dachsbracke</item>
+        <item>Wetterhoun</item>
+        <item>Whippet</item>
+        <item>Wirehaired Pointing Griffon</item>
+        <item>Wirehaired Vizsla</item>
+        <item>Yorkshire terrier</item>
+        <item>Haldenstøver</item>
+        <item>Pølse i brød</item>
+        <item>Menneske</item>
+        <item>Not a dog</item>
+        <item>Tamkatt</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">Identifiser hunderaser</string>
+    <string name="list_breeds">Identifiserbare raser</string>
+    <string name="searchFor">Se opp på Wikipedia?</string>
+    <string name="no">Nei</string>
+    <string name="yes">Ja</string>
+    <string name="no_detection">Ingen gjenkjenning</string>
+    <string name="from_gallery">Fra Galleri ..</string>
+    <string name="about_menu">Handle om</string>
+    <string name="share_with">Del med ..</string>
+    <string name="exit_menu">Exit</string>
+    <string name="change_language">Skifte språk</string>
+</resources>

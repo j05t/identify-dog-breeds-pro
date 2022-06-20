@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>Chó Affenpinscher</item>
+        <item>Chó săn Afghan</item>
+        <item>Chó Aidi</item>
+        <item>Chó sục Airedale</item>
+        <item>Akita Inu</item>
+        <item>Chó Klee Kai Alaska</item>
+        <item>Alaska Malamute</item>
+        <item>Chó Alpine Dachsbracke</item>
+        <item>American Akita</item>
+        <item>Chó bò Mỹ</item>
+        <item>American Cocker Spaniel</item>
+        <item>Chó săn gấu mèo Anh Quốc</item>
+        <item>Chó Eskimo Mỹ</item>
+        <item>Chó săn cáo Mỹ</item>
+        <item>Chó sục trụi lông Hoa Kỳ</item>
+        <item>Chó sục Pit Bull Mỹ</item>
+        <item>American Staffordshire Terrier</item>
+        <item>Chó lội nước Spaniel Hoa Kỳ</item>
+        <item>Chó chăn cừu Anatoli</item>
+        <item>Anglo-Français de Petite Vénerie</item>
+        <item>Chó Appenzeller</item>
+        <item>Chó săn chỉ điểm Ariege</item>
+        <item>Chó Ariegeois</item>
+        <item>Chó săn Artois</item>
+        <item>Chó chăn bò Úc</item>
+        <item>Chó chăn cừu Kelpie Úc</item>
+        <item>Chó chăn cừu Úc</item>
+        <item>Chó sục lông mượt Úc</item>
+        <item>Chó săn gia súc đuôi ngắn Úc</item>
+        <item>Chó sục Úc</item>
+        <item>Chó săn Áo nâu đen</item>
+        <item>Chó Pinscher Áo</item>
+        <item>Azawakh</item>
+        <item>Chó Barbet</item>
+        <item>Basenji</item>
+        <item>Basset Artésien Normand</item>
+        <item>Basset Bleu de Gascogne</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>Grand Basset Griffon Vendéen</item>
+        <item>Chó Petit Basset Griffon Vendéen</item>
+        <item>Chó săn chân lùn</item>
+        <item>Chó săn miền núi Bayern</item>
+        <item>Chó săn thỏ</item>
+        <item>Beagle-Harrier</item>
+        <item>Chó chăn cừu râu dài</item>
+        <item>Chó Beauceron</item>
+        <item>Chó sục Bedlington</item>
+        <item>Chó Groenendael</item>
+        <item>Chó chăn cừu Laekenois</item>
+        <item>Chó chăn cừu Malinois</item>
+        <item>Chó chăn cừu Tervuren</item>
+        <item>Chó chăn gia súc Bergamasco</item>
+        <item>Chó chăn cừu trắng Thụy Sĩ</item>
+        <item>Chó chăn cừu Picard</item>
+        <item>Chó núi Bern</item>
+        <item>Bichon Frise</item>
+        <item>Chó Billy</item>
+        <item>Chó săn gấu mèo nâu đen</item>
+        <item>Chó săn hươu Na Uy đen</item>
+        <item>Chó sục Nga đen</item>
+        <item>Black Mouth Cur</item>
+        <item>Chó săn Gascony lớn</item>
+        <item>Chó săn Gascony lam nhỏ</item>
+        <item>Chó đánh hơi</item>
+        <item>Blue Picardy Spaniel</item>
+        <item>Chó săn gấu mèo lam</item>
+        <item>Chó ngao Nam Phi</item>
+        <item>Chó Bologna</item>
+        <item>Collie biên giới</item>
+        <item>Chó sục Border</item>
+        <item>Borzoi</item>
+        <item>Bosanski Ostrodlaki Gonic Barak</item>
+        <item>Chó sục Boston</item>
+        <item>Chó Bouvier des Ardennes</item>
+        <item>Chó chăn gia súc Flanders</item>
+        <item>Chó võ sĩ</item>
+        <item>Chó Boykin Spaniel</item>
+        <item>Chó Bracco Italia</item>
+        <item>Braque d\'Auvergne</item>
+        <item>Chó Braque du Bourbonnais</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Braque Saint-Germain</item>
+        <item>Chó sục Brasil</item>
+        <item>Briard</item>
+        <item>Briquet Griffon Vendéen</item>
+        <item>Brittany Spaniel</item>
+        <item>Chó Broholmer</item>
+        <item>Chó chăn cừu Bucovina</item>
+        <item>Chó sục bò</item>
+        <item>Chó sục bò Miniature</item>
+        <item>Chó bò Anh</item>
+        <item>Chó ngao bò</item>
+        <item>Burgos Pointer</item>
+        <item>Chó sục Cairn</item>
+        <item>Chó Canaan</item>
+        <item>Chó ngao Ý</item>
+        <item>Chó Cão da Serra de Aires</item>
+        <item>Chó chăn cừu Bồ Đào Nha</item>
+        <item>Chó chăn bò Azores</item>
+        <item>Chó Carolina</item>
+        <item>Chó chăn cừu Carpathia</item>
+        <item>Chó Catahoula</item>
+        <item>Chó chăn cừu Catalan</item>
+        <item>Chó chăn cừu Kavkaz</item>
+        <item>Cavalier King Charles Spaniel</item>
+        <item>Alabai</item>
+        <item>Český fousek</item>
+        <item>Chó sục Séc</item>
+        <item>Chó Vịnh Chesapeake</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chó săn tam thể Pháp</item>
+        <item>Chihuahua (định hướng)</item>
+        <item>Chó có mào</item>
+        <item>Chow Chow</item>
+        <item>Cirneco dell\'Etna</item>
+        <item>Clumber Spaniel</item>
+        <item>Collie lông dài</item>
+        <item>Smooth Collie</item>
+        <item>Chó Coton de Tulear</item>
+        <item>Croatian Sheepdog</item>
+        <item>Curly-coated Retriever</item>
+        <item>Chó Tiệp Khắc</item>
+        <item>Chó Dachshund</item>
+        <item>Dalmatian</item>
+        <item>Chó sục Dandie Dinmont</item>
+        <item>Chó nông trại Đan Mạch-Thụy Điển</item>
+        <item>Chó săn Đức</item>
+        <item>Dobermann</item>
+        <item>Dogo Argentino</item>
+        <item>Chó ngao Pháp</item>
+        <item>Drentse Patrijshond</item>
+        <item>Chó Drever</item>
+        <item>Chó săn Na Uy</item>
+        <item>Chó chăn cừu Hà Lan</item>
+        <item>Dutch Smoushond</item>
+        <item>East Siberian Laika</item>
+        <item>Spaniel Anh</item>
+        <item>Chó săn cáo Anh Quốc</item>
+        <item>Chó ngao Anh</item>
+        <item>Setter Anh Quốc</item>
+        <item>Chó Springer Spaniel Anh Quốc</item>
+        <item>Chó sục cảnh Anh Quốc</item>
+        <item>Chó núi Entlebucher</item>
+        <item>Estrela Mountain Dog</item>
+        <item>Chó Eurasier</item>
+        <item>Chó Field Spaniel</item>
+        <item>Chó ngao Brasil</item>
+        <item>Chó săn nòi Phần Lan</item>
+        <item>Finnish Lapphund</item>
+        <item>Chó săn Phần Lan</item>
+        <item>Chó Retriever lông nhẵn</item>
+        <item>Chó sục cáo lông mượt</item>
+        <item>Chó sục cáo lông xoăn</item>
+        <item>Chó bò Pháp</item>
+        <item>Chó Spaniel Pháp</item>
+        <item>Galgo Español</item>
+        <item>Gascon Saintongeois</item>
+        <item>Chó săn chỉ điểm lông dài Đức</item>
+        <item>Chó Pinscher Đức</item>
+        <item>Stichelhaar</item>
+        <item>Chó chăn cừu Đức</item>
+        <item>Chó săn lông ngắn Đức</item>
+        <item>Chó Spaniel Đức</item>
+        <item>German Spitz</item>
+        <item>Chó săn chỉ điểm lông gợn sóng Đức</item>
+        <item>Chó Schnauzer Lớn</item>
+        <item>Chó sục Glen of Imaal</item>
+        <item>Golden Retriever</item>
+        <item>Setter nâu đen</item>
+        <item>Chó săn Anh Pháp lớn đen trắng</item>
+        <item>Chó săn Anh Pháp lớn cam trắng</item>
+        <item>Chó săn Anh Pháp lớn tam thể</item>
+        <item>Grand Griffon Vendéen</item>
+        <item>Great Dane</item>
+        <item>Chó núi Pyrenees</item>
+        <item>Chó lớn vùng núi Thụy Sĩ</item>
+        <item>Chó săn thỏ rừng Hy Lạp</item>
+        <item>Chó Greenland</item>
+        <item>Greyhound</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>Chó Griffon Brussels</item>
+        <item>Griffon Fauve de Bretagne</item>
+        <item>Griffon Nivernais</item>
+        <item>Hamiltonstövare</item>
+        <item>Chó săn Hanover</item>
+        <item>Harrier (dog)</item>
+        <item>Chó Havana</item>
+        <item>Hokkaidō-Inu</item>
+        <item>Chó Hovawart</item>
+        <item>Hygen Hound</item>
+        <item>Podenco Ibicenco</item>
+        <item>Chó chăn cừu Iceland</item>
+        <item>Setter đỏ trắng</item>
+        <item>Setter Ái Nhĩ Lan</item>
+        <item>Chó sục Ireland</item>
+        <item>Irish Water Spaniel</item>
+        <item>Chó săn sói Ireland</item>
+        <item>Istarski Oštrodlaki Gonič</item>
+        <item>Istarski Kratkodlaki Gonič</item>
+        <item>Chó săn xám Ý</item>
+        <item>Chó sục Jack Russell</item>
+        <item>Jagdterrier</item>
+        <item>Jämthund</item>
+        <item>Chó Nhật</item>
+        <item>Chó Nhật đuôi cuộn</item>
+        <item>Japanese Terrier</item>
+        <item>Chó Giáp Phi</item>
+        <item>Chó săn gấu Karelia</item>
+        <item>Karst Shepherd</item>
+        <item>Keeshond</item>
+        <item>Chó sục xanh Kerry</item>
+        <item>Chó King Charles Spaniel</item>
+        <item>Kishu Inu</item>
+        <item>Chó Komondor</item>
+        <item>Chó Kooikerhondje</item>
+        <item>Chó Jindo</item>
+        <item>Kromfohrländer</item>
+        <item>Chó Kuvasz</item>
+        <item>Chó tha mồi Labrador</item>
+        <item>Lagotto Romagnolo</item>
+        <item>Chó sục Lakeland</item>
+        <item>Lancashire Heeler</item>
+        <item>Chó Landseer</item>
+        <item>Lapponian Herder</item>
+        <item>Chó Leonberger</item>
+        <item>Lhasa Apso</item>
+        <item>Löwchen</item>
+        <item>Chó Magyar agár</item>
+        <item>Chó chăn cừu Majorca</item>
+        <item>Chó Malta</item>
+        <item>Chó sục Manchester</item>
+        <item>Chó chăn cừu Maremma</item>
+        <item>Chó không lông Xoloitzcuintle</item>
+        <item>Chó Phốc</item>
+        <item>Miniature Schnauzer</item>
+        <item>Chó chăn cừu Mioritic Romania</item>
+        <item>Montenegrin Mountain Hound</item>
+        <item>Mudi</item>
+        <item>Chó Münsterländer lớn</item>
+        <item>Small Münsterländer</item>
+        <item>Chó ngao Neapolitan</item>
+        <item>Chó Newfoundland</item>
+        <item>Chó sục Norfolk</item>
+        <item>Norrbottenspets</item>
+        <item>Chó Buhund Na Uy</item>
+        <item>Norwegian Elkhound</item>
+        <item>Lundehund</item>
+        <item>Chó sục Na Uy</item>
+        <item>Chó tha vịt Nova Scotia</item>
+        <item>Chó săn chỉ điểm Đan Mạch Cũ</item>
+        <item>Chó chăn cừu Anh Quốc</item>
+        <item>Olde English Bulldogge</item>
+        <item>Chó săn rái cá</item>
+        <item>Chó bướm</item>
+        <item>Chó sục Parson Russell</item>
+        <item>Chó sục Patterdale</item>
+        <item>Chó Bắc Kinh</item>
+        <item>Presa Canario</item>
+        <item>Ca de Bou</item>
+        <item>Chó không lông Peru</item>
+        <item>Chó săn Pharaoh</item>
+        <item>Chó Picardy Spaniel</item>
+        <item>Chó săn Plott</item>
+        <item>Podenco Canario</item>
+        <item>English Pointer</item>
+        <item>Chó săn Poitevin</item>
+        <item>Chó săn xám Ba Lan</item>
+        <item>Chó săn Ba Lan</item>
+        <item>Polish Hunting Dog</item>
+        <item>Chó chăn cừu hạ Ba Lan</item>
+        <item>Polish Tatra Sheepdog</item>
+        <item>Pomeranian</item>
+        <item>Chó Pont-Audemer Spaniel</item>
+        <item>Chó săn vịt</item>
+        <item>Chó Porcelaine</item>
+        <item>Chó Podengo Bồ Đào Nha</item>
+        <item>Chó săn chỉ điểm Bồ Đào Nha</item>
+        <item>Chó săn lội nước Bồ Đào Nha</item>
+        <item>Chó săn Posavac</item>
+        <item>Pudelpointer</item>
+        <item>Chó Pug</item>
+        <item>Puli</item>
+        <item>Pumi</item>
+        <item>Chó Mastiff Pyrenees</item>
+        <item>Chó chăn cừu Pyrenean</item>
+        <item>Chó Rafeiro do Alentejo</item>
+        <item>Chó sục săn chuột</item>
+        <item>Chó săn gấu Redbone</item>
+        <item>Chó lông xoáy Nam Phi</item>
+        <item>Rottweiler</item>
+        <item>Chó cảnh Nga</item>
+        <item>Chó Laika Nga-Âu</item>
+        <item>Saarloos wolfdog</item>
+        <item>Chó Sabueso Tây Ban Nha</item>
+        <item>Saluki</item>
+        <item>Samoyed</item>
+        <item>Chó chăn cừu Nam Tư</item>
+        <item>Schapendoes</item>
+        <item>Chó Schillerstövare</item>
+        <item>Schipperke</item>
+        <item>Chó Schnauzer Tiêu chuẩn</item>
+        <item>Schweizer Laufhund</item>
+        <item>Schweizerischer Niederlaufhund</item>
+        <item>Chó săn hươu Scotland</item>
+        <item>Chó sục Scotland</item>
+        <item>Chó sục Sealyham</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Chó săn Serbia</item>
+        <item>Chó săn Serbia tam thể</item>
+        <item>Chó Sa Bì</item>
+        <item>Chó chăn cừu Shetland</item>
+        <item>Shiba Inu</item>
+        <item>Shih Tzu</item>
+        <item>Shikoku Inu</item>
+        <item>Chó Husky Sibir</item>
+        <item>Chó sục Skye</item>
+        <item>Sloughi</item>
+        <item>Chó Slovak Cuvac</item>
+        <item>Slovak Rough-haired Pointer</item>
+        <item>Chó săn Slovakia</item>
+        <item>Chó săn Smaland</item>
+        <item>Chó sục Wheaten lông mềm</item>
+        <item>South Russian Ovcharka</item>
+        <item>Chó ngao Tây Ban Nha</item>
+        <item>Spanish Water Dog</item>
+        <item>Spinone Italiano</item>
+        <item>St. Bernard (chó)</item>
+        <item>Chó Stabyhoun</item>
+        <item>Chó sục bò Staffordshire</item>
+        <item>Steirische Rauhhaarbracke</item>
+        <item>Sussex Spaniel</item>
+        <item>Chó Lapphund Thụy Điển</item>
+        <item>Vallhund Thụy Điển</item>
+        <item>Chó núi Đài Loan</item>
+        <item>Chó Bangkaew Thái</item>
+        <item>Chó lông xoáy Thái Lan</item>
+        <item>Chó ngao Tây Tạng</item>
+        <item>Chó cảnh Tây Tạng</item>
+        <item>Chó sục Tây Tạng</item>
+        <item>Chó Tornjak</item>
+        <item>Tosa</item>
+        <item>Chó sục cáo cảnh</item>
+        <item>Chó săn Transilvania</item>
+        <item>Chó săn gấu mèo leo cây Walker</item>
+        <item>Tyrolean Hound</item>
+        <item>Cimarrón Uruguayo</item>
+        <item>Chó Vizsla</item>
+        <item>Chó Volpino</item>
+        <item>Weimaraner</item>
+        <item>Chó Corgi xứ Wales</item>
+        <item>Chó Corgi Pembroke Wales</item>
+        <item>Chó Springer Spaniel Wales</item>
+        <item>Chó sục Wales</item>
+        <item>West Highland White Terrier</item>
+        <item>Chó Laika Tây Siberia</item>
+        <item>Westphalian Dachsbracke</item>
+        <item>Chó Wetterhoun</item>
+        <item>Whippet</item>
+        <item>Chó săn chỉ điểm lông gợn sóng Griffon</item>
+        <item>Chó lông gợn sóng Vizsla</item>
+        <item>Chó sục Yorkshire</item>
+        <item>Chó săn Halden</item>
+        <item>Hot dog</item>
+        <item>Người</item>
+        <item>Not a dog</item>
+        <item>Mèo</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">Xác định giống chó</string>
+    <string name="list_breeds">Các giống có thể nhận dạng</string>
+    <string name="searchFor">Tra cứu trên Wikipedia?</string>
+    <string name="no">Không</string>
+    <string name="yes">Vâng</string>
+    <string name="no_detection">Không phát hiện</string>
+    <string name="share_with">Chia sẽ với..</string>
+    <string name="from_gallery">Từ thư viện ..</string>
+    <string name="about_menu">Trong khoảng</string>
+    <string name="exit_menu">Lối thoát hiểm</string>
+    <string name="change_language">Thay đổi ngôn ngữ</string>
+</resources>

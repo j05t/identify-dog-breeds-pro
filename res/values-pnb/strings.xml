@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="about_message"><![CDATA[
+    <h1>Identify dog Breeds Pro</h1>
+    <p>Identify over two hundred different dog breeds with your smartphone.</p>
+    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
+    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
+    <h2>Acknowledgements</h2>
+    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
+    ]]></string>
+    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
+
+    <string-array name="breeds_array">
+        <item>آفنپنشر</item>
+        <item>افغان ہاؤنڈ</item>
+        <item>ایڈی</item>
+        <item>آئرڈیل ٹیریئر</item>
+        <item>Akita Inu</item>
+        <item>الاسکن کلی کائی</item>
+        <item>الاسکن مالامیوٹ</item>
+        <item>الپائن ڈاشبراکے</item>
+        <item>American Akita</item>
+        <item>امریکی بلڈاگ</item>
+        <item>American Cocker Spaniel</item>
+        <item>American English Coonhound</item>
+        <item>امریکی اسکیمو کتا</item>
+        <item>امریکی لومڑ ہاؤنڈ</item>
+        <item>American Hairless Terrier</item>
+        <item>American Pit Bull Terrier</item>
+        <item>American Staffordshire Terrier</item>
+        <item>American Water Spaniel</item>
+        <item>Anatolian Shepherd</item>
+        <item>Anglo-Français de Petite Vénerie</item>
+        <item>Appenzeller Sennenhund</item>
+        <item>Ariege Pointer</item>
+        <item>Ariegeois</item>
+        <item>Artois Hound</item>
+        <item>اسٹریلی آجڑی کتا</item>
+        <item>کلپی</item>
+        <item>Australian Shepherd</item>
+        <item>Australian Silky Terrier</item>
+        <item>Australian Stumpy Tail Cattle Dog</item>
+        <item>آسٹریلین ٹیریر</item>
+        <item>برانڈلبریک</item>
+        <item>آسٹرین پنشر</item>
+        <item>ازاواخ</item>
+        <item>Barbet dog</item>
+        <item>بسنجی</item>
+        <item>Basset Artésien Normand</item>
+        <item>Basset Bleu de Gascogne</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>Grand Basset Griffon Vendéen</item>
+        <item>Petit Basset Griffon Vendéen</item>
+        <item>Basset Hound</item>
+        <item>باویریائی کتا</item>
+        <item>بیگل</item>
+        <item>Beagle-Harrier</item>
+        <item>داڑی والا کلی</item>
+        <item>Beauceron</item>
+        <item>بیڈلنگٹن ٹیریر</item>
+        <item>گروننڈال</item>
+        <item>Laekenois dog</item>
+        <item>Malinois dog</item>
+        <item>Tervuren dog</item>
+        <item>برگامسکو</item>
+        <item>برجر بلانک سویس</item>
+        <item>Berger Picard</item>
+        <item>برنر پعاڑی کتا</item>
+        <item>بچن فریز</item>
+        <item>Billy (dog)</item>
+        <item>Black and Tan Coonhound</item>
+        <item>Black Norwegian Elkhound</item>
+        <item>Black Russian Terrier</item>
+        <item>کالے منہ والا کتا</item>
+        <item>Grand Bleu de Gascogne</item>
+        <item>Petit Bleu de Gascogne</item>
+        <item>بلڈ ہاؤنڈ</item>
+        <item>Blue Picardy Spaniel</item>
+        <item>Bluetick Coonhound</item>
+        <item>بوئربوئل</item>
+        <item>بولوگنی</item>
+        <item>باڈر کولی</item>
+        <item>بارڈر ٹیریر</item>
+        <item>بورزوی</item>
+        <item>Barak hound</item>
+        <item>Boston Terrier</item>
+        <item>Bouvier des Ardennes</item>
+        <item>Bouvier des Flandres</item>
+        <item>باکسر کتا</item>
+        <item>بوئیکن سپینیل</item>
+        <item>بریکو اٹالیانو</item>
+        <item>Braque d\'Auvergne</item>
+        <item>Braque du Bourbonnais</item>
+        <item>Braque Francais (Gascogne)</item>
+        <item>Braque Saint-Germain</item>
+        <item>Brazilian Terrier</item>
+        <item>بریارڈ</item>
+        <item>Briquet Griffon Vendéen</item>
+        <item>برٹنی (کتا)</item>
+        <item>بروہلمر</item>
+        <item>Bucovina Shepherd Dog</item>
+        <item>بل ٹیریر</item>
+        <item>Miniature Bull Terrier</item>
+        <item>Bulldog</item>
+        <item>Bullmastiff</item>
+        <item>Burgos Pointer</item>
+        <item>کیرن ٹیریر</item>
+        <item>کنعان کتا</item>
+        <item>کین کورسو</item>
+        <item>Cão da Serra de Aires</item>
+        <item>پرتگالی چوکیدار کتا</item>
+        <item>Cão Fila de São Miguel</item>
+        <item>Carolina Dog</item>
+        <item>Carpathian Shepherd Dog</item>
+        <item>کیٹاہولا کر</item>
+        <item>Catalan Sheepdog</item>
+        <item>Caucasian Shepherd Dog</item>
+        <item>کیویلیر کنگ چارلس سپینیل</item>
+        <item>وشکارلے ایشیاء دا پعیڈاں والا کتا</item>
+        <item>چیسکی فوسک</item>
+        <item>Cesky Terrier</item>
+        <item>Chesapeake Bay Retriever</item>
+        <item>Chien Français Blanc et Noir</item>
+        <item>Chien Français Blanc et Orange</item>
+        <item>Chien Français Tricolore</item>
+        <item>Chihuahua</item>
+        <item>چینی تاج والا کتا</item>
+        <item>چو چو</item>
+        <item>سرنیکو ڈلایٹنا</item>
+        <item>کلمبر سپینیل</item>
+        <item>Rough Collie</item>
+        <item>Smooth Collie</item>
+        <item>Coton de Tulear</item>
+        <item>کروشی پعیڈاں والا کتا</item>
+        <item>Curly-coated Retriever</item>
+        <item>Czechoslovakian Wolfdog</item>
+        <item>ڈیشہنڈ</item>
+        <item>Dalmatian</item>
+        <item>Dandie Dinmont Terrier</item>
+        <item>Danish–Swedish Farmdog</item>
+        <item>ڈوئچے بریک</item>
+        <item>ڈوبرمین</item>
+        <item>ڈوگو ارجنٹینو</item>
+        <item>بوردیو دا کتا</item>
+        <item>Drentse Patrijshond</item>
+        <item>Drever</item>
+        <item>ڈنکر</item>
+        <item>Dutch Shepherd</item>
+        <item>Dutch Smoushond</item>
+        <item>سائیبیریائی لائیکا</item>
+        <item>English Cocker Spaniel</item>
+        <item>انگریزی لومڑ شکاری</item>
+        <item>English Mastiff</item>
+        <item>انگریزی سیٹر</item>
+        <item>English Springer Spaniel</item>
+        <item>English Toy Terrier (Black &amp; Tan)</item>
+        <item>Entlebucher Mountain Dog</item>
+        <item>Estrela Mountain Dog</item>
+        <item>Eurasier</item>
+        <item>Field Spaniel</item>
+        <item>Fila Brasileiro</item>
+        <item>فنی کتا</item>
+        <item>Finnish Lapphund</item>
+        <item>Finnish Spitz</item>
+        <item>Flat-coated Retriever</item>
+        <item>Smooth Fox Terrier</item>
+        <item>Wire Fox Terrier</item>
+        <item>French Bulldog</item>
+        <item>French Spaniel</item>
+        <item>گالگو ایسپینول</item>
+        <item>Gascon Saintongeois</item>
+        <item>لمے والاں والا پوائینٹر</item>
+        <item>جرمن پنشر</item>
+        <item>Stichelhaar</item>
+        <item>جرمن شیفرڈ</item>
+        <item>نکے والاں والا پوائینٹر</item>
+        <item>جرمن سپینیل</item>
+        <item>جرمن سپتز</item>
+        <item>ڈرآتھار</item>
+        <item>جن شناؤزر</item>
+        <item>Glen of Imaal Terrier</item>
+        <item>سنہری ریٹریور</item>
+        <item>Gordon Setter</item>
+        <item>Grand Anglo-Français Blanc et Noir</item>
+        <item>Grand Anglo-Français Blanc et Orange</item>
+        <item>Grand Anglo-Français Tricolore</item>
+        <item>Grand Griffon Vendéen</item>
+        <item>گریٹ ڈین</item>
+        <item>Great Pyrenees</item>
+        <item>وڈا سوئس پعاڑی کتا</item>
+        <item>Greek Harehound</item>
+        <item>Greenland Dog</item>
+        <item>گرے ہاؤنڈ</item>
+        <item>Griffon Bleu de Gascogne</item>
+        <item>برسلز گرفون</item>
+        <item>Griffon Fauve de Bretagne</item>
+        <item>Griffon Nivernais</item>
+        <item>Hamiltonstövare</item>
+        <item>Hanover Hound</item>
+        <item>ہیریر</item>
+        <item>ہوانی</item>
+        <item>Hokkaido dog</item>
+        <item>ہوواوارٹ</item>
+        <item>Hygen Hound</item>
+        <item>ابیضی کتا</item>
+        <item>Icelandic Sheepdog</item>
+        <item>Irish Red and White Setter</item>
+        <item>Irish Setter</item>
+        <item>Irish Terrier</item>
+        <item>آئری سپینیل</item>
+        <item>آئری شکاری کتا</item>
+        <item>Istrian Coarse-haired Hound</item>
+        <item>Istrian Shorthaired Hound</item>
+        <item>Italian Greyhound</item>
+        <item>جیک رسل ٹیریئر</item>
+        <item>یاکٹیریر</item>
+        <item>Jämthund</item>
+        <item>جپانی چن</item>
+        <item>Japanese Spitz</item>
+        <item>Japanese Terrier</item>
+        <item>کائی کن</item>
+        <item>Karelian Bear Dog</item>
+        <item>Karst Shepherd</item>
+        <item>کیز ہونڈ</item>
+        <item>کیری بلیو ٹیریر</item>
+        <item>King Charles Spaniel</item>
+        <item>Kishu</item>
+        <item>کومونڈور</item>
+        <item>کویکر</item>
+        <item>جندو</item>
+        <item>کرومفوہرلاندر</item>
+        <item>Kuvasz</item>
+        <item>لیبراڈر ریٹریور</item>
+        <item>Lagotto Romagnolo</item>
+        <item>Lakeland Terrier</item>
+        <item>Lancashire Heeler</item>
+        <item>لینڈسیر</item>
+        <item>لیپ رینڈیر کتا</item>
+        <item>لیونبرگر</item>
+        <item>لہاسہ اپسو</item>
+        <item>لوچن</item>
+        <item>Magyar agár</item>
+        <item>Majorca Shepherd Dog</item>
+        <item>مالٹی کتا</item>
+        <item>Manchester Terrier</item>
+        <item>ماریما پعیڈاں والا کتا</item>
+        <item>Mexican Hairless Dog</item>
+        <item>Miniature Pinscher</item>
+        <item>نکا شناؤزر کتا</item>
+        <item>مائیوریٹک</item>
+        <item>Montenegrin Mountain Hound</item>
+        <item>موڈی</item>
+        <item>وڈا منسترلاندر</item>
+        <item>نکا منسترلاندر</item>
+        <item>نیپلی ماسٹف</item>
+        <item>نیو فاؤنڈ لینڈ کتا</item>
+        <item>نورفوک ٹیریر</item>
+        <item>نوربوٹنپیٹس</item>
+        <item>Norwegian Buhund</item>
+        <item>Norwegian Elkhound</item>
+        <item>Norwegian Lundehund</item>
+        <item>نوروچ ٹیریر</item>
+        <item>ٹولر</item>
+        <item>Old Danish Pointer</item>
+        <item>پرانا پعیڈاں والا کتا</item>
+        <item>Olde English Bulldogge</item>
+        <item>اوٹر ہاؤنڈ</item>
+        <item>پکھڑوں کتا</item>
+        <item>Parson Russell Terrier</item>
+        <item>Patterdale Terrier</item>
+        <item>پیکنگی</item>
+        <item>Perro de Presa Canario</item>
+        <item>Ca de Bou</item>
+        <item>Peruvian Hairless Dog</item>
+        <item>فرعون کتا</item>
+        <item>پکارڈی سپینیل</item>
+        <item>Plott Hound</item>
+        <item>پوڈینکو کیناریو</item>
+        <item>پوائینٹر</item>
+        <item>Poitevin hound</item>
+        <item>Polish Greyhound</item>
+        <item>Polish Hound</item>
+        <item>Polish Hunting Dog</item>
+        <item>پولش پعیڈاں والا کتا</item>
+        <item>Polish Tatra Sheepdog</item>
+        <item>Pomeranian</item>
+        <item>پونٹ آڈمر سپینیل</item>
+        <item>پوڈل</item>
+        <item>Porcelaine</item>
+        <item>Portuguese Podengo</item>
+        <item>Portuguese Pointer</item>
+        <item>پرتگیزی پانی والا کتا</item>
+        <item>Posavac Hound</item>
+        <item>پوڈل پوائینٹر</item>
+        <item>پگ (کتا)</item>
+        <item>پولی کتا</item>
+        <item>Pumi</item>
+        <item>Pyrenean Mastiff</item>
+        <item>Pyrenean Shepherd</item>
+        <item>Rafeiro do Alentejo</item>
+        <item>Rat Terrier</item>
+        <item>Redbone Coonhound</item>
+        <item>Rhodesian Ridgeback</item>
+        <item>روٹویلر</item>
+        <item>روسی کھڈونا</item>
+        <item>Russo-European Laika</item>
+        <item>Saarloos wolfdog</item>
+        <item>Sabueso Español</item>
+        <item>سلوکی</item>
+        <item>سیموئد</item>
+        <item>Šarplaninac</item>
+        <item>Schapendoes</item>
+        <item>Schillerstövare</item>
+        <item>Schipperke</item>
+        <item>شناوزر</item>
+        <item>Schweizer Laufhund</item>
+        <item>Schweizerischer Niederlaufhund</item>
+        <item>ہرن شکاری</item>
+        <item>Scottish Terrier</item>
+        <item>Sealyham Terrier</item>
+        <item>Segugio Italiano a Pelo Forte</item>
+        <item>Serbian Hound</item>
+        <item>Serbian Tricolour Hound</item>
+        <item>شر پائی</item>
+        <item>شٹلینڈ آجڑی کتا</item>
+        <item>Shiba Inu</item>
+        <item>شی زو</item>
+        <item>Shikoku dog</item>
+        <item>سائبیریائی ہسکی</item>
+        <item>سکائی ٹیریر</item>
+        <item>Sloughi</item>
+        <item>Slovak Cuvac</item>
+        <item>Slovak Rough-haired Pointer</item>
+        <item>Slovenský kopov</item>
+        <item>Smaland Hound</item>
+        <item>Soft-coated Wheaten Terrier</item>
+        <item>South Russian Ovcharka</item>
+        <item>Spanish Mastiff</item>
+        <item>Spanish Water Dog</item>
+        <item>Spinone Italiano</item>
+        <item>سینٹ برنارڈ کتا</item>
+        <item>Stabyhoun</item>
+        <item>سٹریفورڈشائر بل ٹیریئر</item>
+        <item>Styrian Coarse-haired Hound</item>
+        <item>Sussex Spaniel</item>
+        <item>Swedish Lapphund</item>
+        <item>سویڈنی والہنڈ</item>
+        <item>Taiwan Dog</item>
+        <item>Thai Bangkaew Dog</item>
+        <item>Thai Ridgeback</item>
+        <item>Tibetan Mastiff</item>
+        <item>Tibetan Spaniel</item>
+        <item>Tibetan Terrier</item>
+        <item>ٹورنیاک</item>
+        <item>Tosa</item>
+        <item>Toy Fox Terrier</item>
+        <item>Transylvanian Hound</item>
+        <item>Treeing Walker Coonhound</item>
+        <item>Tyrolean Hound</item>
+        <item>Cimarrón Uruguayo</item>
+        <item>Vizsla</item>
+        <item>ولپینو اٹالیانو</item>
+        <item>وائمرانر</item>
+        <item>Cardigan Welsh Corgi</item>
+        <item>Pembroke Welsh Corgi</item>
+        <item>Welsh Springer Spaniel</item>
+        <item>Welsh Terrier</item>
+        <item>West Highland White Terrier</item>
+        <item>West Siberian Laika</item>
+        <item>ویسٹفالی ڈیشبریک</item>
+        <item>Wetterhoun</item>
+        <item>وھپٹ</item>
+        <item>Wirehaired Pointing Griffon</item>
+        <item>Wirehaired Vizsla</item>
+        <item>یارکشائر ٹیریر</item>
+        <item>Halden Hound</item>
+        <item>Hot dog</item>
+        <item>انسان</item>
+        <item>Not a dog</item>
+        <item>بلی</item>
+        <item>Labradoodle</item>
+        <item>Goldendoodle</item>
+        <item>Braque Francais (Pyrenees)</item>
+        <item>Griffon Belge</item>
+        <item>Petit Brabancon</item>
+        <item>Pyrenean Shepherd, Smooth-faced</item>
+        <item>Segugio Italiano A Pelo Raso</item>
+    </string-array>
+    <string name="app_name">ਕੁੱਤੇ ਦੀਆਂ ਨਸਲਾਂ ਪਛਾਣੋ</string>
+    <string name="list_breeds">ਪਛਾਣਯੋਗ ਨਸਲਾਂ</string>
+    <string name="searchFor">ਵਿਕੀਪੀਡੀਆ \'ਤੇ ਦੇਖੋ?</string>
+    <string name="no">ਨਹੀਂ</string>
+    <string name="yes">ਹਾਂ</string>
+    <string name="no_detection">ਕੋਈ ਪਤਾ ਨਹੀਂ</string>
+    <string name="from_gallery">ਗੈਲਰੀ ਤੋਂ</string>
+    <string name="about_menu">ਇਸ ਬਾਰੇ</string>
+    <string name="exit_menu">ਨਿਕਾਸ</string>
+    <string name="share_with">ਇਸ ਨਾਲ ਸਾਂਝਾ ਕਰੋ ..</string>
+    <string name="change_language">ਭਾਸ਼ਾ ਬਦਲੋ</string>
+</resources>
