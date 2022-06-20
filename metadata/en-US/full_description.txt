@@ -1,0 +1,8 @@
+Identify over two hundred different dog breeds with your smartphone.
+
+Click the camera button or load an image from the gallery to identify a dog in a single picture. Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The app works best for high quality images loaded from the gallery.
+
+The application reports up to three predictions it believes to be most correct. Please treat the output only as a suggestion.
+
+Based on an extended version of the Stanford Dogs Dataset. 
+Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.
