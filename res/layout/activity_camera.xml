@@ -16,6 +16,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="46dp"
         android:background="@drawable/roundedbutton"
+        android:textColor="#201D1D"
         android:textSize="8sp"
         android:translationZ="50dp"
         tools:ignore="RtlHardcoded,SmallSp" />
