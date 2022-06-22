@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
-    <string name="about_message"><![CDATA[
-    <h1>Identify dog Breeds Pro</h1>
-    <p>Identify over two hundred different dog breeds with your smartphone.</p>
-    <p>Click the camera button or load an image from the image gallery to analyze a single picture. Tap the results list to get a detailed view of detected breeds or tap the picture to close the displayed result.</p>
-    <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
-    <h2>Acknowledgements</h2>
-    <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
-    <p>Apache License 2.0. Source code available at github.com/j05t/dbclf. Pictures from Wikipedia.</p>
-    ]]></string>
-    <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
 
     <string-array name="breeds_array">
         <item>Pinczer małpi</item>

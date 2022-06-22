@@ -8,7 +8,7 @@
     <p>Activer les prédictions continues et garder le chien dans le cercle pour obtenir le résultat en direct. L\'application indique jusqu\'à trois prédictions jugées les plus correctes. Ce résultat n\'a aucune valeur scientifique.</p>
     <h2>Remerciements</h2>
     <p>Basé sur une version étendue de la base de données Stanford Dogs. Icônes créées par Pause08, Smashicons, Freepik de www.flaticon.com.
-    <p>Apache License 2.0. Code source disponible à github.com/j05t/dbclf. Images issues de Wikipedia. Traduction française par Clément Thonon.</p>
+    <p>Apache License 2.0. Code source disponible à github.com/j05t/identify-dog-breeds-pro. Images issues de Wikipedia. Traduction française par Clément Thonon.</p>
     ]]></string>
     <string name="error_tf_init">Erreur de mémoire insuffisante. Essayez de fermer quelques applications en arrière-plan.</string>
 

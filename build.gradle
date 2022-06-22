@@ -35,6 +35,9 @@ android {
     compileSdkVersion 30
     buildToolsVersion '30.0.3'
 
+    lintOptions {
+        disable 'MissingTranslation'
+    }
 
     defaultConfig {
         applicationId = 'com.jstappdev.identify_dog_breeds_pro'
