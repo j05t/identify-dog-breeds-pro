@@ -112,7 +112,7 @@ public class SimpleListActivity extends Activity {
 
             Locale locale;
 
-            if (CameraActivity.supportedLanguageCodes.contains(CameraActivity.preferredLanguageCode)) {
+            if (CameraActivity.supportedLanguageCodes != null && CameraActivity.supportedLanguageCodes.contains(CameraActivity.preferredLanguageCode)) {
                 locale = new Locale(CameraActivity.preferredLanguageCode);
             } else {
                 locale = Locale.getDefault();
