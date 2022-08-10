@@ -259,8 +259,7 @@ public class CameraConnectionFragment extends Fragment {
 
         // Pick the smallest of those, assuming we found any
         if (bigEnough.size() > 0) {
-            final Size chosenSize = Collections.min(bigEnough, new CompareSizesByArea());
-            return chosenSize;
+            return Collections.min(bigEnough, new CompareSizesByArea());
         } else {
             return choices[0];
         }
@@ -289,7 +288,7 @@ public class CameraConnectionFragment extends Fragment {
         final Activity activity = getActivity();
         if (activity != null) {
             activity.runOnUiThread(
-                    () -> Toast.makeText(requireContext().getApplicationContext(), text, Toast.LENGTH_SHORT).show());
+                    () -> Toast.makeText(getContext(), text, Toast.LENGTH_SHORT).show());
         }
     }
 
