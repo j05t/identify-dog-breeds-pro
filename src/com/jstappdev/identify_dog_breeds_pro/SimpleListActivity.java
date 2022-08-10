@@ -31,7 +31,7 @@ public class SimpleListActivity extends Activity {
         setContentView(R.layout.activity_list);
 
         final String lang = CameraActivity.preferredLanguageCode;
-        if (CameraActivity.supportedLanguageCodes.contains(lang)) {
+        if (CameraActivity.supportedLanguageCodes != null && CameraActivity.supportedLanguageCodes.contains(lang)) {
             wikiLangSubDomain = lang + ".";
         }
 
