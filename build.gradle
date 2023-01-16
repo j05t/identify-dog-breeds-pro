@@ -13,10 +13,7 @@ buildscript {
         mavenCentral()
     }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.2'
-        classpath 'org.apache.httpcomponents:httpclient:4.5.9'
-    }
+    dependencies { classpath 'com.android.tools.build:gradle:7.4.0' }
 }
 
 allprojects {
@@ -32,17 +29,15 @@ project.ext.ASSET_DIR = projectDir.toString() + '/assets'
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 32
-    buildToolsVersion '32.1.0-rc1'
-
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId = 'com.jstappdev.identify_dog_breeds_pro'
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 33
 
-        versionCode 55
-        versionName "24"
+        versionCode 56
+        versionName "25"
     }
 
     if (buildFor == 'armabi-v7a') {
@@ -58,7 +53,6 @@ android {
             }
         }
     }
-
 
     sourceSets {
         main {

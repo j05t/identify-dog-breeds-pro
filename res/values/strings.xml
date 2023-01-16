@@ -384,7 +384,7 @@
     <p>Activate continuous predictions and keep the dog in the circle to get predictions directly from the video stream. The application reports up to three predictions it believes to be the most correct. Please treat the output only as a suggestion.</p>
     <h2>Acknowledgements</h2>
     <p>Based on an extended version of the Stanford Dogs dataset. Icons made by Pause08, Smashicons, Freepik from www.flaticon.com.</p>
-    <p>Apache License 2.0. Source code available at github.com/j05t/identify-dog-breeds-pro. Pictures from Wikipedia.</p>
+    <p>Apache License 2.0. Source code available at github.com/j05t/identify-dog-breeds-pro. The app is also available at f-droid.org/packages/com.jstappdev.identify_dog_breeds_pro. Pictures from Wikipedia.</p>
     ]]></string>
     <string name="error_tf_init">Out of Memory Error. Try closing a few background applications.</string>
 

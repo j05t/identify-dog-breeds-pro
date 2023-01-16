@@ -5,7 +5,8 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <!-- remove implicitly added permissions (tensorflow targetSDK < app targetSDK) -->
     <uses-permission
@@ -32,9 +33,9 @@
 
         <activity
             android:name="com.jstappdev.identify_dog_breeds_pro.ClassifierActivity"
-            android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:exported="true">
+            android:exported="true"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

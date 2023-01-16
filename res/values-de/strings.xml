@@ -10,7 +10,7 @@
     <p>Aktivieren Sie kontinuierliche Vorhersagen und halten Sie den Hund im Kreis, um Vorhersagen direkt aus dem Videostrom zu erhalten. Die Anwendung meldet die drei Vorhersagen mit der höchsten Wahrscheinlichkeit. Bitte behandeln Sie die Ausgabe nur als Vorschlag.</p>
     <h2>Anerkennungen</h2>
     <p>Basierend auf einer erweiterten Version des Stanford Dogs Datensatzes. Icons von Pause08, Smashicons, Freepik von www.flaticon.com.</p>
-    <p>Apache License 2.0. Source code verfügbar auf github.com/j05t/identify-dog-breeds-pro. Bilder von Wikipedia.</p>
+    <p>Apache License 2.0. Source code verfügbar auf github.com/j05t/identify-dog-breeds-pro. Die App ist auch verfügbar auf f-droid.org/packages/com.jstappdev.identify_dog_breeds_pro. Bilder von Wikipedia.</p>
     ]]></string>
     <string name="about_menu">Über diese App</string>
     <string name="exit_menu">Beenden</string>
