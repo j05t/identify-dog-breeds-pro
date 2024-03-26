@@ -1,7 +1,7 @@
 // set to 'armabi-v7a', 'all', 'arm64-v8a'
 // armabi-v7a will only build for armabi-v7a (most smartphones)
 // all will build for arm64-v8a, armeabi-v7a, x86, x86_64
-def buildFor = 'armeabi-v7a'
+def buildFor = 'armabi-v7a'
 
 buildscript {
     repositories {
@@ -31,7 +31,7 @@ android {
         applicationId = 'com.jstappdev.identify_dog_breeds_pro'
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 59
+        versionCode 62
         versionName "27"
     }
 
