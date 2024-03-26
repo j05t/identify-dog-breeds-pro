@@ -1,7 +1,7 @@
-// set to 'armabi-v7a', 'all', 'arm64-v8a'
-// armabi-v7a will only build for armabi-v7a (most smartphones)
+// set to 'armeabi-v7a', 'all', 'arm64-v8a'
+// armeabi-v7a will only build for armeabi-v7a (most smartphones)
 // all will build for arm64-v8a, armeabi-v7a, x86, x86_64
-def buildFor = 'armabi-v7a'
+def buildFor = 'armeabi-v7a'
 
 buildscript {
     repositories {
@@ -31,14 +31,14 @@ android {
         applicationId = 'com.jstappdev.identify_dog_breeds_pro'
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 62
+        versionCode 65
         versionName "27"
     }
 
-    if (buildFor == 'armabi-v7a') {
+    if (buildFor == 'armeabi-v7a') {
         defaultConfig {
             ndk {
-                abiFilters 'armabi-v7a'
+                abiFilters 'armeabi-v7a'
             }
         }
     } else if (buildFor == 'arm64-v8a') {
@@ -88,6 +88,4 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.fragment:fragment:1.6.2'
-    implementation 'me.saket.modernstorage:modernstorage-photopicker:1.0.0-alpha07'
-    implementation 'androidx.compose.ui:ui-graphics-android:1.6.4'
 }
