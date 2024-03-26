@@ -57,7 +57,7 @@ public class ListAdapter extends BaseExpandableListAdapter implements SectionInd
         sectionList.toArray(sections);
     }
 
-    private static Bitmap getBitmapFromAsset(Context context, String filePath) {
+    public static Bitmap getBitmapFromAsset(Context context, String filePath) {
         AssetManager assetManager = context.getAssets();
 
         InputStream istr;
@@ -67,7 +67,7 @@ public class ListAdapter extends BaseExpandableListAdapter implements SectionInd
             bitmap = BitmapFactory.decodeStream(istr);
         } catch (IOException e) {
             try {
-                istr = assetManager.open("nodata.jpg");
+                istr = assetManager.open("nodata.jpeg");
                 bitmap = BitmapFactory.decodeStream(istr);
             } catch (IOException ignored) {
             }

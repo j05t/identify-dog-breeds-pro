@@ -17,6 +17,8 @@ package com.jstappdev.identify_dog_breeds_pro;
  * limitations under the License.
  */
 
+import static com.jstappdev.identify_dog_breeds_pro.ListAdapter.getBitmapFromAsset;
+
 import android.Manifest;
 import android.app.ActionBar;
 import android.app.AlertDialog;
@@ -27,8 +29,12 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
@@ -54,6 +60,7 @@ import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.text.util.Linkify;
 import android.util.Size;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -72,6 +79,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.PickVisualMediaRequest;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
@@ -107,6 +117,7 @@ public abstract class CameraActivity extends FragmentActivity
     public static String cameraId;
     private static int cameraPermissionRequests = 0;
     protected ArrayList<String> currentRecognitions;
+    protected ArrayList<String> currentRecognitionsText;
     protected int previewWidth = 0;
     protected int previewHeight = 0;
     protected ClassifierActivity.InferenceTask inferenceTask;
@@ -117,7 +128,7 @@ public abstract class CameraActivity extends FragmentActivity
     boolean imageSet = false;
     ImageButton cameraButton, shareButton, closeButton, saveButton;
     ToggleButton continuousInferenceButton;
-    ImageView imageViewFromGallery;
+    ImageView imageView;
     ProgressBar progressBar;
     private Handler handler;
     private HandlerThread handlerThread;
@@ -135,6 +146,14 @@ public abstract class CameraActivity extends FragmentActivity
     public static String preferredLanguageCode;
 
     abstract void handleSendImage(Intent intent);
+
+    abstract void handleSendImageUri(Uri uri);
+
+    // Registers a photo picker activity launcher in single-select mode.
+    ActivityResultLauncher<PickVisualMediaRequest> pickMedia =
+            registerForActivityResult(new ActivityResultContracts.PickVisualMedia(), uri -> {
+                if (uri != null) handleSendImageUri(uri);
+            });
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -172,6 +191,7 @@ public abstract class CameraActivity extends FragmentActivity
     @Override
     public void onRequestPermissionsResult(
             final int requestCode, @NonNull final String[] permissions, @NonNull final int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PERMISSIONS_REQUEST && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             switch (permissions[0]) {
                 case PERMISSION_CAMERA:
@@ -189,7 +209,7 @@ public abstract class CameraActivity extends FragmentActivity
     }
 
     private void setupButtons() {
-        imageViewFromGallery = findViewById(R.id.imageView);
+        imageView = findViewById(R.id.imageView);
         resultsView = findViewById(R.id.results);
         mChart = findViewById(R.id.chart);
         progressBar = findViewById(R.id.progressBar);
@@ -217,7 +237,7 @@ public abstract class CameraActivity extends FragmentActivity
             imageSet = false;
             updateResults(null);
 
-            imageViewFromGallery.setVisibility(View.GONE);
+            imageView.setVisibility(View.GONE);
             continuousInferenceButton.setChecked(false);
 
             // show flash animation
@@ -246,7 +266,7 @@ public abstract class CameraActivity extends FragmentActivity
         continuousInferenceButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (!hasPermission(PERMISSION_CAMERA)) requestPermission(PERMISSION_CAMERA);
 
-            imageViewFromGallery.setVisibility(View.GONE);
+            imageView.setVisibility(View.GONE);
             continuousInference = isChecked;
 
             if (!continuousInference)
@@ -321,12 +341,13 @@ public abstract class CameraActivity extends FragmentActivity
 
                 break;
             case R.id.pick_image:
-                if (!hasPermission(PERMISSION_STORAGE_READ)) {
-                    requestPermission(PERMISSION_STORAGE_READ);
-                    return false;
-                }
-
-                pickImage();
+                // use old permissions system if API level < 30,
+                // photoPicker needs google services and internet access for installation
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
+                    pickImage();
+                } else pickMedia.launch(new PickVisualMediaRequest.Builder()
+                        .setMediaType(ActivityResultContracts.PickVisualMedia.ImageOnly.INSTANCE)
+                        .build());
                 break;
             case R.id.set_language:
                 final LayoutInflater inflater = getLayoutInflater();
@@ -716,6 +737,7 @@ public abstract class CameraActivity extends FragmentActivity
     void updateResultsView(List<Classifier.Recognition> results) {
         final StringBuilder sb = new StringBuilder();
         currentRecognitions = new ArrayList<String>();
+        currentRecognitionsText = new ArrayList<String>();
 
         if (results != null) {
             resultsView.setEnabled(true);
@@ -730,6 +752,7 @@ public abstract class CameraActivity extends FragmentActivity
                             recog.getTitle(), Math.round(recog.getConfidence() * 100));
                     sb.append(text);
                     currentRecognitions.add(recog.getTitle());
+                    currentRecognitionsText.add(text);
                 }
             } else {
                 sb.append(getString(R.string.no_detection));
@@ -795,10 +818,10 @@ public abstract class CameraActivity extends FragmentActivity
         alreadyAdded = false;
 
         cameraButton.setEnabled(false);
-        imageViewFromGallery.setImageBitmap(image);
-        imageViewFromGallery.setVisibility(View.VISIBLE);
+        imageView.setImageBitmap(image);
+        imageView.setVisibility(View.VISIBLE);
 
-        final TransitionDrawable transition = (TransitionDrawable) imageViewFromGallery.getBackground();
+        final TransitionDrawable transition = (TransitionDrawable) imageView.getBackground();
         transition.startTransition(transitionTime);
 
         setupShareButton();
@@ -813,10 +836,10 @@ public abstract class CameraActivity extends FragmentActivity
                 if (inferenceTask != null)
                     inferenceTask.cancel(true);
 
-                imageViewFromGallery.setClickable(false);
+                imageView.setClickable(false);
                 runInBackground(() -> updateResults(null));
                 transition.reverseTransition(transitionTime);
-                imageViewFromGallery.setVisibility(View.GONE);
+                imageView.setVisibility(View.GONE);
                 setButtonsVisibility(View.GONE);
             }
 
@@ -835,8 +858,8 @@ public abstract class CameraActivity extends FragmentActivity
             }
         });
 
-        imageViewFromGallery.setVisibility(View.VISIBLE);
-        closeButton.setOnClickListener(v -> imageViewFromGallery.startAnimation(fade));
+        imageView.setVisibility(View.VISIBLE);
+        closeButton.setOnClickListener(v -> imageView.startAnimation(fade));
 
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -848,20 +871,57 @@ public abstract class CameraActivity extends FragmentActivity
     }
 
     public Bitmap takeScreenshot() {
-        setButtonsVisibility(View.GONE);
-        final View rootView = findViewById(android.R.id.content).getRootView();
-        rootView.setDrawingCacheEnabled(true);
-        final Bitmap b = rootView.getDrawingCache();
-        setButtonsVisibility(View.VISIBLE);
-        return b;
+        String[] fileNames = getResources().getStringArray(R.array.file_names);
+        List<String> dogbreeds = Arrays.asList(getResources().getStringArray(R.array.breeds_array));
+        String appname = getString(R.string.app_name);
+
+        Bitmap icon = null;
+        Drawable drawable = getDrawable(R.drawable.ic_launcher);
+        if (drawable instanceof BitmapDrawable) {
+            BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+            if (bitmapDrawable.getBitmap() != null) {
+                icon = bitmapDrawable.getBitmap();
+            }
+        } else if (drawable.getIntrinsicWidth() <= 0 || drawable.getIntrinsicHeight() <= 0) {
+            icon = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888); // Single color bitmap will be created of 1x1 pixel
+        } else {
+            icon = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        }
+
+        final View img = imageView;
+        img.setDrawingCacheEnabled(true);
+        img.buildDrawingCache();
+        final Bitmap b = img.getDrawingCache();
+        Bitmap result = Bitmap.createBitmap(b.getWidth(), b.getHeight(), b.getConfig());
+        Canvas canvas = new Canvas(result);
+        canvas.drawBitmap(b, 0f, 0, null);
+
+        Paint textPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
+        textPaint.setColor(Color.WHITE);
+        textPaint.setTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 18, getResources().getDisplayMetrics()));
+        textPaint.setTextAlign(Paint.Align.LEFT);
+        Paint.FontMetrics metric = textPaint.getFontMetrics();
+        int textHeight = (int) Math.ceil(metric.descent - metric.ascent);
+        int y = (int) (textHeight - metric.descent);
+        canvas.drawBitmap(icon, 64, b.getHeight() - icon.getHeight() - 64, null);
+        canvas.drawText(appname, 84 + icon.getWidth(), b.getHeight() - icon.getHeight() - 64 + 2 * y, textPaint);
+
+        for (int i = 0; i < currentRecognitions.size(); i++) {
+            Bitmap image = getBitmapFromAsset(getApplicationContext(), fileNames[dogbreeds.indexOf(currentRecognitions.get(i))]);
+            Bitmap bitmap = Bitmap.createScaledBitmap(image, 128, 128, true);
+            canvas.drawBitmap(bitmap, 16, 16 + i * 128 + i * 16, null);
+            canvas.drawText(currentRecognitionsText.get(i), 164, 144 + i * 128 - y + i * 16, textPaint);
+        }
+
+        return result;
     }
 
     private void saveImage() {
-        if (!hasPermission(PERMISSION_STORAGE_WRITE)) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R && !hasPermission(PERMISSION_STORAGE_WRITE)) {
             requestPermission(PERMISSION_STORAGE_WRITE);
             return;
         }
-        
+
         if (!alreadyAdded) {
             final String fileName = getString(R.string.app_name) + " " + System.currentTimeMillis() / 1000;
             fileUrl = MediaStore.Images.Media.insertImage(getContentResolver(), takeScreenshot(), fileName, currentRecognitions.toString());
@@ -873,13 +933,7 @@ public abstract class CameraActivity extends FragmentActivity
     }
 
     protected void setupShareButton() {
-
         shareButton.setOnClickListener(v -> {
-            if (!hasPermission(PERMISSION_STORAGE_WRITE)) {
-                requestPermission(PERMISSION_STORAGE_WRITE);
-                return;
-            }
-
             saveImage();
 
             final Uri contentUri = Uri.parse(fileUrl);

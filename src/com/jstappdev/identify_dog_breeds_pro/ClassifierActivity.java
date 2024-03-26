@@ -59,6 +59,10 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
         final Uri imageUri = data.getParcelableExtra(Intent.EXTRA_STREAM);
         classifyLoadedImage(imageUri);
     }
+    @Override
+    void handleSendImageUri(Uri uri) {
+        classifyLoadedImage(uri);
+    }
 
     /**
      * user has chosen a picture from the image gallery
