@@ -388,4 +388,5 @@
     <string name="share_with">Del med ..</string>
     <string name="exit_menu">Exit</string>
     <string name="change_language">Skifte språk</string>
+    <string name="high_accuracy">Høy presisjon</string>
 </resources>

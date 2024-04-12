@@ -399,4 +399,5 @@
     <string name="yes">Oui</string>
     <string name="no_detection">Pas de détection.</string>
     <string name="change_language">Changer de langue</string>
+    <string name="high_accuracy">Haute précision</string>
 </resources>

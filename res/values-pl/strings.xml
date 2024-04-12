@@ -388,4 +388,5 @@
     <string name="exit_menu">Wyjście</string>
     <string name="share_with">Udostępnij za pomocą ..</string>
     <string name="change_language">Zmień język</string>
+    <string name="high_accuracy">Wysoka celność</string>
 </resources>

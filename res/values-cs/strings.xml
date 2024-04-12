@@ -388,4 +388,5 @@
     <string name="exit_menu">Výstup</string>
     <string name="share_with">Sdílet s..</string>
     <string name="change_language">Změnit jazyk</string>
+    <string name="high_accuracy">Vysoká přesnost</string>
 </resources>

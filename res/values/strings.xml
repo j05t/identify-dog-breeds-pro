@@ -399,6 +399,7 @@
     <string name="yes">Yes</string>
     <string name="no_detection">No detection</string>
     <string name="change_language">Change language</string>
+    <string name="high_accuracy">High Accuracy</string>
 
     <string-array name="array_languages" translatable="false">
         <item>English</item>

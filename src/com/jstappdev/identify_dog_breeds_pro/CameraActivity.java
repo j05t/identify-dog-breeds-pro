@@ -55,9 +55,6 @@ import android.provider.MediaStore;
 import android.text.Html;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
-import android.text.style.ForegroundColorSpan;
-import android.text.style.RelativeSizeSpan;
-import android.text.style.StyleSpan;
 import android.text.util.Linkify;
 import android.util.Size;
 import android.util.TypedValue;
@@ -71,6 +68,7 @@ import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -89,7 +87,6 @@ import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.utils.ColorTemplate;
 import com.jstappdev.identify_dog_breeds_pro.env.ImageUtils;
 
 import java.nio.ByteBuffer;
@@ -128,6 +125,7 @@ public abstract class CameraActivity extends FragmentActivity
     boolean imageSet = false;
     ImageButton cameraButton, shareButton, closeButton, saveButton;
     ToggleButton continuousInferenceButton;
+    CheckBox highAccuracyCheckbox;
     ImageView imageView;
     ProgressBar progressBar;
     private Handler handler;
@@ -141,7 +139,7 @@ public abstract class CameraActivity extends FragmentActivity
     private boolean useCamera2API;
     private String fileUrl;
     private boolean alreadyAdded = false;
-
+    boolean highAccuracy = false;
 
     public static String preferredLanguageCode;
 
@@ -160,6 +158,7 @@ public abstract class CameraActivity extends FragmentActivity
         super.onCreate(null);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        highAccuracy = PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getBoolean("high_accuracy", false);
         preferredLanguageCode = PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getString("lang", Locale.getDefault().getLanguage());
         supportedLanguageNames = Arrays.asList(getResources().getStringArray(R.array.array_languages));
         supportedLanguageCodes = Arrays.asList(getResources().getStringArray(R.array.array_language_codes));
@@ -300,6 +299,7 @@ public abstract class CameraActivity extends FragmentActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         final MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.mainmenu, menu);
+        menu.findItem(R.id.high_accuracy).setChecked(highAccuracy);
         return true;
     }
 
@@ -379,6 +379,11 @@ public abstract class CameraActivity extends FragmentActivity
                 break;
             case R.id.list_breeds:
                 startActivity(new Intent(this, SimpleListActivity.class));
+                break;
+            case R.id.high_accuracy:
+                highAccuracy = !highAccuracy;
+                PreferenceManager.getDefaultSharedPreferences(getBaseContext()).edit().putBoolean("high_accuracy", highAccuracy).apply();
+                item.setChecked(highAccuracy);
                 break;
             case R.id.action_exit:
                 finishAndRemoveTask();
@@ -559,17 +564,6 @@ public abstract class CameraActivity extends FragmentActivity
 
         final PieData data = new PieData(set);
         mChart.setData(data);
-    }
-
-    private SpannableString generateCenterSpannableText() {
-        final SpannableString s = new SpannableString("Center dog here\nkeep camera stable");
-        s.setSpan(new RelativeSizeSpan(1.5f), 0, 15, 0);
-        s.setSpan(new StyleSpan(Typeface.NORMAL), 15, s.length() - 15, 0);
-        s.setSpan(new ForegroundColorSpan(ColorTemplate.getHoloBlue()), 0, 15, 0);
-
-        s.setSpan(new StyleSpan(Typeface.ITALIC), s.length() - 18, s.length(), 0);
-        s.setSpan(new ForegroundColorSpan(ColorTemplate.getHoloBlue()), s.length() - 18, s.length(), 0);
-        return s;
     }
 
     @Override

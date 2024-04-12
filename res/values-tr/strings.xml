@@ -388,4 +388,5 @@
     <string name="exit_menu">çıkış</string>
     <string name="share_with">İle paylaş..</string>
     <string name="change_language">Dili değiştir</string>
+    <string name="high_accuracy">Yüksek Doğruluk</string>
 </resources>

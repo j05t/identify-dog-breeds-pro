@@ -35,7 +35,7 @@
             android:name="com.jstappdev.identify_dog_breeds_pro.ClassifierActivity"
             android:screenOrientation="portrait"
             android:exported="true"
-            tools:ignore="LockedOrientationActivity">
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

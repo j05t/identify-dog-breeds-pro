@@ -388,4 +388,5 @@
     <string name="about_menu">Trong khoảng</string>
     <string name="exit_menu">Lối thoát hiểm</string>
     <string name="change_language">Thay đổi ngôn ngữ</string>
+    <string name="high_accuracy">Độ chính xác cao</string>
 </resources>

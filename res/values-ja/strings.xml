@@ -388,4 +388,5 @@
     <string name="exit_menu">出口</string>
     <string name="share_with">と共有する..</string>
     <string name="change_language">言語を変えてください</string>
+    <string name="high_accuracy">高い正確性</string>
 </resources>

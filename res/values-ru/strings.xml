@@ -388,4 +388,5 @@
     <string name="exit_menu">Выход</string>
     <string name="share_with">Поделиться с.</string>
     <string name="change_language">изменение языка</string>
+    <string name="high_accuracy">Высокая точность</string>
 </resources>

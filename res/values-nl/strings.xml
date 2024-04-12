@@ -388,4 +388,5 @@
     <string name="exit_menu">Uitgang</string>
     <string name="share_with">Delen met..</string>
     <string name="change_language">Verander de taal</string>
+    <string name="high_accuracy">Hoge nauwkeurigheid</string>
 </resources>

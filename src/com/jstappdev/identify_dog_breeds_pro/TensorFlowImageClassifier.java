@@ -43,13 +43,11 @@ public class TensorFlowImageClassifier implements Classifier {
     private float imageStd;
 
     // Pre-allocated buffers.
-    private Vector<String> labels = new Vector<String>();
+    private final Vector<String> labels = new Vector<>();
     private int[] intValues;
     private float[] floatValues;
     private float[] outputs;
     private String[] outputNames;
-
-    private boolean logStats = false;
 
     private TensorFlowInferenceInterface inferenceInterface;
 
@@ -110,8 +108,6 @@ public class TensorFlowImageClassifier implements Classifier {
 
     @Override
     public List<Recognition> recognizeImage(final Bitmap bitmap) {
-        // Log this method so that it can be analyzed with systrace.
-
         // Preprocess the image data from 0-255 int to normalized float based
         // on the provided parameters.
         bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
@@ -126,14 +122,14 @@ public class TensorFlowImageClassifier implements Classifier {
         inferenceInterface.feed(inputName, floatValues, 1, inputSize, inputSize, 3);
 
         // Run the inference call.
-        inferenceInterface.run(outputNames, logStats);
+        inferenceInterface.run(outputNames, false);
 
         // Copy the output Tensor back into the output array.
         inferenceInterface.fetch(outputName, outputs);
 
         // Find the best classifications.
         PriorityQueue<Recognition> pq =
-                new PriorityQueue<Recognition>(
+                new PriorityQueue<>(
                         3,
                         (lhs, rhs) -> {
                             // Intentionally reversed to put high confidence at the head of the queue.
@@ -147,7 +143,7 @@ public class TensorFlowImageClassifier implements Classifier {
                                 "" + i, labels.size() > i ? labels.get(i) : "unknown", outputs[i], null));
             }
         }
-        final ArrayList<Recognition> recognitions = new ArrayList<Recognition>();
+        final ArrayList<Recognition> recognitions = new ArrayList<>();
         final int recognitionsSize = Math.min(pq.size(), MAX_RESULTS);
         for (int i = 0; i < recognitionsSize; ++i) {
             recognitions.add(pq.poll());

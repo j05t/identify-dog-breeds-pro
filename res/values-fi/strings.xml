@@ -388,4 +388,5 @@
     <string name="exit_menu">poistuminen</string>
     <string name="share_with">Jakaa..</string>
     <string name="change_language">Vaihda kieltä</string>
+    <string name="high_accuracy">Korkea tarkkuus</string>
 </resources>

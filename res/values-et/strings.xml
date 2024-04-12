@@ -388,4 +388,5 @@
     <string name="exit_menu">Välju</string>
     <string name="share_with">Jaga..</string>
     <string name="change_language">Keele muutmine</string>
+    <string name="high_accuracy">Kõrge täpsus</string>
 </resources>

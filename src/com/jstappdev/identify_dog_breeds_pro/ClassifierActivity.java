@@ -37,7 +37,9 @@ import android.widget.Toast;
 import com.jstappdev.identify_dog_breeds_pro.env.ImageUtils;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 
 public class ClassifierActivity extends CameraActivity implements OnImageAvailableListener {
@@ -51,7 +53,6 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
     private Bitmap rgbFrameBitmap = null;
     private Bitmap croppedBitmap = null;
     private Matrix frameToCropTransform;
-
     private Classifier classifier;
 
     @Override
@@ -59,6 +60,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
         final Uri imageUri = data.getParcelableExtra(Intent.EXTRA_STREAM);
         classifyLoadedImage(imageUri);
     }
+
     @Override
     void handleSendImageUri(Uri uri) {
         classifyLoadedImage(uri);
@@ -232,7 +234,60 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
             initClassifier();
 
             if (!isCancelled() && classifier != null) {
-                return classifier.recognizeImage(bitmaps[0]);
+                List<Classifier.Recognition> recogs1 = classifier.recognizeImage(bitmaps[0]);
+                if (!highAccuracy) return recogs1;
+
+                Matrix matrix = new Matrix();
+                matrix.postScale(-1, 1, bitmaps[0].getWidth() / 2f, bitmaps[0].getHeight() / 2f);
+                final Bitmap flippedBitmap = Bitmap.createBitmap(bitmaps[0], 0, 0, bitmaps[0].getWidth(), bitmaps[0].getHeight(), matrix, true);
+                List<Classifier.Recognition> recogs2 = classifier.recognizeImage(flippedBitmap);
+
+                // we would need API level 24 to use List.sort()
+                PriorityQueue<Classifier.Recognition> pq =
+                        new PriorityQueue<>(
+                                3,
+                                (lhs, rhs) -> {
+                                    // Intentionally reversed to put high confidence at the head of the queue.
+                                    return Float.compare(rhs.getConfidence(), lhs.getConfidence());
+                                });
+
+                for (int i = 0; i < recogs1.size(); i++) {
+                    Classifier.Recognition recog = recogs1.get(i);
+                    boolean ttaAdjusted = false;
+
+                    for (int j = 0; j < recogs2.size(); j++) {
+                        if (recog.getId().equals(recogs2.get(j).getId())) {
+                            recog.setConfidenceTTA(recogs2.get(j).getConfidence());
+                            ttaAdjusted = true;
+                        }
+                    }
+
+                    if (!ttaAdjusted) recog.setConfidenceTTA(0);
+
+                    pq.add(recog);
+                }
+                for (int i = 0; i < recogs2.size(); i++) {
+                    Classifier.Recognition recog = recogs2.get(i);
+                    boolean inRecogs1 = false;
+
+                    for (int j = 0; j < recogs1.size(); j++) {
+                        if (recog.getId().equals(recogs1.get(j).getId())) {
+                            inRecogs1 = true;
+                        }
+                    }
+                    if (!inRecogs1) {
+                        recog.setConfidenceTTA(0);
+                        pq.add(recog);
+                    }
+                }
+
+                final ArrayList<Classifier.Recognition> r = new ArrayList<>();
+                final int size = Math.min(pq.size(), 3);
+                for (int i = 0; i < size; ++i) {
+                    r.add(pq.poll());
+                }
+
+                return r;
             }
 
             return null;

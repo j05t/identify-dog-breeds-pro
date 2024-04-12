@@ -399,4 +399,5 @@
         <item>Segugio Italiano A Pelo Raso</item>
     </string-array>
     <string name="change_language">Sprache ändern</string>
+    <string name="high_accuracy">Hohe Genauigkeit</string>
 </resources>

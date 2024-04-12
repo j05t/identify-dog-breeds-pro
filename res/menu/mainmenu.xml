@@ -1,27 +1,32 @@
 <menu xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/pick_image"
         android:icon="@android:drawable/ic_menu_gallery"
         android:title="@string/from_gallery"
-        app:showAsAction="always"
-        tools:ignore="AlwaysShowAction" />
+        tools:ignore="AlwaysShowAction"
+        android:showAsAction="always" />
     <item
         android:id="@+id/list_breeds"
         android:title="@string/list_breeds"
-        app:showAsAction="never"/>
+        android:showAsAction="never" />
     <item
         android:id="@+id/set_language"
         android:icon="@drawable/ic_change_language"
         android:title="@string/change_language"
-        app:showAsAction="never" />
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/high_accuracy"
+        android:checkable="true"
+        android:title="@string/high_accuracy"
+        android:actionViewClass="android.widget.CheckBox"
+        android:showAsAction="never" />
     <item
         android:id="@+id/action_about"
         android:title="@string/about_menu"
-        app:showAsAction="never"/>
+        android:showAsAction="never" />
     <item
         android:id="@+id/action_exit"
         android:title="@string/exit_menu"
-        app:showAsAction="never"/>
+        android:showAsAction="never" />
 </menu>

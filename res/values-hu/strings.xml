@@ -388,4 +388,5 @@
     <string name="exit_menu">Kijárat</string>
     <string name="share_with">Oszd..</string>
     <string name="change_language">Válts nyelvet</string>
+    <string name="high_accuracy">Nagy pontosság</string>
 </resources>

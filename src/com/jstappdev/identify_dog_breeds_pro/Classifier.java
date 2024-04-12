@@ -3,6 +3,8 @@ package com.jstappdev.identify_dog_breeds_pro;
 import android.graphics.Bitmap;
 import android.graphics.RectF;
 
+import androidx.annotation.NonNull;
+
 import java.util.List;
 import java.util.Locale;
 
@@ -15,7 +17,7 @@ public interface Classifier {
     /**
      * An immutable result returned by a Classifier describing what was recognized.
      */
-    public class Recognition {
+    class Recognition {
         /**
          * A unique identifier for what has been recognized. Specific to the class, not the instance of
          * the object.
@@ -30,12 +32,17 @@ public interface Classifier {
         /**
          * A sortable score for how good the recognition is relative to others. Higher should be better.
          */
-        private final Float confidence;
+        private  Float confidence;
+
+        // sets confidence to (confidence + c) / 2
+        public void setConfidenceTTA(float c) {
+            this.confidence = (this.confidence + c) / 2;
+        }
 
         /**
          * Optional location within the source image for the location of the recognized object.
          */
-        private RectF location;
+        private final RectF location;
 
         public Recognition(
                 final String id, final String title, final Float confidence, final RectF location) {
@@ -57,6 +64,7 @@ public interface Classifier {
             return confidence;
         }
 
+        @NonNull
         @Override
         public String toString() {
             String resultString = "";
