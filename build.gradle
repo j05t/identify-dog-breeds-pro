@@ -31,7 +31,7 @@ android {
         applicationId = 'com.jstappdev.identify_dog_breeds_pro'
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 68
+        versionCode 70
         versionName "28"
     }
 

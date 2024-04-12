@@ -341,6 +341,8 @@ public abstract class CameraActivity extends FragmentActivity
 
                 break;
             case R.id.pick_image:
+                continuousInference = false;
+                continuousInferenceButton.setChecked(false);
                 // use old permissions system if API level < 30,
                 // photoPicker needs google services and internet access for installation
                 if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
@@ -539,7 +541,6 @@ public abstract class CameraActivity extends FragmentActivity
             edit.apply();
 
             mChart.setCenterTextTypeface(Typeface.createFromAsset(getAssets(), "OpenSans-Regular.ttf"));
-            //mChart.setCenterText(generateCenterSpannableText());
             mChart.setCenterTextSizePixels(23);
             mChart.setDrawCenterText(true);
         }
