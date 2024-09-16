@@ -1,15 +1,10 @@
-// set to 'armeabi-v7a', 'all', 'arm64-v8a'
-// armeabi-v7a will only build for armeabi-v7a (most smartphones)
-// all will build for arm64-v8a, armeabi-v7a, x86, x86_64
-def buildFor = 'armeabi-v7a'
-
 buildscript {
     repositories {
         google()
         mavenCentral()
     }
 
-    dependencies { classpath 'com.android.tools.build:gradle:8.3.2' }
+    dependencies { classpath 'com.android.tools.build:gradle:8.6.0' }
 }
 
 allprojects {
@@ -24,28 +19,27 @@ project.ext.ASSET_DIR = projectDir.toString() + '/assets'
 
 apply plugin: 'com.android.application'
 
+ext {
+    abiCodes = ['armeabi-v7a': 1, 'x86': 2, 'x86_64': 3, 'arm64-v8a': 4]
+}
+
 android {
     namespace = 'com.jstappdev.identify_dog_breeds_pro'
     compileSdk 34
     defaultConfig {
         applicationId = 'com.jstappdev.identify_dog_breeds_pro'
         minSdkVersion 21
-        targetSdkVersion 34
-        versionCode 70
-        versionName "28"
+        targetSdkVersion 35
+        versionCode 72
+        versionName "30"
     }
 
-    if (buildFor == 'armeabi-v7a') {
-        defaultConfig {
-            ndk {
-                abiFilters 'armeabi-v7a'
-            }
-        }
-    } else if (buildFor == 'arm64-v8a') {
-        defaultConfig {
-            ndk {
-                abiFilters 'arm64-v8a'
-            }
+    splits {
+        abi {
+            enable = true
+            reset()
+            //noinspection ChromeOsAbiSupport
+            include project.ext.abiCodes.keySet() as String[]
         }
     }
 
@@ -79,13 +73,30 @@ android {
         renderScript true
         aidl true
     }
+
+    android.applicationVariants.configureEach { variant ->
+        variant.outputs.each { output ->
+            def baseAbiVersionCode = project.ext.abiCodes.get output.getFilter("ABI")
+            if (baseAbiVersionCode != null) {
+                output.versionCodeOverride = (100 * project.android.defaultConfig.versionCode) + baseAbiVersionCode
+            } else {
+                output.versionCodeOverride = 100 * project.android.defaultConfig.versionCode
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
 }
+
 
 dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
     implementation 'org.tensorflow:tensorflow-android:1.13.1'
-    implementation 'androidx.activity:activity:1.8.2'
+    implementation 'androidx.activity:activity:1.9.2'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.fragment:fragment:1.6.2'
+    implementation 'androidx.fragment:fragment:1.8.3'
 }
