@@ -158,7 +158,7 @@ public abstract class CameraActivity extends FragmentActivity
         super.onCreate(null);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        highAccuracy = PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getBoolean("high_accuracy", false);
+        highAccuracy = PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getBoolean("high_accuracy", true);
         preferredLanguageCode = PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getString("lang", Locale.getDefault().getLanguage());
         supportedLanguageNames = Arrays.asList(getResources().getStringArray(R.array.array_languages));
         supportedLanguageCodes = Arrays.asList(getResources().getStringArray(R.array.array_language_codes));
